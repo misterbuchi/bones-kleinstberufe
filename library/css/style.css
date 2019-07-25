@@ -2150,7 +2150,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  background-color: var(--white); }
 
 #logo {
   margin: 0.75em 0; }
@@ -2521,7 +2521,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: #323944;
-  color: #f8f9fa; }
+  color: var(--white); }
 
 /*
 if you checked out the link above:

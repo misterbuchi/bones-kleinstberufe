@@ -252,4 +252,11 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+function kb_svg ( $svg_mime ){
+	$svg_mime['svg'] = 'image/svg+xml';
+	return $svg_mime;
+}
+
+add_filter( 'upload_mimes', 'kb_svg' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
