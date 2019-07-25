@@ -259,4 +259,12 @@ function kb_svg ( $svg_mime ){
 
 add_filter( 'upload_mimes', 'kb_svg' );
 
+add_theme_support( 'custom-logo', array(
+	'height'      => 127,
+	'width'       => 300,
+	'flex-height' => true,
+	'flex-width'  => true,
+	'header-text' => array( 'site-title', 'site-description' ),
+) );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
