@@ -75,6 +75,14 @@ if ( ! isset( $content_width ) ) {
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'slider-home', 1440, 785, true );
+add_image_size( 'slider-contend', 1110, 465, true );
+add_image_size( 'home-medium', 630, 414, true );
+add_image_size( 'home-small', 350, 220, true );
+
+
+
+
 
 /*
 to add more sizes, simply copy a line from above

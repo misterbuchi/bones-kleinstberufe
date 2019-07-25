@@ -1,3 +1,6 @@
+/* @override 
+	https://beta.kleinstberufe.ch/wp-content/themes/bones-kleinstberufe/library/css/style.css */
+
 /*! Made with Bones: http://themble.com/bones :) */
 /******************************************************************
 Site Name:
@@ -27,6 +30,152 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+ 
+/* Color palette */
+:root {
+  --white: #ffffff;
+  --greyish-brown: #3d3d3d;
+  --dusk: #45436e;
+  --deep-lilac: #7d7bb7;
+  --bluey-grey: #a6a6a9;
+  --greyish-brown-two: #624e41;
+  --very-light-blue: #e7eaee;
+  --steel: #7e8085;
+  --gunmetal: #54565a;
+  --grey-teal: #5b8982;
+  --soft-blue: #81a5d6;
+  --soft-purple: #a573aa;
+  --yellowish: #f2ee6c;
+  --sick-green: #b0ae2d;
+  --dull-red: #9d3d39;
+  --pale-grey: #f6f8f9;
+  --pale-lilac: #e3e2e4;
+}
+
+h1 {
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+h2 {
+  font-family: Merriweather;
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+.Headline-5-Style {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+h3, .Headline-6-Style {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.15px;
+  text-align: center;
+  color: #000000;
+}
+.Button-Style {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.35px;
+  color: #000000;
+}
+.Subtitle-1-Style {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+p, .Body-1-Style {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: 0.44px;
+  color: var(--gunmetal);
+}
+.Subtitle-2-Style {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  color: var(--gunmetal);
+}
+p.Body-2-Style {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+p.Body-2-Style {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.25px;
+  color: #000000;
+}
+
+.Caption-Style {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.4px;
+  color: #000000;
+}
+.Overline-Style {
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  color: #000000;
+}
+ 
 article,
 aside,
 details,
@@ -86,6 +235,13 @@ html {
  */
 body {
   margin: 0; }
+  
+ #container {
+ 	max-width: 1440px;
+ 	width: 100vw;
+ 	margin: auto;
+ 	display: block;
+ } 
 
 /* ==========================================================================
    Links
@@ -116,9 +272,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -1297,7 +1451,7 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 96%;
+  width: 100%;
   margin: 0 auto; }
 
 /*********************
@@ -1409,7 +1563,7 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+}
 
 .hentry {
   background-color: white;
@@ -1853,8 +2007,7 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  .wrap {
-    width: 760px; }
+  
 
   /*********************
   HEADER STYLES
@@ -1985,8 +2138,7 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1040px; } }
+  }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
