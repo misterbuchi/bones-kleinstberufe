@@ -20,6 +20,32 @@
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							
+							<div class="swiper-container">
+							
+							    <div class="swiper-wrapper">
+							
+							        <?php
+							        query_posts( array('category_name' => 'slider', 'posts_per_page' => 7, 'order' => 'ASC', 'orderby' => 'rand' ) );
+							        while(have_posts()) : the_post();
+							        ?>
+							
+							        <div class="swiper-slide">
+							
+							            <?php the_post_thumbnail('slider-home') ?>
+							
+							        </div>
+							
+							        <?php
+							        endwhile;
+							        wp_reset_query();
+							        ?>
+							
+							    </div>
+							
+							    <div class="swiper-pagination"></div>
+							
+							</div>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
