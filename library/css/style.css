@@ -795,7 +795,18 @@ over your project's layout.
 .last-col {
   float: right;
   padding-right: 0 !important; }
+  
+  
+/*  
+Home Layout
 
+*/
+
+article.RectangleHome {
+  max-width: 540px;
+  max-height: 540px;
+  background-color: var(--dusk);
+}
 /*
 Mobile Grid Styles
 These are the widths for the mobile grid.
