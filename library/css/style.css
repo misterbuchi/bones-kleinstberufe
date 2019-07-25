@@ -2158,6 +2158,8 @@ HEADER STYLES
     color: white; }
 #inner-header {
 	padding: 17.3px 165px 20.3px 137.1px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	  background-color: var(--white);
 }    
 
 /*********************
@@ -2683,7 +2685,7 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: var(--deep-lila);
+          color: var(--dusk);
           text-decoration: underline; }
       .nav li ul.sub-menu,
       .nav li ul.children {
