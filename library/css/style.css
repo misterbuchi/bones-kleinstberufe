@@ -2151,11 +2151,14 @@ HEADER STYLES
 *********************/
 .header {
   background-color: var(--white); }
-
 #logo {
-  margin: 0.75em 0; }
+	width: calc(100%-700px);
+}
   #logo a {
     color: white; }
+#inner-header {
+	padding: 17.3px 165px 20.3px 137.1px;
+}    
 
 /*********************
 NAVIGATION STYLES
@@ -2170,6 +2173,10 @@ and more scalable.
 .nav {
   border-bottom: 0;
   margin: 0;
+position: absolute;
+bottom: 0;
+right: 148px;}
+
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -2183,18 +2190,26 @@ and more scalable.
     */ }
     .nav li a {
       display: block;
-      color: white;
-      text-decoration: none;
-      padding: 0.75em;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
+      opacity: 0.87;
+      font-family: Lato;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.6;
+      letter-spacing: 0.15px;
+      text-align: center;
+      color: #000000;
+	  text-decoration: none;
+	  margin-right: 24px;
+	margin-left: 24px;
+		padding-top: 73px;
+	padding-bottom: 73px;
+	}
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
+        
 
 /* end .nav */
 /*********************
@@ -2668,7 +2683,7 @@ you can add resource intensive styles.
         has the possibility of being a mobile device.
         */ }
         .nav li a:hover, .nav li a:focus {
-          color: white;
+          color: var(--deep-lila);
           text-decoration: underline; }
       .nav li ul.sub-menu,
       .nav li ul.children {
