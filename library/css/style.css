@@ -2259,13 +2259,13 @@ POSTS & CONTENT STYLES
   top: calc(var(--ten)*54.5);
 }
 
-.page article {
+#content.page article {
 	margin-right: calc(var(--ten)*16.5);
 	margin-left: calc(var(--ten)*16.5);
 	
 }
 
-.page h1, .page h2,.page h3,.page h4,.page p {
+#content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
 	padding-left: calc(var(--ten)*19);
 	padding-right: calc(var(--ten)*19);
 }
