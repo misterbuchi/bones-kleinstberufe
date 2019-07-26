@@ -2235,8 +2235,29 @@ right: calc(var(--ten)*14.8);}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content {
+#content.page {
+	background-color: var(--white);
 }
+
+.Rectangle.pale-lilac.first {
+  width: calc(var(--ten)*42);
+  height: calc(var(--ten)*42);
+  background-color: var(--pale-lilac);
+  position: absolute;
+  top: 0;
+  left: calc(var(--ten)*26);
+}
+
+.Rectangle {
+  width: calc(var(--ten)*30.4);
+  height: calc(var(--ten)*42);
+  background-color: var(--dull-red);
+  position: absolute;
+  right: 0;
+  top: calc(var(--ten)*54.5);
+}
+
+
 
 .hentry {
   background-color: white;
