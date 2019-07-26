@@ -606,7 +606,6 @@ use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
 span.amp {
-  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic; }
 
 /******************************************************************
@@ -2178,6 +2177,7 @@ HEADER STYLES
 	padding: calc(var(--ten)*1.73) calc(var(--ten)*16.5) calc(var(--ten)*2.03) calc(var(--ten)*13.71);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	  background-color: var(--white);
+	  z-index: 10;
 }    
 
 /*********************
@@ -2266,8 +2266,8 @@ POSTS & CONTENT STYLES
 }
 
 .page h1, .page h2,.page h3,.page h4,.page p {
-	padding-left: calc(var(--ten)*19;
-	calc(var(--ten)*19);
+	padding-left: calc(var(--ten)*19);
+	padding-right: calc(var(--ten)*19);
 }
 
 
@@ -2669,7 +2669,7 @@ tweeners.
       float: right; }
     .entry-content .aligncenter, .entry-content img.aligncenter {
       margin-right: auto;
-      margin-left: auto;
+      margin-left: -90px auto;
       display: block;
       clear: both; }
 
