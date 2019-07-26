@@ -67,7 +67,7 @@ add_action( 'after_setup_theme', 'bones_ahoy' );
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 680;
+	$content_width = 1110;
 }
 
 /************* THUMBNAIL SIZE OPTIONS *************/
@@ -110,6 +110,7 @@ function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'bones-thumb-600' => __('600px by 150px'),
         'bones-thumb-300' => __('300px by 100px'),
+        'slider-home' => __('Breites-Bild'),
     ) );
 }
 

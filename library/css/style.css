@@ -2237,6 +2237,8 @@ POSTS & CONTENT STYLES
 *********************/
 #content.page {
 	background-color: var(--white);
+	position: relative;
+	overflow: hidden;
 }
 
 .Rectangle.pale-lilac.first {
@@ -2248,7 +2250,7 @@ POSTS & CONTENT STYLES
   left: calc(var(--ten)*26);
 }
 
-.Rectangle {
+.Rectangle.dull-red.second {
   width: calc(var(--ten)*30.4);
   height: calc(var(--ten)*42);
   background-color: var(--dull-red);
@@ -2257,10 +2259,22 @@ POSTS & CONTENT STYLES
   top: calc(var(--ten)*54.5);
 }
 
+.page article {
+	margin-right: calc(var(--ten)*16.5);
+	margin-left: calc(var(--ten)*16.5);
+	
+}
+
+.page h1, .page h2,.page h3,.page h4,.page p {
+	padding-left: calc(var(--ten)*19;
+	calc(var(--ten)*19);
+}
+
+
+
 
 
 .hentry {
-  background-color: white;
   margin-bottom: 1.5em;
    }
   .hentry header {
