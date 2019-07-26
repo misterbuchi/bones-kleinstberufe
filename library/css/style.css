@@ -50,12 +50,27 @@ the whole project.
   --dull-red: #9d3d39;
   --pale-grey: #f6f8f9;
   --pale-lilac: #e3e2e4;
+  --ten: 0.6944vw;
 }
 
+@media (min-width: 1440px) {
+	
+	:root {
+		  --ten: 10px;
+		
+	}
+	
+
+	}
+
+
+
+	
+	
 h1 {
-  font-family: Merriweather;
-  font-size: 48px;
+  font-family: Rubik;
   font-weight: 300;
+  font-size: calc(var(--ten)*4.8);
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -63,18 +78,18 @@ h1 {
   color: #000000;
 }
 h2 {
-  font-family: Merriweather;
-  font-size: 34px;
+  font-family: Rubik;
+  font-size: calc(var(--ten)*3.4);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.007em;
   color: #000000;
 }
 .Headline-5-Style {
-  font-family: Merriweather;
-  font-size: 24px;
+  font-family: Rubik;
+  font-size: calc(var(--ten)*2.4);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -84,98 +99,99 @@ h2 {
 }
 h3, .Headline-6-Style {
   font-family: Lato;
-  font-size: 20px;
+  font-size: calc(var(--ten)*2);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.6;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.007em;
   text-align: center;
   color: #000000;
 }
 .Button-Style {
   font-family: Lato;
-  font-size: 16px;
+  font-size: calc(var(--ten)*1.6);
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 1.35px;
+  letter-spacing: 0.084em;
   color: #000000;
 }
 .Subtitle-1-Style {
   font-family: Lato;
-  font-size: 16px;
+  font-size: calc(var(--ten)*1.6);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.009em;
   color: #000000;
 }
 p, .Body-1-Style {
   font-family: Lato;
-  font-size: 16px;
+  font-size: calc(var(--ten)*1.6);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.028em;
   color: var(--gunmetal);
 }
 .Subtitle-2-Style {
   font-family: Lato;
-  font-size: 14px;
+  font-size: calc(var(--ten)*1.4);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.71;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.007em;
   color: var(--gunmetal);
 }
 p.Body-2-Style {
   font-family: Lato;
-  font-size: 14px;
+  font-size: calc(var(--ten)*1.4);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.43;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.018em;
   color: #000000;
 }
 
 p.Body-2-Style {
   font-family: Lato;
-  font-size: 14px;
+  font-size: calc(var(--ten)*1.4);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.43;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.018em;
   color: #000000;
 }
 
 .Caption-Style {
   font-family: Lato;
-  font-size: 12px;
+  font-size: calc(var(--ten)*1.2);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.033em;
   color: #000000;
 }
 .Overline-Style {
   font-family: Lato;
-  font-size: 10px;
+  font-size: var(--ten);
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.6;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.150em;
   color: #000000;
-}
- 
+} 
+
+	
 article,
 aside,
 details,
@@ -805,14 +821,16 @@ Home Layout
 */
 
 article.RectangleHome {
-  width: 540px;
-  height: 540px;
+  max-width: 540px;
+  max-height: 540px;
+  width: 37.5vw;
+  height: 37.5vw;
   background-color: var(--dusk);
   z-index: 1;
-  padding: 85px 48px 85px 65px;
   position: absolute;
   top: 0;
-  right: 168px;
+  padding: calc(var(--ten)*8.5) calc(var(--ten)*4.8) calc(var(--ten)*8.5) calc(var(--ten)*6.5);
+  right: calc(var(--ten)*16.8);
 }
 
 .RectangleHome h1, .RectangleHome p {
@@ -821,24 +839,24 @@ article.RectangleHome {
 
 
 .RectangleHome p {
-	font-size: 20px;
+	font-size: calc(var(--ten)*2);
 }
 
 .RectangleHome p a {
-	width: 134px;
-	 height: 50px;
+	width: calc(var(--ten)*13.4);
+	 height: calc(var(--ten)*5);
 	 border-radius: 1px;
 	 background-color: var(--deep-lilac);
 	 display: block;
-	 padding: 14px;
+	 padding: calc(var(--ten)*1.4);
 	 opacity: 0.87;
 	 font-family: Lato;
-	 font-size: 16px;
+	 font-size: calc(var(--ten)*1.6);
 	 font-weight: bold;
 	 font-style: normal;
 	 font-stretch: normal;
 	 line-height: normal;
-	letter-spacing: 1.35px;
+	letter-spacing: 0.084em;
 	text-align: center;
 	color: var(--white);
 	text-decoration: none;
@@ -2151,13 +2169,13 @@ HEADER STYLES
 *********************/
 .header {
   background-color: var(--white); }
-#logo {
-	width: calc(100%-700px);
+#logo, #logo.h1 a, #logo img {
+	width: calc(var(--ten)*19.4);
 }
   #logo a {
     color: white; }
 #inner-header {
-	padding: 17.3px 165px 20.3px 137.1px;
+	padding: calc(var(--ten)*1.73) calc(var(--ten)*16.5) calc(var(--ten)*2.03) calc(var(--ten)*13.71);
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	  background-color: var(--white);
 }    
@@ -2177,7 +2195,7 @@ and more scalable.
   margin: 0;
 position: absolute;
 bottom: 0;
-right: 148px;}
+right: calc(var(--ten)*14.8);}
 
   /* end .menu li */
   /* highlight current page */
@@ -2194,23 +2212,23 @@ right: 148px;}
       display: block;
       opacity: 0.87;
       font-family: Lato;
-      font-size: 20px;
+      font-size: calc(var(--ten)*2);
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.6;
-      letter-spacing: 0.15px;
+      letter-spacing: 0.007em;
       text-align: center;
       color: #000000;
 	  text-decoration: none;
-	  margin-right: 24px;
-	margin-left: 24px;
-		padding-top: 73px;
-	padding-bottom: 73px;
+	  margin-right: calc(var(--ten)*2.4);
+	margin-left: calc(var(--ten)*2.4);
+		padding-top: calc(var(--ten)*7.3);
+	padding-bottom: calc(var(--ten)*7.3);
 	}
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
-      padding-left: 30px; }
+      padding-left: calc(var(--ten)*3); }
         
 
 /* end .nav */
