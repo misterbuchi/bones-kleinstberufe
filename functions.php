@@ -174,7 +174,7 @@ function bones_register_sidebars() {
 	));
 	
 	register_sidebar(array(
-		'id' => 'top-sidebar',
+		'id' => 'sidebartop',
 		'name' => __( 'Sidebar Top', 'bonestheme' ),
 		'description' => __( 'Die Top Sidebar', 'bonestheme' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',

@@ -47,7 +47,7 @@
 
 		<div id="container">
 <div id="top-sidebar">
-	<?php get_sidebar('top-sidebar'); ?>
+	<?php get_sidebar('sidebartop'); ?>
 </div>
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				
