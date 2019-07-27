@@ -2648,6 +2648,53 @@ SIDEBARS & ASIDES
   border: 1px solid #cccccc;
   border-radius: 2px;
   margin-bottom: 1.5em; }
+  
+  #top-sidebar {
+  	background-color: var(--pale-lilac);
+  	height: calc(var(--ten)*5);
+  	margin: 0;
+  	padding: 0;
+  }
+  #top-sidebar .widget {
+  	float: right;
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
+  }
+  
+  #top-sidebar p {
+  	  	  line-height: 1.5;
+  	
+  }
+  
+  #top-sidebar .widget a, #top-sidebar .widget p a {
+  	text-decoration: none;
+  	opacity: 0.87;
+  	font-family: Lato;
+  	  font-size: calc(var(--ten)*1.6);
+  	  font-weight: normal;
+  	  font-style: normal;
+  	  font-stretch: normal;
+  	  line-height: 1.5;
+  	  letter-spacing: 0.009em;
+  	  color: #000000;
+  }
+  
+  #top-sidebar .widget:first-child {
+  	background-color: var(--pale-grey);
+  	width: calc(var(--ten)*23.6);
+  }
+  
+  .qtranxs_widget ul li {
+  	text-transform: uppercase;
+  	padding: 0 1em 0 0;
+  	height: calc(var(--ten)*5);
+  }
+  
+  .qtranxs_widget ul {
+  	padding-top: var(--ten);
+  }
+  
 
 /*********************
 FOOTER STYLES
@@ -2780,6 +2827,7 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
+  
   .nav {
     border: 0;
     /* end .menu ul li */
