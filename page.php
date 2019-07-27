@@ -6,7 +6,7 @@
 			<div class="Rectangle pale-lilac first"></div>
 			<div class="Rectangle dull-red second"></div>	
 			
-			<u>
+			<ul class="register">
 				<li>Startseite</li>
 				<?php if ( $post->post_parent ) { ?>
 				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
@@ -15,7 +15,7 @@
 				<li><?php the_title(); ?></li>
 				
 				
-			</u>
+			</ul>
 			
 				
 
