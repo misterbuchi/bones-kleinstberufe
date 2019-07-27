@@ -2702,6 +2702,7 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: var(--white);
+  position: relative;
  }
  
  .footer .column-1 {
@@ -2710,13 +2711,20 @@ FOOTER STYLES
  	display: block;
  	height: calc(var(--ten)*53.2);
  	float: left;
+ 	z-index: -1;
  	
+ }
+ 
+ .footer .wrap {
+ 	width: 60%;
+ 	float: left;
  }
   
   .footer img.custom-logo {
   	width: calc(var(--ten)*19.2);
   	position: absolute;
   	left: calc(var(--ten)*14.5);
+  	top: calc(var(--ten)*5.7);
   }
   
   ul.social {
@@ -2727,14 +2735,15 @@ FOOTER STYLES
   ul.social li {
   	float:left;
   	margin-right: calc(var(--ten)*1.5);
+  
   }
   
-  ul.socail li img {
+  ul.social li a {
   	height: calc(var(--ten)*3.2);
-  	width: calc(var(--ten)*3.2);
-  	
-  	
+  		width: calc(var(--ten)*3.2);
   }
+  
+
 
 /*
 if you checked out the link above:
