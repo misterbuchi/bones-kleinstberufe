@@ -2702,7 +2702,38 @@ FOOTER STYLES
 .footer {
   clear: both;
   background-color: var(--white);
+ }
+ 
+ .footer .column-1 {
+ 	width: 38%;
+ 	padding-left: calc(var(--ten)*16.5);
+ 	display: block;
+ 	height: calc(var(--ten)*53.2);
+ 	float: left;
+ 	
+ }
   
+  .footer img.custom-logo {
+  	width: calc(var(--ten)*19.2);
+  	position: absolute;
+  	left: calc(var(--ten)*14.5);
+  }
+  
+  ul.social {
+  	  	margin-top: calc(var(--ten)*44.4);
+  	
+  }
+  
+  ul.social li {
+  	float:left;
+  	margin-right: calc(var(--ten)*1.5);
+  }
+  
+  ul.socail li img {
+  	height: calc(var(--ten)*3.2);
+  	width: calc(var(--ten)*3.2);
+  	
+  	
   }
 
 /*
