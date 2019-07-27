@@ -21,7 +21,7 @@
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/library/images/apple-touch-icon.png">
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png">
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/lightbox.min.css" />
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/library/css/lightbox.min.css" />
 		
 		
 		<!--[if IE]>
@@ -29,7 +29,7 @@
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+		<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/library/images/win8-tile-icon.png">
             <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
