@@ -1,9 +1,21 @@
 <?php get_header(); ?>
 
 			<div id="content" class="page">
+											<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
 			<div class="Rectangle pale-lilac first"></div>
 			<div class="Rectangle dull-red second"></div>	
+			
+			<u>
+				<li>Startseite</li>
+				<?php if ( $post->post_parent ) { ?>
+				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
+				<?php } ?>
+				
+				<li><?php the_title(); ?></li>
+				
+				
+			</u>
 			
 				
 
@@ -11,7 +23,6 @@
 
 						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -19,9 +30,6 @@
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
-									<p class="byline vcard">
-										<?php printf( __( 'Posted', 'bonestheme').' <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> '.__( 'by',  'bonestheme').' <span class="author">%3$s</span>', get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
-									</p>
 
 								</header> <?php // end article header ?>
 
@@ -54,13 +62,15 @@
 						
 							</article>
 
-							<?php endwhile; endif; ?>
 
 						</main>
 
-						<?php get_sidebar(); ?>
 
 				</div>
+											<?php endwhile; endif; ?>
+																	<?php get_sidebar(); ?>
+											
+				
 
 			</div>
 
