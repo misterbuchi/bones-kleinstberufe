@@ -125,6 +125,6 @@
 
 			</div>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/vendor.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 <?php get_footer(); ?>
