@@ -47,7 +47,21 @@
 
 		<div id="container">
 <div id="top-sidebar">
-	<?php get_sidebar('Sidebar Top'); ?>
+	<?php if ( is_active_sidebar( 'sidebartop' ) ) : ?>
+	
+							<?php dynamic_sidebar( 'sidebartop' ); ?>
+	
+						<?php else : ?>
+	
+							<?php
+								/*
+								 * This content shows up if there are no widgets defined in the backend.
+								*/
+							?>
+	
+							
+	
+						<?php endif; ?>
 </div>
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				
