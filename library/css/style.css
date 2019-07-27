@@ -2250,6 +2250,32 @@ POSTS & CONTENT STYLES
   left: calc(var(--ten)*26);
 }
 
+ul.register {
+	position: absolute;
+	top: calc(var(--ten)*5);
+	left: calc(var(--ten)*16.5);
+	text-transform: uppercase;
+	font-size: calc(var(--ten)*1.2);
+	height: calc(var(--ten)*1.6);
+	list-style-type:disc;
+	
+	
+}
+
+ul.register li:first-child {
+	list-style-type: none;
+}
+
+ul.register li {
+	float: left;
+	color: var(--dusk);
+	margin-right: calc(var(--ten)*3.2);
+}
+
+ul.register li a {
+	color: #000000;
+}
+
 .Rectangle.dull-red.second {
   width: calc(var(--ten)*30.4);
   height: calc(var(--ten)*42);
@@ -2263,6 +2289,14 @@ POSTS & CONTENT STYLES
 	margin-right: calc(var(--ten)*16.5);
 	margin-left: calc(var(--ten)*16.5);
 	
+}
+
+#content.page .article-header {
+	margin-top: calc(var(--ten)*16.2);
+}
+
+#content.page h1 {
+	color: var(--dusk);
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
@@ -2338,11 +2372,25 @@ POSTS & CONTENT STYLES
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
-    padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
-    font-style: italic;
-    color: #9fa6b4; }
+  	margin-bottom: calc(var(--ten)*4.8);
+  	margin-top: calc(var(--ten)*4.8);
+  	margin-left: 0;
+  	margin-right: 0;
+  	
+  	  
+    }
+    
+    blockquote p {
+		font-size: calc(var(--ten)*4.8);
+			font-family: Rubik;
+			font-weight: 300;
+			  font-style: normal;
+			  font-stretch: normal;
+			  line-height: normal;
+			  letter-spacing: normal;
+			  color: var(--gunmetal);
+			    opacity: 0.87;
+	}
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
