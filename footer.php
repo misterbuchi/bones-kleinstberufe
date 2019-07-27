@@ -1,4 +1,18 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+				
+				<div class="column-1">
+					<?php  if ( function_exists( 'the_custom_logo' ) ) {
+							the_custom_logo();
+						} else {
+						
+					bloginfo('name');} ?>
+					
+					<ul class="social">
+						<li><a href="https://www.instagram.com/kleinstberufe/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/Instagram.svg" title="Instagram" alt="Instagram" /></a></li>
+						<li><a href="https://www.facebook.com/Kleinstberufe" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/Facebook.svg" alt="Facebook" title="Facebook" />
+					</ul>
+					
+				</div>
 
 				<div id="inner-footer" class="wrap cf">
 

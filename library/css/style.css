@@ -2701,8 +2701,8 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
-  color: var(--white); }
+  background-color: var(--white);
+  }
 
 /*
 if you checked out the link above:
