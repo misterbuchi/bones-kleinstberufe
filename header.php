@@ -47,9 +47,9 @@
 
 		<div id="container">
 <div id="top-sidebar">
-	<?php if ( is_active_sidebar( 'sidebartop' ) ) : ?>
+	<?php if ( is_active_sidebar( 'Sidebar Top' ) ) : ?>
 	
-							<?php dynamic_sidebar( 'sidebartop' ); ?>
+							<?php dynamic_sidebar( 'Sidebar Top' ); ?>
 	
 						<?php else : ?>
 	
