@@ -2370,17 +2370,33 @@ POSTS & CONTENT STYLES
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
-  padding: 5px;
+  margin-bottom: calc(var(--ten)*5);
+  margin-top: calc(var(--ten)*5);
+  
   /* images inside wp-caption */ }
+  
+  #content.page .wp-caption p {
+  	padding-left: 0;
+  	padding-right: 0;
+  }
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
   .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
+    font-size: var(--ten);
+	font-family: Lato;
+	font-weight: normal;
+	 font-style: normal;
+	 font-stretch: normal;
+	 line-height: 1.6;
+	 letter-spacing: 0.15em;
+	 color: #000000;
+	 
     margin: 4px 0 7px;
-    text-align: center; }
+    text-align: left;
+	text-transform: uppercase;
+  }
 
 /* end .wp-caption */
 /* image gallery styles */
