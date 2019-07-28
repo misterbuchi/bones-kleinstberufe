@@ -17,6 +17,8 @@
 				<div id="inner-footer" class="wrap cf">
 
 					<?php // WP_Query arguments
+					                        wp_reset_query();
+					
 					$args = array(
 						'page_id'                => '53',
 					);

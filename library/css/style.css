@@ -87,7 +87,7 @@ h2 {
   letter-spacing: 0.007em;
   color: #000000;
 }
-.Headline-5-Style {
+h4 {
   font-family: Rubik;
   font-size: calc(var(--ten)*2.4);
   font-weight: normal;
