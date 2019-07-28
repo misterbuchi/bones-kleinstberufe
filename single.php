@@ -8,9 +8,9 @@
 				
 				<ul class="register">
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-					<?php if ( $post->post_parent ) { ?>
-					<li><?php  get_the_category_list()?></li>
-					<?php } ?>
+				
+					<li><?php  get_the_category_list('</li><li>')?></li>
+					
 					
 					<li><?php the_title(); ?></li>
 					
