@@ -46,7 +46,7 @@
 						
 						                    <div class="sponsoren">
 						
-						                        <?php the_post_thumbnail('slider-home') ?>
+						                        <?php the_post_thumbnail('sponsoren') ?>
 						
 						                    </div>
 						
