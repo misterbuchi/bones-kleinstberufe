@@ -24,8 +24,8 @@
 					);
 					
 					// The Query
-					$query = new WP_Query( $args );
-					while (have_posts()) : the_post(); ?>
+					$queryfooter = new WP_Query( $args );
+					while ($queryfooter->have_posts()) : $queryfooter->the_post(); ?>
 					
 					<h4><?php the_title(); ?></h4>
 					
