@@ -2176,12 +2176,12 @@ position: relative;
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: var(--dusk);
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: var(--soft-purple); }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
