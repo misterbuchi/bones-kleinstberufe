@@ -2738,10 +2738,7 @@ SIDEBARS & ASIDES
   #sidebar1 {
   	background-color: var(--dusk);
   	text-align: center;
-  	padding-left: calc(var(--ten)*16.5);
-  	  	padding-right: calc(var(--ten)*16.5);
-  	
-  }
+}
   
   #sidebar1 p a {
   	margin-left: 0;
