@@ -79,6 +79,8 @@ add_image_size( 'slider-home', 1440, 785, true );
 add_image_size( 'slider-contend', 1110, 465, true );
 add_image_size( 'home-medium', 630, 414, true );
 add_image_size( 'home-small', 350, 220, true );
+add_image_size( 'sponsoren', 153, 66 );
+
 
 
 

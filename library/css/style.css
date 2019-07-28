@@ -95,7 +95,8 @@ h2 {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
+  color: var(--dusk);
+  
 }
 h3, .Headline-6-Style {
   font-family: Lato;
@@ -2738,7 +2739,7 @@ FOOTER STYLES
   
   }
   
-  ul.social li a {
+  ul.social li img {
   	height: calc(var(--ten)*3.2);
   		width: calc(var(--ten)*3.2);
   }
