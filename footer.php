@@ -61,7 +61,7 @@
 					</div>
 					
 					<address>
-					<span class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></span>
+						<span class="source-org copyright"><p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p></span>
 					<?php if ( is_active_sidebar( 'sidebarfooter' ) ) : ?>
 					    <?php dynamic_sidebar( 'sidebarfooter' ); ?>
 					<?php endif; ?>

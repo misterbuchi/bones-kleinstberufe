@@ -2802,6 +2802,21 @@ FOOTER STYLES
   	  color: var(--gunmetal);
   }
   
+  .footer address span p {
+  	margin: 0;
+  	padding: 0;
+  	
+  }
+  
+  .footer address span p:empty {
+  	display: none;
+  }
+  
+  .footer address{
+  margin-top: calc(var(--ten)*5);
+  }
+  
+  
   
 
 
