@@ -8,10 +8,7 @@
 				
 				<ul class="register">
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-				
-					<li><?php  single_cat_title(); ?></li>
-					
-					
+					<li><?php  in_category(); ?></li>
 					<li><?php the_title(); ?></li>
 					
 					
