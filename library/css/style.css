@@ -2791,7 +2791,7 @@ FOOTER STYLES
   }
   
   
-  .footer .address span {
+  .footer address span {
   	opacity: 0.87;
   	  font-size: calc(var(--ten)*1.4);
   	  font-weight: normal;
