@@ -523,7 +523,7 @@ input[type="submit"] {
   label.button svg {
   	height: calc(var(--ten)*2.4) !important;
   	width: calc(var(--ten)*2.4) !important;
-  	  cursor: pointer;
+  	cursor: pointer;
   	
   	
   	
@@ -531,9 +531,24 @@ input[type="submit"] {
   
   label.button {
   	padding: 0;
-  		margin: 0;
+  	margin: 0;
   		height: calc(var(--ten)*2.4) !important;
   			width: calc(var(--ten)*2.4) !important;
+  }
+  
+  span.wpcf7-not-valid-tip {
+ 
+  position: absolute;
+  right: calc(var(--ten)*3);
+  width: calc(var(--ten)*25);
+  text-align: right;}
+  
+  
+  div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: 2px solid #f7e700;
+  position: absolute;
+  background-color: var(--white);
+  margin-left: 0;
   }
 
 /**
@@ -2768,6 +2783,16 @@ FOOTER STYLES
   	height: calc(var(--ten)*3.2);
   		width: calc(var(--ten)*3.2);
   }
+  
+  .sponsoren img {
+  	max-width: calc(var(--ten)*15.3);
+  	height: auto;
+  	margin-right: var(--ten);
+  }
+  
+  
+  
+  
   
 
 
