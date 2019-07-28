@@ -481,6 +481,8 @@ textarea {
   /* 2 */
   margin: 0;
   /* 3 */ }
+  
+  
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -488,7 +490,10 @@ textarea {
  */
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+  color: var(--gunmetal);
+}
+
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -511,10 +516,25 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
+  display: none;
   /* 2 */
-  cursor: pointer;
   /* 3 */ }
+  
+  label.button svg {
+  	height: calc(var(--ten)*2.4) !important;
+  	width: calc(var(--ten)*2.4) !important;
+  	  cursor: pointer;
+  	
+  	
+  	
+  }
+  
+  label.button {
+  	padding: 0;
+  		margin: 0;
+  		height: calc(var(--ten)*2.4) !important;
+  			width: calc(var(--ten)*2.4) !important;
+  }
 
 /**
  * Re-set default cursor for disabled elements.
@@ -1810,22 +1830,24 @@ select,
 textarea,
 .field {
   display: block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 12px;
-  margin-bottom: 14px;
+  height: calc(var(--ten)*4);
+  line-height: calc(var(--ten)*4);
+  padding: 0 calc(var(--ten)*1.2);
+  margin-bottom: calc(var(--ten)*1.4);
+  margin-right: calc(var(--ten)*2);
   font-size: 1em;
-  color: #5c6b80;
-  border-radius: 3px;
+  color: var(--gunmetal);
   vertical-align: middle;
   box-shadow: none;
   border: 0;
-  width: 100%;
+  float: left;
+  width: 40%;
   max-width: 400px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
-  transition: background-color 0.24s ease-in-out; }
+  transition: background-color 0.24s ease-in-out;
+  border-bottom: 1px solid var(--gunmetal);
+}
   input[type="text"]:focus, input[type="text"]:active,
   input[type="password"]:focus,
   input[type="password"]:active,
@@ -2719,7 +2741,10 @@ FOOTER STYLES
  .footer .wrap {
  	width: 60%;
  	float: left;
+ 	padding-top: calc(var(--ten)*6.1);
  }
+ 
+ 
   
   .footer img.custom-logo {
   	width: calc(var(--ten)*19.2);

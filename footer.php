@@ -36,6 +36,30 @@
 					wp_reset_query();
 					?>
 					
+					<div id="sponsoren">
+						<?php
+						                    query_posts( array('cat' => 16, 'posts_per_page' => -1, 'order' => 'ASC') );
+						                    while(have_posts()) : the_post();
+						                    ?>
+											
+											<h4><?php single_cat_title(); ?>.</h4>
+						
+						                    <div class="sponsoren">
+						
+						                        <?php the_post_thumbnail('slider-home') ?>
+						
+						                    </div>
+						
+						                    <?php
+						                    endwhile;
+						                    wp_reset_query();
+						                    ?>
+						
+						
+						
+						
+					</div>
+					
 					
 
 				</div>
