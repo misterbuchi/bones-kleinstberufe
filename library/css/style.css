@@ -868,8 +868,8 @@ article.RectangleHome {
   right: calc(var(--ten)*16.8);
 }
 
-.RectangleHome h1, .RectangleHome p {
-	color: var(--white);
+#sidebar1 h1, #sidebar1 p, .RectangleHome h1, .RectangleHome p {
+	color: var(--white) !important;
 }
 
 
@@ -877,8 +877,8 @@ article.RectangleHome {
 	font-size: calc(var(--ten)*2);
 }
 
-.RectangleHome p a {
-	width: calc(var(--ten)*13.4);
+#sidebar1 p a, .RectangleHome p a {
+	width: 15em;
 	 height: calc(var(--ten)*5);
 	 border-radius: 1px;
 	 background-color: var(--deep-lilac);
@@ -895,6 +895,8 @@ article.RectangleHome {
 	text-align: center;
 	color: var(--white);
 	text-decoration: none;
+	text-transform: uppercase;
+	
 }
 
 
@@ -2733,6 +2735,20 @@ SIDEBARS & ASIDES
   	padding-top: var(--ten);
   }
   
+  #sidebar1 {
+  	background-color: var(--dusk);
+  	text-align: center;
+  	padding-left: calc(var(--ten)*16.5);
+  	  	padding-right: calc(var(--ten)*16.5);
+  	
+  }
+  
+  #sidebar1 p a {
+  	margin-left: 0;
+  	margin-right: 0;
+  	margin: auto;
+  }
+  
 
 /*********************
 FOOTER STYLES
@@ -3010,12 +3026,11 @@ you can add resource intensive styles.
     margin-top: 2.2em; }
 
   .widgettitle {
-    border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
 
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0; }
+     }
     .widget ul li {
       margin-bottom: 0.75em;
       /* deep nesting */ }

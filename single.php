@@ -1,12 +1,27 @@
 <?php get_header(); ?>
 
 			<div id="content">
+										<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				
+				<div class="Rectangle pale-lilac first"></div>
+				<div class="Rectangle dull-red second"></div>	
+				
+				<ul class="register">
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
+					<?php if ( $post->post_parent ) { ?>
+					<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
+					<?php } ?>
+					
+					<li><?php the_title(); ?></li>
+					
+					
+				</ul>
+				
 
-				<div id="inner-content" class="wrap cf">
+				<div id="inner-content" class="page">
 
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<?php
 								/*
@@ -25,29 +40,31 @@
 								get_template_part( 'post-formats/format', get_post_format() );
 							?>
 
-						<?php endwhile; ?>
-
-						<?php else : ?>
-
-							<article id="post-not-found" class="hentry cf">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
-
-						<?php endif; ?>
+						
 
 					</main>
 
-					<?php get_sidebar(); ?>
 
 				</div>
+				<?php endwhile; ?>
+				
+										<?php else : ?>
+				
+											<article id="post-not-found" class="hentry cf">
+													<header class="article-header">
+														<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+													</header>
+													<section class="entry-content">
+														<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+													</section>
+													<footer class="article-footer">
+															<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+													</footer>
+											</article>
+				
+										<?php endif; ?>
+															<?php get_sidebar(); ?>
+										
 
 			</div>
 
