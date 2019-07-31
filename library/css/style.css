@@ -2299,6 +2299,31 @@ POSTS & CONTENT STYLES
   top: 0;
   left: 26rem;
 }
+.Rectangle.dull-red.second {
+  width: 30.4rem;
+  height: 42rem;
+  background-color: var(--dull-red);
+  position: absolute;
+  right: 0;
+  top: 54.5rem;
+}
+
+.Rectangle.soft-blue.third {
+	position: absolute;
+	background-color: var(--soft-blue);
+	height: 42rem;
+	width: 30.4rem;
+	top: 155rem;
+}
+
+.Rectangl.grey-teal.thourth {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: var(--grey-teal);
+	position: absolute;
+	right: 0;
+	top: 206rem;
+}
 
 ul.register {
 	position: absolute;
@@ -2326,14 +2351,6 @@ ul.register li a {
 	color: #000000;
 }
 
-.Rectangle.dull-red.second {
-  width: 30.4rem;
-  height: 42rem;
-  background-color: var(--dull-red);
-  position: absolute;
-  right: 0;
-  top: 54.5rem;
-}
 
 
 
@@ -2386,16 +2403,10 @@ ul.register li a {
   	  padding-bottom: 5.1rem;
   	  position: relative;
   	  display: table-cell;
+  	  height: 65rem;
   }
   
-  .newsbox {
-  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
-  	  border: solid 1px var(--very-light-blue);
-  	  background-color: var(--white);
-  	  padding-bottom: 5.1rem;
-  	  position: relative;
-  	  display: table-cell;
-  }
+ 
   
   #content.page .newsbox h2, #content.page .newsbox h3, #content.page .newsbox h4, #content.page .newsbox p {
   	padding-left: 2.5rem;
@@ -2411,10 +2422,15 @@ ul.register li a {
   .newsbox h3 a {
   	
  text-decoration: none;
+ 
   }
   
   .newsbox h3 {
   	height: 6rem;
+  	text-overflow: ellipsis;
+  	  word-wrap: break-word;
+  	  overflow: hidden;
+  	  position: relative;
   }
   
   .newsbox footer {
@@ -2594,8 +2610,8 @@ PAGE NAVI STYLES
     margin: 0;
     text-decoration: none;
     padding: 0;
-    line-height: 1em;
-    font-size: 1em;
+    line-height: 1.6;
+    font-size: 1.6rem;
     font-weight: normal;
     padding: 0.75em;
     min-width: 1em;
