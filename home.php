@@ -183,7 +183,7 @@
 							                   													
 							                   														</article>							                    
 						</section>
-						<section id="two" class="m-all t-all d-all"></section>
+						<section id="two" class="m-all t-all d-all">
 						
 						<?php
 						                    query_posts( array('cat' => 2, 'posts_per_page' => 3, 'order' => 'rand') );
@@ -252,7 +252,7 @@
 						                   							</section> <?php // end article section ?>
 						                   							
 						                   													
-						                   														</article>	
+						                   														</article>	</section>
 						
 						<section id="three" class="m-all t-all d-all"></section>
 						

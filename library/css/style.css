@@ -2402,9 +2402,13 @@ section .article-header {
 	margin-top: 10rem;
 }
 
-section#one h1, #content.page h1 {
+section#one h1, section#two h1, #content.page h1 {
 	color: var(--dusk);
 	text-align: center;
+}
+
+section#two {
+	background-color: var(--pale-grey);
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
