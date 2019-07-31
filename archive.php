@@ -7,19 +7,41 @@
 				<div class="Rectangle dull-red second"></div>
 				<div class="Rectangle soft-blue third"></div>
 				
+				<ul class="register">
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
+					<?php if ( $post->post_parent ) { ?>
+					<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
+					<?php } ?>
+					
+					
+					
+					<li><?php the_title(); ?></li>
+					
+					
+				</ul>
+				
 
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-all d-all cf newscontainer" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+							
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							
+															<header class="article-header">
 
 							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+							the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+							
+							</header> <?php // end article header ?>
+							
+															<section class="entry-content cf" itemprop="articleBody">
+							
+							<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							?>
 							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<div id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
+							<news id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
 								
 								<?php 
 								if ( has_post_thumbnail() ) {
@@ -32,27 +54,27 @@
 								 ?>
 								
 
-								<header class="entry-header article-header">
+								<header class="entry-header news-header">
 
-									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline entry-meta vcard">
+									<h3 class="h2 news-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+									<p class="byline news-meta vcard">
 										<?php printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'                    							); ?>
 									</p>
 
 								</header>
 
-								<section class="entry-content cf">
+								<section class="news-content cf">
 
 
 									<?php the_excerpt(); ?>
 
 								</section>
 
-								<footer class="article-footer">
+								<footer class="news-footer">
 
 								</footer>
 
-							</div>
+							</news>
 
 							<?php endwhile; ?>
 
@@ -73,6 +95,11 @@
 									</article>
 
 							<?php endif; ?>
+							
+							</section> <?php // end article section ?>
+							
+													
+														</article>
 
 						</main>
 
