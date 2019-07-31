@@ -26,7 +26,7 @@
 								    the_post_thumbnail('home-small');
 								}
 								else {
-								    the_custom_logo('home-small')
+								    the_custom_logo('home-small');
 								}
 								
 								 ?>
