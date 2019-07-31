@@ -163,6 +163,9 @@
 							                   								</footer>
 							                   
 							                   							</news>
+											   							   <?php   $category_link = get_category_link( 1 );?>
+											   							
+											   							<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Mehr</a>
 							                   
 							                   
 							                   
