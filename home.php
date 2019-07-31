@@ -172,7 +172,7 @@
 											   												
 											   												<?php   $category_link = get_category_link( 1 );?>
 											   													
-											   													<a href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Mehr</a>
+											   													<a class="button" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Mehr</a>
 											   													
 							                   							                    <?php wp_reset_query();
 							                   							                    ?>

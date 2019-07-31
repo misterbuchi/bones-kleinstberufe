@@ -884,7 +884,7 @@ article.RectangleHome {
 	font-size: 2rem;
 }
 
-#sidebar1 p a, .RectangleHome p a {
+a.button, #sidebar1 p a, .RectangleHome p a {
 	width: 15em;
 	 height: 5rem;
 	 border-radius: 1px;
@@ -2414,11 +2414,13 @@ section#one h1, #content.page h1 {
   }
   
   section#one .newsbox,  section#two .newsbox {
-  	height: 38rem;
+  	height: 35rem;
   	margin-top: 5.9rem;
+  	padding-top: 2.5rem;
+  	margin-bottom: 5.9rem;
   }
   
- 
+
   
  
   
