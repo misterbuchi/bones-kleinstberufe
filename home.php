@@ -172,7 +172,7 @@
 											   												
 											   												<?php   $category_link = get_category_link( 1 );?>
 											   													
-											   													<a class="button" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Mehr</a>
+											   													<p><a class="button" href="<?php echo esc_url( $category_link ); ?>" title="Category Name">Mehr</a></p>
 											   													
 							                   							                    <?php wp_reset_query();
 							                   							                    ?>
@@ -184,6 +184,76 @@
 							                   														</article>							                    
 						</section>
 						<section id="two" class="m-all t-all d-all"></section>
+						
+						<?php
+						                    query_posts( array('cat' => 2, 'posts_per_page' => 3, 'order' => 'rand') );
+						                    ?>
+											
+						
+						                   <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+						                   							
+						                   															<header class="article-header">
+						                   
+						                   							<?php
+						                   							the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+						                   							
+						                   							</header> <?php // end article header ?>
+						                   							
+						                   															<section class="entry-content cf" itemprop="articleBody">
+						                   							
+						                   							<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						                   							?>
+						                   							
+										   							<?php 							                    while(have_posts()) : the_post();
+										   							 ?>
+						                   						
+						                   
+						                   							<news id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
+						                   	
+						                   								<?php 
+						                   								if ( has_post_thumbnail() ) {
+						                   								    the_post_thumbnail('home-small');
+						                   								}
+						                   								else {
+						                   								    the_custom_logo('home-small');
+						                   								}
+						                   								
+						                   								 ?>
+						                   
+						                   								<header class="entry-header news-header">
+						                   
+						                   									<h3 class="h2 news-title"><?php the_content() ?></h3>
+						                   									
+						                   
+						                   								</header>
+						                   
+						             
+						                   
+						                   								<footer class="news-footer">
+						                   
+						                   								</footer>
+						                   
+						                   							</news>
+										   							   
+						                   
+						                   
+						                   
+						                   							<?php
+						                   							                    endwhile;?>
+										   												
+										   												
+										   													
+										   													<p><a class="button" href="#" title="Berufe">Mehr</a></p>
+										   													
+						                   							                    <?php wp_reset_query();
+						                   							                    ?>
+						                   							
+						                   							
+						                   							</section> <?php // end article section ?>
+						                   							
+						                   													
+						                   														</article>	
+						
 						<section id="three" class="m-all t-all d-all"></section>
 						
 						
