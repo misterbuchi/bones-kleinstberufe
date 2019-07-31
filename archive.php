@@ -59,10 +59,10 @@
 									<h3 class="h2 news-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 									<p class="byline news-meta vcard">
 										<?php $display_date = date('d.m.Y', strtotime(get_post_meta($post->ID, 'event_begin', true)));
-										printf('<div class="art-box"><p class="byline entry-meta vcard"><time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' ); 
+										printf('<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' ); 
 										if ( $display_date == '01.01.1970') { the_time('d.m.Y'); } else { echo $display_date;  } ;  
-										   printf('</time></p><p class=" entry-title">');
-										 the_title() . printf('</p></div>');  ?>
+										   printf('</time>');
+										   ?>
 									</p>
 
 								</header>
