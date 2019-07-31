@@ -50,12 +50,7 @@
                      * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
                      *
                     */
-                    wp_link_pages( array(
-                      'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
-                      'after'       => '</div>',
-                      'link_before' => '<span>',
-                      'link_after'  => '</span>',
-                    ) );
+                   
                   ?>
                 </section> 
 
