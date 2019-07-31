@@ -2761,6 +2761,7 @@ FOOTER STYLES
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
   	  border: solid 1px var(--very-light-blue);
+  	  height: 53.2rem;
  }
  
  .footer .column-1 {

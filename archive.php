@@ -1,10 +1,16 @@
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="page">
+				
+				
+				<div class="Rectangle pale-lilac first"></div>
+				<div class="Rectangle dull-red second"></div>
+				<div class="Rectangle soft-blue third"></div>
+				
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-all d-all cf newscontainer" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -13,9 +19,17 @@
 							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
 								
-								<?php the_post_thumbnail( 'home-small' ); ?>
+								<?php 
+								if ( has_post_thumbnail() ) {
+								    the_post_thumbnail('home-small');
+								}
+								else {
+								    the_custom_logo('home-small')
+								}
+								
+								 ?>
 								
 
 								<header class="entry-header article-header">
