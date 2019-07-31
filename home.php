@@ -115,7 +115,7 @@
 
 						</main>
 						
-						<section id="1" class="m-all t-all d-all">
+						<section id="one" class="m-all t-all d-all">
 							
 							<?php
 							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
@@ -177,8 +177,8 @@
 							                   													
 							                   														</article>							                    
 						</section>
-						<section id="2" class="m-all t-all d-all"></section>
-						<section id="3" class="m-all t-all d-all"></section>
+						<section id="two" class="m-all t-all d-all"></section>
+						<section id="three" class="m-all t-all d-all"></section>
 						
 						
 						

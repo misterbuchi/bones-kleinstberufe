@@ -2354,14 +2354,18 @@ ul.register li a {
 
 
 
-#content.page article {
+ #content.page article {
 	margin-right: 16.5rem;
 	margin-left: 16.5rem;
 	
 }
-
-#content.page main.newscontainer article {
-	margin-right: 13rem;
+section#1 {
+	display: block;
+}
+section#1 article, #content.page main.newscontainer article {
+		margin-right: 16.5rem;
+	
+	margin-left: 13rem;
 	
 }
 
@@ -2614,7 +2618,7 @@ PAGE NAVI STYLES
     font-size: 1.6rem;
     font-weight: normal;
     padding: 0.75em;
-    min-width: 1em;
+    min-width: 1.6rem;
     display: block;
     color: #2980b9; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
