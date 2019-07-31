@@ -119,10 +119,9 @@
 							
 							<?php
 							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
-							                    while(have_posts()) : the_post();
+							                    
 							                    ?>
 												
-												<h4><?php single_cat_title(); ?>.</h4>
 							
 							                   <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 							                   							
