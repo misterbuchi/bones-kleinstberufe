@@ -15,7 +15,7 @@
 					
 					
 					
-					<li><?php the_title(); ?></li>
+					<li><?php the_archive_title(); ?></li>
 					
 					
 				</ul>

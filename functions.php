@@ -63,6 +63,10 @@ function bones_ahoy() {
 // let's get this party started
 add_action( 'after_setup_theme', 'bones_ahoy' );
 
+add_filter( 'excerpt_length', function($length) {
+    return 30;
+} );
+
 
 /************* OEMBED SIZE OPTIONS *************/
 
