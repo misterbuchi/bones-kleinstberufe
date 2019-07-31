@@ -50,7 +50,10 @@ the whole project.
   --dull-red: #9d3d39;
   --pale-grey: #f6f8f9;
   --pale-lilac: #e3e2e4;
-  --ten: 0.6944vw;
+  --ten: ;
+}
+html {
+	font-size: 0.6944vw;
 }
 
 @media (min-width: 1440px) {
@@ -58,6 +61,9 @@ the whole project.
 	:root {
 		  --ten: 10px;
 		
+	}
+	html {
+		font-size: 10px;
 	}
 	
 
@@ -70,7 +76,7 @@ the whole project.
 h1 {
   font-family: rubik;
   font-weight: 300;
-  font-size: calc(var(--ten)*4.8);
+  font-size: 4.8rem;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -79,7 +85,7 @@ h1 {
 }
 h2 {
   font-family: Rubik;
-  font-size: calc(var(--ten)*3.4);
+  font-size: 3.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -89,7 +95,7 @@ h2 {
 }
 h4 {
   font-family: Rubik;
-  font-size: calc(var(--ten)*2.4);
+  font-size: 2.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -100,7 +106,7 @@ h4 {
 }
 h3, .Headline-6-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*2);
+  font-size: 2rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -111,7 +117,7 @@ h3, .Headline-6-Style {
 }
 .Button-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.6);
+  font-size: 1.6rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -121,7 +127,7 @@ h3, .Headline-6-Style {
 }
 .Subtitle-1-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.6);
+  font-size: 1.6rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -131,7 +137,7 @@ h3, .Headline-6-Style {
 }
 p, .Body-1-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.6);
+  font-size: 1.6rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -141,7 +147,7 @@ p, .Body-1-Style {
 }
 .Subtitle-2-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.4);
+  font-size: 1.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -151,7 +157,7 @@ p, .Body-1-Style {
 }
 p.Body-2-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.4);
+  font-size: 1.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -162,7 +168,7 @@ p.Body-2-Style {
 
 p.Body-2-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.4);
+  font-size: 1.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -173,7 +179,7 @@ p.Body-2-Style {
 
 .Caption-Style {
   font-family: Lato;
-  font-size: calc(var(--ten)*1.2);
+  font-size: 1.2rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -183,7 +189,7 @@ p.Body-2-Style {
 }
 .Overline-Style {
   font-family: Lato;
-  font-size: var(--ten);
+  font-size: 1rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -406,7 +412,7 @@ dd {
  * Addresses paddings set differently in IE6/7.
  */
 menu {
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 4rem; }
 
 ol,
 ul {
@@ -453,7 +459,7 @@ figure {
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
+  margin: 0 0.2rem;
   padding: 0.35em 0.625em 0.75em; }
 
 /**
@@ -521,8 +527,8 @@ input[type="submit"] {
   /* 3 */ }
   
   label.button svg {
-  	height: calc(var(--ten)*2.4) !important;
-  	width: calc(var(--ten)*2.4) !important;
+  	height: 2.4rem !important;
+  	width: 2.4rem !important;
   	cursor: pointer;
   	
   	
@@ -532,20 +538,20 @@ input[type="submit"] {
   label.button {
   	padding: 0;
   	margin: 0;
-  		height: calc(var(--ten)*2.4) !important;
-  			width: calc(var(--ten)*2.4) !important;
+  		height: 2.4rem !important;
+  			width: 2.4rem !important;
   }
   
   span.wpcf7-not-valid-tip {
  
   position: absolute;
-  right: calc(var(--ten)*3);
-  width: calc(var(--ten)*25);
+  right: 3rem;
+  width: 25rem;
   text-align: right;}
   
   
   div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-  border: 2px solid #f7e700;
+  border: 1px solid #f7e700;
   position: absolute;
   background-color: var(--white);
   margin-left: 0;
@@ -864,8 +870,8 @@ article.RectangleHome {
   z-index: 1;
   position: absolute;
   top: 0;
-  padding: calc(var(--ten)*8.5) calc(var(--ten)*4.8) calc(var(--ten)*8.5) calc(var(--ten)*6.5);
-  right: calc(var(--ten)*16.8);
+  padding: 8.5rem 4.8rem 8.5rem 6.5rem;
+  right: 16.8rem;
 }
 
 #sidebar1 h1, #sidebar1 p, .RectangleHome h1, .RectangleHome p {
@@ -874,19 +880,19 @@ article.RectangleHome {
 
 
 .RectangleHome p {
-	font-size: calc(var(--ten)*2);
+	font-size: 2rem;
 }
 
 #sidebar1 p a, .RectangleHome p a {
 	width: 15em;
-	 height: calc(var(--ten)*5);
+	 height: 5rem;
 	 border-radius: 1px;
 	 background-color: var(--deep-lilac);
 	 display: block;
-	 padding: calc(var(--ten)*1.4);
+	 padding: 1.4rem;
 	 opacity: 0.87;
 	 font-family: Lato;
-	 font-size: calc(var(--ten)*1.6);
+	 font-size: 1.6rem;
 	 font-weight: bold;
 	 font-style: normal;
 	 font-stretch: normal;
@@ -1847,11 +1853,11 @@ select,
 textarea,
 .field {
   display: block;
-  height: calc(var(--ten)*4);
-  line-height: calc(var(--ten)*4);
-  padding: 0 calc(var(--ten)*1.2);
-  margin-bottom: calc(var(--ten)*1.4);
-  margin-right: calc(var(--ten)*2);
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.2rem;
+  margin-bottom: 1.4rem;
+  margin-right: 2rem;
   font-size: 1em;
   color: var(--gunmetal);
   vertical-align: middle;
@@ -2209,12 +2215,12 @@ HEADER STYLES
 .header {
   background-color: var(--white); }
 #logo, #logo.h1 a, #logo img {
-	width: calc(var(--ten)*19.4);
+	width: 19.4rem;
 }
   #logo a {
     color: white; }
 #inner-header {
-	padding: calc(var(--ten)*1.73) calc(var(--ten)*16.5) calc(var(--ten)*2.03) calc(var(--ten)*13.71);
+	padding: 1.73rem 16.5rem 2.03rem 13.71rem;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	  background-color: var(--white);
 	  z-index: 10;
@@ -2235,7 +2241,7 @@ and more scalable.
   margin: 0;
 position: absolute;
 bottom: 0;
-right: calc(var(--ten)*14.8);}
+right: 14.8rem;}
 
   /* end .menu li */
   /* highlight current page */
@@ -2252,7 +2258,7 @@ right: calc(var(--ten)*14.8);}
       display: block;
       opacity: 0.87;
       font-family: Lato;
-      font-size: calc(var(--ten)*2);
+      font-size: 2rem;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -2261,14 +2267,14 @@ right: calc(var(--ten)*14.8);}
       text-align: center;
       color: #000000;
 	  text-decoration: none;
-	  margin-right: calc(var(--ten)*2.4);
-	margin-left: calc(var(--ten)*2.4);
-		padding-top: calc(var(--ten)*7.3);
-	padding-bottom: calc(var(--ten)*7.3);
+	  margin-right: 2.4rem;
+	margin-left: 2.4rem;
+		padding-top: 7.3rem;
+	padding-bottom: 7.3rem;
 	}
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
-      padding-left: calc(var(--ten)*3); }
+      padding-left: 3rem; }
         
 
 /* end .nav */
@@ -2282,21 +2288,21 @@ POSTS & CONTENT STYLES
 }
 
 .Rectangle.pale-lilac.first {
-  width: calc(var(--ten)*42);
-  height: calc(var(--ten)*42);
+  width: 42rem;
+  height: 42rem;
   background-color: var(--pale-lilac);
   position: absolute;
   top: 0;
-  left: calc(var(--ten)*26);
+  left: 26rem;
 }
 
 ul.register {
 	position: absolute;
-	top: calc(var(--ten)*5);
-	left: calc(var(--ten)*16.5);
+	top: 5rem;
+	left: 16.5rem;
 	text-transform: uppercase;
-	font-size: calc(var(--ten)*1.2);
-	height: calc(var(--ten)*1.6);
+	font-size: 1.2rem;
+	height: 1.6rem;
 	list-style-type:disc;
 	
 	
@@ -2309,7 +2315,7 @@ ul.register li:first-child {
 ul.register li {
 	float: left;
 	color: var(--dusk);
-	margin-right: calc(var(--ten)*3.2);
+	margin-right: 3.2rem;
 }
 
 ul.register li a {
@@ -2317,22 +2323,22 @@ ul.register li a {
 }
 
 .Rectangle.dull-red.second {
-  width: calc(var(--ten)*30.4);
-  height: calc(var(--ten)*42);
+  width: 30.4rem;
+  height: 42rem;
   background-color: var(--dull-red);
   position: absolute;
   right: 0;
-  top: calc(var(--ten)*54.5);
+  top: 54.5rem;
 }
 
 #content.page article {
-	margin-right: calc(var(--ten)*16.5);
-	margin-left: calc(var(--ten)*16.5);
+	margin-right: 16.5rem;
+	margin-left: 16.5rem;
 	
 }
 
 #content.page .article-header {
-	margin-top: calc(var(--ten)*16.2);
+	margin-top: 16.2rem;
 }
 
 #content.page h1 {
@@ -2340,8 +2346,8 @@ ul.register li a {
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
-	padding-left: calc(var(--ten)*19);
-	padding-right: calc(var(--ten)*19);
+	padding-left: 19rem;
+	padding-right: 19rem;
 }
 
 
@@ -2412,8 +2418,8 @@ ul.register li a {
     .entry-content th:last-child {
       border-right: 0; }
   .entry-content blockquote {
-  	margin-bottom: calc(var(--ten)*4.8);
-  	margin-top: calc(var(--ten)*4.8);
+  	margin-bottom: 4.8rem;
+  	margin-top: 4.8rem;
   	margin-left: 0;
   	margin-right: 0;
   	
@@ -2421,7 +2427,7 @@ ul.register li a {
     }
     
     blockquote p {
-		font-size: calc(var(--ten)*4.8);
+		font-size: 4.8rem;
 			font-family: Rubik;
 			font-weight: 300;
 			  font-style: normal;
@@ -2458,8 +2464,8 @@ ul.register li a {
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  margin-bottom: calc(var(--ten)*5);
-  margin-top: calc(var(--ten)*5);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
   
   /* images inside wp-caption */ }
   
@@ -2472,7 +2478,7 @@ ul.register li a {
     margin-bottom: 0;
     width: 100%; }
   .wp-caption p.wp-caption-text {
-    font-size: var(--ten);
+    font-size: 1rem;
 	font-family: Lato;
 	font-weight: normal;
 	 font-style: normal;
@@ -2691,7 +2697,7 @@ SIDEBARS & ASIDES
   
   #top-sidebar {
   	background-color: var(--pale-lilac);
-  	height: calc(var(--ten)*5);
+  	height: 5rem;
   	margin: 0;
   	padding: 0;
   }
@@ -2711,7 +2717,7 @@ SIDEBARS & ASIDES
   	text-decoration: none;
   	opacity: 0.87;
   	font-family: Lato;
-  	  font-size: calc(var(--ten)*1.6);
+  	  font-size: 1.6rem;
   	  font-weight: normal;
   	  font-style: normal;
   	  font-stretch: normal;
@@ -2722,17 +2728,17 @@ SIDEBARS & ASIDES
   
   #top-sidebar .widget:first-child {
   	background-color: var(--pale-grey);
-  	width: calc(var(--ten)*23.6);
+  	width: 23.6rem;
   }
   
   .qtranxs_widget ul li {
   	text-transform: uppercase;
   	padding: 0 1em 0 0;
-  	height: calc(var(--ten)*5);
+  	height: 5rem;
   }
   
   .qtranxs_widget ul {
-  	padding-top: var(--ten);
+  	padding-top: 1.4rem;
   }
   
   #sidebar1 {
@@ -2758,9 +2764,9 @@ FOOTER STYLES
  
  .footer .column-1 {
  	width: 38%;
- 	padding-left: calc(var(--ten)*16.5);
+ 	padding-left: 16.5rem;
  	display: block;
- 	height: calc(var(--ten)*53.2);
+ 	height: 53.2rem;
  	float: left;
  	z-index: -1;
  	
@@ -2769,44 +2775,44 @@ FOOTER STYLES
  .footer .wrap {
  	width: 60%;
  	float: left;
- 	padding-top: calc(var(--ten)*6.1);
+ 	padding-top: 6.1rem;
  }
  
  
   
   .footer img.custom-logo {
-  	width: calc(var(--ten)*19.2);
+  	width: 19.2rem;
   	position: absolute;
-  	left: calc(var(--ten)*14.5);
-  	top: calc(var(--ten)*5.7);
+  	left: 14.5rem;
+  	top: 5.7rem;
   }
   
   ul.social {
-  	  	margin-top: calc(var(--ten)*44.4);
+  	  	margin-top: 44.4rem;
   	
   }
   
   ul.social li {
   	float:left;
-  	margin-right: calc(var(--ten)*1.5);
+  	margin-right: 1.5rem;
   
   }
   
   ul.social li img {
-  	height: calc(var(--ten)*3.2);
-  		width: calc(var(--ten)*3.2);
+  	height: 3.2rem;
+  		width: 3.2rem;
   }
   
   .sponsoren img {
-  	max-width: calc(var(--ten)*15.3);
+  	max-width: 15.3rem;
   	height: auto;
-  	margin-right: var(--ten);
+  	margin-right: 1rem;
   }
   
   
   .footer address span {
   	opacity: 0.87;
-  	  font-size: calc(var(--ten)*1.4);
+  	  font-size: 1.4rem;
   	  font-weight: normal;
   	  font-style: normal;
   	  font-stretch: normal;
@@ -2826,7 +2832,7 @@ FOOTER STYLES
   }
   
   .footer address{
-  margin-top: calc(var(--ten)*5);
+  margin-top: 5rem;
   }
   
   
