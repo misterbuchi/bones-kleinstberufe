@@ -122,13 +122,14 @@
 							                    
 							                    ?>
 												
+												<h4><?php single_cat_title(); ?>.</h4>
 							
 							                   <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 							                   							
 							                   															<header class="article-header">
 							                   
-							                   							<?php
-							                   							the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+							                   							
+							                   							<h1><?php single_cat_title(); ?>.</h1>
 							                   							
 							                   							</header> <?php // end article header ?>
 							                   							
