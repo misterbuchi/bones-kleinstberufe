@@ -112,8 +112,9 @@ h3, .Headline-6-Style {
   font-stretch: normal;
   line-height: 1.6;
   letter-spacing: 0.007em;
-  text-align: center;
-  color: #000000;
+  text-align: left;
+   color: var(--dusk);
+  
 }
 .Button-Style {
   font-family: Lato;
@@ -2377,6 +2378,15 @@ ul.register li a {
 .page-title,
 .entry-title {
   margin: 0; }
+  
+  .newsbox {
+  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+  	  border: solid 1px var(--very-light-blue);
+  	  background-color: var(--white);
+  	  padding-bottom: 5.1rem;
+  	  position: relative;
+  	  display: table-cell;
+  }
   
   .newsbox {
   	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
