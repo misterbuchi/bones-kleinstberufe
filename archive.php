@@ -19,7 +19,7 @@
 							
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
+							<div id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
 								
 								<?php 
 								if ( has_post_thumbnail() ) {
@@ -52,7 +52,7 @@
 
 								</footer>
 
-							</article>
+							</div>
 
 							<?php endwhile; ?>
 
