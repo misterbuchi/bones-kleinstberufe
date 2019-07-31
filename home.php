@@ -222,7 +222,7 @@
 						                   
 						                   								<header class="entry-header news-header">
 						                   
-						                   									<h3 class="h2 news-title"><?php  echo strip_tags(the_content(), '<a>');?></h3>
+						                   									<h3 class="h2 news-title"><?php  echo str_replace(['<p>', '</p>'], '', the_content());?></h3>
 						                   									
 						                   
 						                   								</header>
