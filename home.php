@@ -119,7 +119,7 @@
 							
 							<?php
 							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
-							                    
+							                    while(have_posts()) : the_post();
 							                    ?>
 												
 												<h4><?php single_cat_title(); ?>.</h4>
@@ -128,8 +128,8 @@
 							                   							
 							                   															<header class="article-header">
 							                   
-							                   							
-							                   							<h1><?php single_cat_title(); ?>.</h1>
+							                   							<?php
+							                   							the_archive_title( '<h1 class="page-title">', '</h1>' );?>
 							                   							
 							                   							</header> <?php // end article header ?>
 							                   							
@@ -138,7 +138,7 @@
 							                   							<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							                   							?>
 							                   							
-							                   							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							                   						
 							                   
 							                   							<news id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
 							                   	
@@ -164,24 +164,9 @@
 							                   
 							                   							</news>
 							                   
-							                   							<?php endwhile; ?>
 							                   
 							                   
-							                   							<?php else : ?>
-							                   
-							                   									<article id="post-not-found" class="hentry cf">
-							                   										<header class="article-header">
-							                   											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-							                   										</header>
-							                   										<section class="entry-content">
-							                   											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-							                   										</section>
-							                   										<footer class="article-footer">
-							                   												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-							                   										</footer>
-							                   									</article>
-							                   
-							                   							<?php endif; ?>
+							                   							
 							                   							
 							                   							</section> <?php // end article section ?>
 							                   							
