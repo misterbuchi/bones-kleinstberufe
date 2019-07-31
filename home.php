@@ -119,10 +119,8 @@
 							
 							<?php
 							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
-							                    while(have_posts()) : the_post();
 							                    ?>
 												
-												<h4><?php single_cat_title(); ?>.</h4>
 							
 							                   <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 							                   							
@@ -138,6 +136,8 @@
 							                   							<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );
 							                   							?>
 							                   							
+											   							<?php 							                    while(have_posts()) : the_post();
+											   							 ?>
 							                   						
 							                   
 							                   							<news id="post-<?php the_ID(); ?>" <?php post_class( 'cf d-1of3 t-1of2 m-all newsbox' ); ?> role="article">
@@ -166,16 +166,16 @@
 							                   
 							                   
 							                   
+							                   							<?php
+							                   							                    endwhile;
+							                   							                    wp_reset_query();
+							                   							                    ?>
 							                   							
 							                   							
 							                   							</section> <?php // end article section ?>
 							                   							
 							                   													
-							                   														</article>							                    <?php
-							                    endwhile;
-							                    wp_reset_query();
-							                    ?>
-							
+							                   														</article>							                    
 						</section>
 						<section id="2" class="m-all t-all d-all"></section>
 						<section id="3" class="m-all t-all d-all"></section>
