@@ -117,6 +117,8 @@
 						
 						<section id="one" class="m-all t-all d-all">
 							
+							<div class="Rectangle gey-tale"></div>
+							
 							<?php
 							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
 							                    ?>
@@ -184,6 +186,8 @@
 							                   														</article>							                    
 						</section>
 						<section id="two" class="m-all t-all d-all">
+													<div class="Rectangle pale-lilac"></div>
+						
 						
 						<?php
 						                    query_posts( array('cat' => 2, 'posts_per_page' => 3, 'order' => 'rand') );

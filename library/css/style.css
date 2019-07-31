@@ -2416,6 +2416,25 @@ section#two {
 	padding-right: 19rem;
 }
 
+section#one .Rectangle {
+	background-color: var(--grey-tale);
+	width: 37.5rem;
+	height: 37.5.rem;
+	position: absolute;
+	right: 0;
+	top: 27.7rem;
+}
+
+
+section#two .Rectangle {
+	background-color: var(--pale-lilac);
+	width: 37.5rem;
+	height: 37.5.rem;
+	position: absolute;
+	left: 72.rem;
+	top: 32.4rem;
+}
+
 
 
 
