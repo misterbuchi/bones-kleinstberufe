@@ -2435,6 +2435,21 @@ section#two .Rectangle {
 	top: 32.4rem;
 }
 
+section .taxonomy-description p {
+	opacity: 0.87;
+	  font-family: Lato;
+	  font-size: 20px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.6;
+	  letter-spacing: 0.15px;
+	  text-align: center;
+	  color: var(--gunmetal);
+	  
+	
+}
+
 
 
 
