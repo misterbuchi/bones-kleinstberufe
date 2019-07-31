@@ -2405,6 +2405,9 @@ section .article-header {
 section#one h1, section#two h1, #content.page h1 {
 	color: var(--dusk);
 	text-align: center;
+}
+
+section#one {
 	position: relative;
 }
 
