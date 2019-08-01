@@ -204,7 +204,7 @@ function bones_register_sidebars() {
 	register_sidebar(array(
 		'id' => 'sidebarhome',
 		'name' => __( 'Sidebar Home', 'bonestheme' ),
-		'description' => __( 'Die Addresszeile', 'bonestheme' ),
+		'description' => __( 'Für die Agenda auf der Startseite', 'bonestheme' ),
 		'before_widget' => '<span id="%1$s" class="widget %2$s">',
 		'after_widget' => '</span>',
 		'before_title' => '<h1 class="widgettitle">',

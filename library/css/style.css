@@ -2401,12 +2401,12 @@ section .article-header {
 	margin-top: 10rem;
 }
 
-section#one h1, section#two h1, #content.page h1 {
+section#one h1, section#two h1, #content.page h1, section#three h1 {
 	color: var(--dusk);
 	text-align: center;
 }
 
-section#one {
+section#one, section#three {
 	position: relative;
 }
 
