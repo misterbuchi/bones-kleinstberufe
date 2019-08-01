@@ -3024,7 +3024,7 @@ FOOTER STYLES
   }
   
   .footer address{
-  margin-top: 5rem;
+  margin-top: 7rem;
   }
   
   
@@ -3224,7 +3224,6 @@ you can add resource intensive styles.
     margin-bottom: 0.75em; }
 
   .widget {
-    padding: 0 10px;
      }
     .widget ul li {
       margin-bottom: 0.75em;
