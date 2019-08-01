@@ -260,9 +260,9 @@
 						
 						<section id="three" class="m-all t-all d-all">
 							
-							<?php if ( is_active_sidebar( 'sidebarhome' ) ) : ?>
-							    <?php dynamic_sidebar( 'sidebarhome' ); ?>
-							<?php endif; ?>
+							<?php if ( is_active_sidebar( 'sidebarhome' ) ) :
+							     dynamic_sidebar( 'sidebarhome' ); 
+							endif; ?>
 							
 						</section>
 						
