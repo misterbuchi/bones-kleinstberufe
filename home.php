@@ -258,12 +258,17 @@
 						                   													
 						                   														</article>	</section>
 						
-						<section id="three" class="m-all t-all d-all"></section>
+						<section id="three" class="m-all t-all d-all">
+							
+							<?php if ( is_active_sidebar( 'sidebarhome' ) ) : ?>
+							    <?php dynamic_sidebar( 'sidebarhome' ); ?>
+							<?php endif; ?>
+							
+						</section>
 						
 						
 						
 
-						<?php get_sidebar(); ?>
 
 				</div>
 

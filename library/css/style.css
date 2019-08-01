@@ -104,7 +104,7 @@ h4 {
   color: var(--dusk);
   
 }
-h3, .Headline-6-Style {
+h3, .Headline-6-Style, h3 p {
   font-family: Lato;
   font-size: 2rem;
   font-weight: normal;
@@ -921,12 +921,11 @@ a.button {
 	text-decoration: none;
 	text-transform: uppercase;
      padding: 1.4rem;
-text-align: center;
-display: flex;
 width: 20rem;
 margin-left: 0;
 margin-right: 0;
 margin: auto;
+display: table;
 		
 		
 	
@@ -2456,6 +2455,11 @@ section .taxonomy-description p {
 	
 }
 
+
+.newsbox h3 p {
+	padding: 0;
+	
+}
 
 
 
