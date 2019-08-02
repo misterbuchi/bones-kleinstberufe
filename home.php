@@ -247,7 +247,7 @@
 										   												
 										   												
 										   													
-										   													<p><a class="button" href="#" title="Berufe">Mehr</a></p>
+										   													<p><a class="button" href="#" title="Berufe"><?php __('[:de]Mehr[:fr]Plus[:]') ?></a></p>
 										   													
 						                   							                    <?php wp_reset_query();
 						                   							                    ?>
@@ -261,7 +261,7 @@
 						<section id="three" class="m-all t-all d-all">
 							
 							<?php if ( is_active_sidebar( 'sidebarhome' ) ) :
-							     __(dynamic_sidebar( 'sidebarhome' )); 
+							     dynamic_sidebar( 'sidebarhome' ); 
 							endif; ?>
 							
 						</section>
