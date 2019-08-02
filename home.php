@@ -174,7 +174,7 @@
 											   												
 											   												<?php   $category_link = get_category_link( 1 );?>
 											   													
-											   													<p><a class="button" href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
+											   													<p><a class="button" href="<?php echo esc_url( $category_link ); ?>" title="Category Name"><?php echo __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
 											   													
 							                   							                    <?php wp_reset_query();
 							                   							                    ?>
@@ -247,7 +247,7 @@
 										   												
 										   												
 										   													
-										   													<p><a class="button" href="#" title="Berufe"><?php __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
+										   													<p><a class="button" href="#" title="Berufe"><?php echo __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
 										   													
 						                   							                    <?php wp_reset_query();
 						                   							                    ?>
