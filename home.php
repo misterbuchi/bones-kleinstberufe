@@ -120,7 +120,7 @@
 							<div class="Rectangle gey-tale"></div>
 							
 							<?php
-							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'ASC') );
+							                    query_posts( array('cat' => 1, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'DESC') );
 							                    ?>
 												
 							
