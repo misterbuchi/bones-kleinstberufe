@@ -550,9 +550,14 @@ input[type="submit"] {
   width: 25rem;
   text-align: right;}
   
+  div.wpcf7 .ajax-loader {
+  	display: none;
+  }
+  
   
   div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   border: 1px solid #f7e700;
+  font-size: 1.6rem;
   position: absolute;
   background-color: var(--white);
   margin-left: 0;
@@ -2995,10 +3000,19 @@ FOOTER STYLES
   		width: 3.2rem;
   }
   
+  
   .sponsoren img {
   	max-width: 15.3rem;
   	height: auto;
   	margin-right: 1rem;
+  	float: left;
+  }
+  
+
+  
+  .footer address {
+  	clear: both;
+  	padding-top: 5.5rem;
   }
   
   
