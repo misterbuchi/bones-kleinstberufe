@@ -2650,6 +2650,12 @@ section .taxonomy-description p {
     padding: 1.5em;
     margin: 0 0 1.5em;
     }
+    
+    .entry-content iframe {
+		max-width: 100%;
+		padding-left: -19rem;
+		padding-right: -19rem;
+	}
 
 /* end .entry-content */
 .wp-caption {
