@@ -92,7 +92,10 @@
 											    'order' => 'ASC'
 											    ));
 											    if( $sub_cats ) :
-											        foreach( $sub_cats as $sub_cat ) : 											            echo category_description($sub_cat->term_id);
+											        foreach( $sub_cats as $sub_cat ) : ?>
+													
+													<div class="oda">
+													<?php echo category_description($sub_cat->term_id);
 											        
 											            $sub_query = new WP_Query( array(
 											                'category__in' => array( $sub_cat->term_id ),
@@ -106,7 +109,23 @@
 											                    the_content();
 											                endwhile;
 											            endif;
-											        endforeach;
+											       $sub_query1 = new WP_Query( array(
+											           'category__in' => array( $sub_cat->term_id ),
+											           'posts_per_page' => 1,
+											           'order' => 'rand')
+											       );
+											       
+											       if ( $sub_query1->have_posts() ) :
+											           while( $sub_query1->have_posts() ) : $sub_query1->the_post();
+											               the_post_thumbnail('medium');
+											               
+											           endwhile;
+											       endif;     
+											            
+											            ?>
+														</div>
+											        <?php endforeach;
+											       
 											    endif;
 											?>	
 																	<?php get_sidebar(); ?>
