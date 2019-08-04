@@ -1556,6 +1556,7 @@ button.swiper-pagination-bullet {
 .event_list {
 	column-count: 2;
 	column-width: 53.9rem;
+	margin-bottom: 5rem;
 }
 
 div.event_item {
@@ -1658,7 +1659,7 @@ span.time-end::before {
 
 span.eventpost-date-export {
 	position: absolute;
-	top: 0.8rem;
+	top: 0;
 	right: 0;
 	font-size: 1.2rem;
 }
@@ -2526,15 +2527,15 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 
 section#one, section#three {
 	position: relative;
+		background-color: var(--pale-grey);
+	
 }
 
 section#two {
-	background-color: var(--pale-grey);
 	position: relative;
 }
 
 section#three {
-	background-color: var(--pale-grey);
 	padding-left: 19rem;
 	padding-right: 19rem;
 }
@@ -2774,6 +2775,10 @@ section .taxonomy-description p {
 		max-width: 100%;
 		padding-left: -19rem;
 		padding-right: -19rem;
+	}
+	
+	.entry-content {
+		display: inline-block;
 	}
 
 /* end .entry-content */
