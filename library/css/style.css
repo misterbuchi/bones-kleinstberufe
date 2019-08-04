@@ -3376,7 +3376,6 @@ you can add resource intensive styles.
     /* highlight current page */
     /* end current highlighters */ }
     .nav ul {
-      background: #323944;
       margin-top: 0; }
     .nav li {
       float: left;
@@ -3397,14 +3396,20 @@ you can add resource intensive styles.
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
-        border: 1px solid #ccc;
         border-top: 0;
         position: absolute;
         visibility: hidden;
         z-index: 8999;
+		width: 117rem;
+		height: 20rem;
+		right: 0;
+		opacity: 0.9;
+		background-blend-mode: multiply;
+		  background-image: linear-gradient(to bottom, var(--greyish-brown), var(--greyish-brown));
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
+		  float: right;
           /*
           if you need to go deeper, go nuts
           just remember deeper menus suck
@@ -3416,14 +3421,15 @@ you can add resource intensive styles.
             border-right: 0;
             display: block;
             width: 180px;
-            border-bottom: 1px solid #ccc; }
+			color: var(--white);
+             }
           .nav li ul.sub-menu li:last-child a,
           .nav li ul.children li:last-child a {
             border-bottom: 0; }
           .nav li ul.sub-menu li ul,
           .nav li ul.children li ul {
             top: 0;
-            left: 100%; }
+             }
       .nav li:hover > ul {
         top: auto;
         visibility: visible; }
