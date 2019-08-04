@@ -190,7 +190,7 @@
 						
 						
 						<?php
-						                    query_posts( array('cat' => 2, 'posts_per_page' => 3, 'order' => 'rand') );
+						                    query_posts( array('cat' => 2, 'posts_per_page' => 3, 'orderby' => 'rand') );
 						                    ?>
 											
 						
