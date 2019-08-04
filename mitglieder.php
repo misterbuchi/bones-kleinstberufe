@@ -84,7 +84,13 @@
 									        foreach( $sub_cats as $sub_cat ) : ?>
 											
 											<div class="oda">
-											<?php echo category_description($sub_cat->term_id);
+											<?php if ( $sub_query1->have_posts() ) :
+											    while( $sub_query1->have_posts() ) : $sub_query1->the_post();
+											        the_post_thumbnail('medium');
+											        
+											    endwhile;
+											endif;  
+											echo category_description($sub_cat->term_id);
 									        
 									            $sub_query = new WP_Query( array(
 									                'category__in' => array( $sub_cat->term_id ),
@@ -104,12 +110,7 @@
 									           'order' => 'rand')
 									       );
 									       
-									       if ( $sub_query1->have_posts() ) :
-									           while( $sub_query1->have_posts() ) : $sub_query1->the_post();
-									               the_post_thumbnail('medium');
-									               
-									           endwhile;
-									       endif;     
+									          
 									            
 									            ?>
 												</div>
