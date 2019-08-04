@@ -1567,6 +1567,7 @@ div.event_item {
                break-inside: avoid;
 			   padding-left: 10.5rem;
 			   height: 9.5rem;
+width: 53.9rem;;
 }
 
 span.date-single {
@@ -1602,11 +1603,12 @@ h5.event_widgettitle {opacity: 0.87;
   font-stretch: normal;
   line-height: 1.6;
   letter-spacing: 0.015rem;
-  text-align: center;
+  text-align: left;
   color: var(--dusk);
   text-transform: none;
   margin-top: 2rem;
   margin-bottom: 0;
+  
 	
 }
 
