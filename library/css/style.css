@@ -2554,8 +2554,14 @@ section#three {
 	padding-right: 19rem;
 }
 
-#content.page div.oda p, #content.page div.oda h2 {
+#content.page div.oda:nth-last-child(odd) p, #content.page div.oda:nth-last-child(odd) h2 {
 	padding-left: 6.5rem;
+	padding-right: 0rem;
+	
+}
+
+#content.page div.oda:nth-last-child(even) p, #content.page div.oda:nth-last-child(even) h2 {
+	padding-left: 0px;
 	padding-right: 6.5rem;
 }
 
@@ -2729,6 +2735,7 @@ section .taxonomy-description p {
   }
   
   .oda h2 {
+  	font-size: 2.8rem;
   	word-wrap: break-word;
   	-moz-hyphens: auto;
   	   -o-hyphens: auto;
