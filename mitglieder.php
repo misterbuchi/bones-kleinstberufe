@@ -75,23 +75,7 @@
 									?>
 								</section> <?php // end article section ?>
 								
-								<?php 
-								
-								
-								    $sub_cats = get_categories('parent=3');
-								    if( $sub_cats ) :
-								        foreach( $sub_cats as $sub_cat ) :
-								            $sub_query = new WP_Query( array(
-								                'category__in' => array( $sub_cat->term_id ),
-								                'posts_per_page' => -1)
-								            );
-								            if ( $sub_query->have_posts() ) :
-								                while( $sub_query->have_posts() ) : $sub_query->the_post();
-								                    the_content();								                endwhile;
-								            endif;
-								        endforeach;
-								    endif;
-								?>					
+												
 							</article>
 
 
@@ -100,6 +84,25 @@
 
 				</div>
 											<?php endwhile; endif; ?>
+											
+											<?php 
+											
+											
+											    $sub_cats = get_categories('parent=3');
+											    if( $sub_cats ) :
+											        foreach( $sub_cats as $sub_cat ) :
+											            $sub_query = new WP_Query( array(
+											                'category__in' => array( $sub_cat->term_id ),
+											                'posts_per_page' => -1)
+											            );
+											            if ( $sub_query->have_posts() ) :
+											                while( $sub_query->have_posts() ) : $sub_query->the_post();
+											                    //your output//
+											                endwhile;
+											            endif;
+											        endforeach;
+											    endif;
+											?>	
 																	<?php get_sidebar(); ?>
 											
 				
