@@ -73,6 +73,51 @@
 											'link_after'  => '</span>',
 										) );
 									?>
+									
+									<?php 
+									
+									
+									    $sub_cats = get_categories(array('child_of' => 3,'order_by' => 'name',
+									    'order' => 'ASC'
+									    ));
+									    if( $sub_cats ) :
+									        foreach( $sub_cats as $sub_cat ) : ?>
+											
+											<div class="oda">
+											<?php echo category_description($sub_cat->term_id);
+									        
+									            $sub_query = new WP_Query( array(
+									                'category__in' => array( $sub_cat->term_id ),
+									                'posts_per_page' => -1,
+									                'order_by' => 'name',
+									                'order' => 'ASC')
+									            );
+									            
+									            if ( $sub_query->have_posts() ) :
+									                while( $sub_query->have_posts() ) : $sub_query->the_post();
+									                    the_content();
+									                endwhile;
+									            endif;
+									       $sub_query1 = new WP_Query( array(
+									           'category__in' => array( $sub_cat->term_id ),
+									           'posts_per_page' => 1,
+									           'order' => 'rand')
+									       );
+									       
+									       if ( $sub_query1->have_posts() ) :
+									           while( $sub_query1->have_posts() ) : $sub_query1->the_post();
+									               the_post_thumbnail('medium');
+									               
+									           endwhile;
+									       endif;     
+									            
+									            ?>
+												</div>
+									        <?php endforeach;
+									       
+									    endif;
+									?>	
+									
 								</section> <?php // end article section ?>
 								
 												
@@ -85,50 +130,7 @@
 				</div>
 											<?php endwhile; endif; ?>
 											
-											<?php 
-											
-											
-											    $sub_cats = get_categories(array('child_of' => 3,'order_by' => 'name',
-											    'order' => 'ASC'
-											    ));
-											    if( $sub_cats ) :
-											        foreach( $sub_cats as $sub_cat ) : ?>
-													
-													<div class="oda">
-													<?php echo category_description($sub_cat->term_id);
-											        
-											            $sub_query = new WP_Query( array(
-											                'category__in' => array( $sub_cat->term_id ),
-											                'posts_per_page' => -1,
-											                'order_by' => 'name',
-											                'order' => 'ASC')
-											            );
-											            
-											            if ( $sub_query->have_posts() ) :
-											                while( $sub_query->have_posts() ) : $sub_query->the_post();
-											                    the_content();
-											                endwhile;
-											            endif;
-											       $sub_query1 = new WP_Query( array(
-											           'category__in' => array( $sub_cat->term_id ),
-											           'posts_per_page' => 1,
-											           'order' => 'rand')
-											       );
-											       
-											       if ( $sub_query1->have_posts() ) :
-											           while( $sub_query1->have_posts() ) : $sub_query1->the_post();
-											               the_post_thumbnail('medium');
-											               
-											           endwhile;
-											       endif;     
-											            
-											            ?>
-														</div>
-											        <?php endforeach;
-											       
-											    endif;
-											?>	
-																	<?php get_sidebar(); ?>
+																												<?php get_sidebar(); ?>
 											
 				
 
