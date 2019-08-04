@@ -421,11 +421,11 @@ ul {
   list-style-type: none; 
   
 }
-ol {
+.wrap ol {
 	list-style-type: decimal;
 }  
 
-ul {
+.wrap ul {
 	list-style-type: circle;
 }
 
