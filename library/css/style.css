@@ -1551,6 +1551,79 @@ button.swiper-pagination-bullet {
     }
 }
 
+/*Agenda*/
+
+.event_list {
+	column-count: 2;
+}
+
+div.event_item {
+	position: relative;
+	background-color: var(--white);
+	display: inline-block;
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+			   padding-left: 10.5rem;
+			   height: 9.5rem;
+}
+
+span.date-single {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: var(--dusk);
+	font-size: 1.6rem !important;
+	color: var(--white);
+	width: 9.5rem;
+	height: 9.5rem;
+	text-align: center;
+	line-height: 1.2;
+	
+}
+
+span.date-single::first-line {
+	font-size: 5rem;
+}
+
+.dashicons-before {
+	display: none;
+}
+
+
+h5.event_widgettitle {opacity: 0.87;
+  font-family: Lato;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.015rem;
+  text-align: center;
+  color: var(--dusk);
+  text-transform: none;
+  margin-top: 2rem;
+  margin-bottom: 0;
+	
+}
+
+span.linking_word {
+	display: none;
+}
+
+span.time {
+	font-size: 1.6rem;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.75;
+	  letter-spacing: 0.044rem;
+	  color: var(--gunmetal);;
+}
+
+span.time-end::before {
+	content: "- ";
+}
 
 /*
 Mobile Grid Styles
@@ -2418,6 +2491,12 @@ section#one, section#three {
 section#two {
 	background-color: var(--pale-grey);
 	position: relative;
+}
+
+section#three {
+	background-color: var(--pale-grey);
+	padding-left: 19rem;
+	padding-right: 19rem;
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
