@@ -75,20 +75,24 @@
 									?>
 								</section> <?php // end article section ?>
 								
-								<?php $subcats = get_categories('child_of=' . 3);
-								    foreach($subcats as $subcat) {
-								    echo '<h3>' . $subcat->cat_name . '</h3>';
-								    echo '<ul>';
-								    $subcat_posts = get_posts('cat=' . $subcat->cat_ID);
-								    foreach($subcat_posts as $subcat_post) {
-								        $postID = $subcat_post->ID;
-								    echo '<li>';
-								    echo '<a href="' . get_permalink($postID) . '">';
-								    echo get_the_title($postID);
-								    echo '</a></li>';
-								    }
-								    echo '</ul>';
-								    } ?>						
+								<?php 
+								
+								
+								    $sub_cats = get_categories('parent=3');
+								    if( $sub_cats ) :
+								        foreach( $sub_cats as $sub_cat ) :
+								            $sub_query = new WP_Query( array(
+								                'category__in' => array( $sub_cat->term_id ),
+								                'posts_per_page' => -1)
+								            );
+								            if ( $sub_query->have_posts() ) :
+								                while( $sub_query->have_posts() ) : $sub_query->the_post();
+								                    //your output//
+								                endwhile;
+								            endif;
+								        endforeach;
+								    endif;
+								?>					
 							</article>
 
 
