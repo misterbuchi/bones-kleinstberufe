@@ -92,7 +92,7 @@
 											);
 											if ( $sub_query1->have_posts() ) :
 											    while( $sub_query1->have_posts() ) : $sub_query1->the_post();
-											        the_post_thumbnail('medium');
+											        the_post_thumbnail('oda');
 											        
 											    endwhile;
 											endif;  
