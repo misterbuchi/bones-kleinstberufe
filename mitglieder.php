@@ -92,14 +92,14 @@
 											    'order' => 'ASC'
 											    ));
 											    if( $sub_cats ) :
-											        foreach( $sub_cats as $sub_cat ) :
+											        foreach( $sub_cats as $sub_cat ) : 											            echo category_description();
+											        
 											            $sub_query = new WP_Query( array(
 											                'category__in' => array( $sub_cat->term_id ),
 											                'posts_per_page' => -1,
 											                'order_by' => 'name',
 											                'order' => 'ASC')
 											            );
-											            echo category_description();
 											            
 											            if ( $sub_query->have_posts() ) :
 											                while( $sub_query->have_posts() ) : $sub_query->the_post();
