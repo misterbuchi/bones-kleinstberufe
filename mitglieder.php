@@ -95,6 +95,8 @@
 											                'category__in' => array( $sub_cat->term_id ),
 											                'posts_per_page' => -1)
 											            );
+											            the_archive_description( '<div class="taxonomy-description">', '</div>' );
+											            
 											            if ( $sub_query->have_posts() ) :
 											                while( $sub_query->have_posts() ) : $sub_query->the_post();
 											                    the_content();
