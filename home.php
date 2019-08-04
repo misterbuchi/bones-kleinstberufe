@@ -247,7 +247,7 @@
 										   												
 										   												
 										   													
-										   													<p><a class="button" href="#" title="Berufe"><?php echo __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
+										   													<p><a class="button" href="/mitglieder/" title="Berufe"><?php echo __('[:de]Mehr[:fr]Plus[:]'); ?></a></p>
 										   													
 						                   							                    <?php wp_reset_query();
 						                   							                    ?>
