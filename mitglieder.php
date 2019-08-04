@@ -88,7 +88,7 @@
 											<?php 
 											
 											
-											    $sub_cats = get_categories('parent=3');
+											    $sub_cats = get_categories(array('child_of' => 3));
 											    if( $sub_cats ) :
 											        foreach( $sub_cats as $sub_cat ) :
 											            $sub_query = new WP_Query( array(
