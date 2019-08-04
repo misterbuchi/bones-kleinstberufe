@@ -136,7 +136,7 @@ h3, .Headline-6-Style, h3 p {
   letter-spacing: 0.009em;
   color: #000000;
 }
-p, .Body-1-Style {
+p, .Body-1-Style, ul, ol {
   font-family: Lato;
   font-size: 1.6rem;
   font-weight: normal;
@@ -417,8 +417,17 @@ menu {
 
 ol,
 ul {
-  padding: 0;
-  list-style-type: none; }
+  
+  list-style-type: none; 
+  
+}
+ol {
+	list-style-type: decimal;
+}  
+
+ul {
+	list-style-type: circle;
+}
 
 /*
  * Corrects list images handled incorrectly in IE7.
@@ -1659,9 +1668,9 @@ span.time-end::before {
 
 span.eventpost-date-export {
 	position: absolute;
-	top: 0;
+	top: 0.65rem;
 	right: 0;
-	font-size: 1.2rem;
+	font-size: 1.2rem !important;
 }
 
 
@@ -2540,7 +2549,7 @@ section#three {
 	padding-right: 19rem;
 }
 
-#content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p {
+#content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p, #content.page #inner-content ol, #content.page #inner-content ul {
 	padding-left: 19rem;
 	padding-right: 19rem;
 }
