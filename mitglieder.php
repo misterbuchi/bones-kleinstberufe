@@ -84,7 +84,13 @@
 									        foreach( $sub_cats as $sub_cat ) : ?>
 											
 											<div class="oda">
-											<?php if ( $sub_query1->have_posts() ) :
+											<?php 
+											$sub_query1 = new WP_Query( array(
+											    'category__in' => array( $sub_cat->term_id ),
+											    'posts_per_page' => 1,
+											    'order' => 'rand')
+											);
+											if ( $sub_query1->have_posts() ) :
 											    while( $sub_query1->have_posts() ) : $sub_query1->the_post();
 											        the_post_thumbnail('medium');
 											        
@@ -104,11 +110,7 @@
 									                    the_content();
 									                endwhile;
 									            endif;
-									       $sub_query1 = new WP_Query( array(
-									           'category__in' => array( $sub_cat->term_id ),
-									           'posts_per_page' => 1,
-									           'order' => 'rand')
-									       );
+									       
 									       
 									          
 									            
