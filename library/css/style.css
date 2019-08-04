@@ -2554,6 +2554,13 @@ section#three {
 	padding-right: 19rem;
 }
 
+#content.page div.oda p, #content.page div.oda h2 {
+	padding-left: 6.5rem;
+	padding-right: 6.5rem;
+}
+
+
+
 section#one .Rectangle {
 	background-color: var(--grey-teal);
 	width: 37.5rem;
@@ -2683,6 +2690,54 @@ section .taxonomy-description p {
   	  margin-top: 1.8rem;
   	
   }
+  
+  /*Mitglieder*/
+  
+  div.oda {
+  	padding: 0;
+  	margin: 6.5rem 0 0;
+  	clear: both;
+  	width: 111rem;
+  	height: auto;
+  	display: inline-block;
+  }
+  
+  div.oda:nth-child(odd) {
+  	background-color: var(--pale-grey);
+  }
+  
+  div.oda:nth-child(even) {
+  	background-color: var(--pale-lilac);
+  }
+  
+  div.oda:nth-child(odd) img {
+  	float: left;
+  	width: 65rem;
+  	margin-right: 3.5rem;
+  	margin-bottom: 0;
+  }
+  
+  div.oda:nth-child(even) img {
+  	float: right;
+  	width: 65rem;
+  	margin-left: 3.5rem;
+  	margin-bottom: 0;
+  }
+  
+  .oda a {
+  	text-decoration: none;
+  }
+  
+  .oda h2 {
+  	word-wrap: break-word;
+  	-moz-hyphens: auto;
+  	   -o-hyphens: auto;
+  	   -webkit-hyphens: auto;
+  	   -ms-hyphens: auto;
+  	   hyphens: auto; 
+  }
+  
+ 
   
   
   
