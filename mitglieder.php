@@ -88,7 +88,7 @@
 											$sub_query1 = new WP_Query( array(
 											    'category__in' => array( $sub_cat->term_id ),
 											    'posts_per_page' => 1,
-											    'order' => 'rand')
+											    'orderby' => 'rand')
 											);
 											if ( $sub_query1->have_posts() ) :
 											    while( $sub_query1->have_posts() ) : $sub_query1->the_post();
@@ -101,7 +101,7 @@
 									            $sub_query = new WP_Query( array(
 									                'category__in' => array( $sub_cat->term_id ),
 									                'posts_per_page' => -1,
-									                'order_by' => 'name',
+									                'orderby' => 'title',
 									                'order' => 'ASC')
 									            );
 									            
