@@ -97,7 +97,7 @@
 											            );
 											            if ( $sub_query->have_posts() ) :
 											                while( $sub_query->have_posts() ) : $sub_query->the_post();
-											                    //your output//
+											                    the_content();
 											                endwhile;
 											            endif;
 											        endforeach;
