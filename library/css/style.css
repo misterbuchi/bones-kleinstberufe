@@ -1564,8 +1564,8 @@ button.swiper-pagination-bullet {
 
 .event_list {
 	column-count: 2;
-	column-width: 53.9rem;
 	margin-bottom: 5rem;
+	column-gap: 5rem
 }
 
 div.event_item {
@@ -1653,7 +1653,7 @@ span.time-end::before {
 	font-style: normal;
 }
 
-.event_location::before {
+.event_date::after {
 	content: "|";
 	float: left;
 	padding-left: 1rem;
