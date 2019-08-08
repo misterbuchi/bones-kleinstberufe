@@ -1568,6 +1568,13 @@ button.swiper-pagination-bullet {
 	column-gap: 5rem
 }
 
+.event_single {
+	position: relative;
+	background-color: var(--white);
+				   height: 9.5rem;
+	
+}
+
 div.event_item {
 	position: relative;
 	background-color: var(--white);
@@ -1580,7 +1587,7 @@ div.event_item {
 width: 53.9rem;;
 }
 
-span.date-single {
+time.date-start, span.date-single {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1595,7 +1602,7 @@ span.date-single {
 	
 }
 
-span.date-single::first-line {
+time.date-start::first-line, span.date-single::first-line {
 	font-size: 5rem;
 	margin-bottom: 0.65rem;
 }
@@ -1618,6 +1625,12 @@ h5.event_widgettitle {opacity: 0.87;
   text-transform: none;
   margin-top: 2rem;
   margin-bottom: 0;
+  height: 3.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 1.6rem;
+  
   
 	
 }
@@ -1626,7 +1639,7 @@ a.gcal, a.vcs, span.linking_word {
 	display: none;
 }
 
-span.time {
+time.date-end, span.time {
 	font-size: 1.6rem !important;
 	  font-weight: normal;
 	  font-style: normal;
@@ -1648,14 +1661,24 @@ span.time-end::before {
 	  letter-spacing: 0.044rem;
 	  color: var(--gunmetal);
 	  float: left;
-	  width: 60%;
+	  width: 66%;
 	font-weight: normal;
 	font-style: normal;
+	
+
+	
 }
 
-.event_date::after {
+.event_location address {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+		  color: var(--gunmetal);
+	
+}
+
+time.date-end::after, span.time-end::after {
 	content: "|";
-	float: left;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
@@ -2508,8 +2531,7 @@ ul.register li a {
 
 
 
- #content.page article {
-	margin-right: 16.5rem;
+ #content.page article, #content.page .event_single {
 	margin-left: 16.5rem;
 	
 }
