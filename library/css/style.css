@@ -1570,7 +1570,7 @@ button.swiper-pagination-bullet {
 
 .event_single {
 	position: relative;
-	background-color: var(--pale-lilac) !important;
+	background-color: var(--very-light-blue) !important;
 	min-height: 9.5rem;
 	max-height: 41.5rem;
 	width: 73rem;
@@ -1595,6 +1595,10 @@ div.event_item {
 			   padding-left: 10.5rem;
 			   height: 9.5rem;
 width: 53.9rem;
+}
+
+#content.page div.event_item {
+	background-color: var(--very-light-blue);
 }
 
 time.date-start, span.date-single {

@@ -259,6 +259,7 @@
 						                   														</article>	</section>
 						
 						<section id="three" class="m-all t-all d-all">
+							<div class="Rectangle sick-green"></div>
 							
 							<?php if ( is_active_sidebar( 'sidebarhome' ) ) :
 							     dynamic_sidebar( 'sidebarhome' ); 
