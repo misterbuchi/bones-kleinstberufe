@@ -541,8 +541,10 @@ input[type="submit"] {
   	width: 2.4rem !important;
   	cursor: pointer;
   	
-  	
-  	
+  }
+  
+  label.button svg:hover  #Path1 {
+  	fill: var(--dusk) !important;
   }
   
   label.button {
@@ -877,10 +879,8 @@ Home Layout
 */
 
 article.RectangleHome {
-  max-width: 540px;
-  max-height: 540px;
-  width: 37.5vw;
-  height: 37.5vw;
+  width: 54rem;
+  height: 54rem;
   background-color: var(--dusk);
   z-index: 1;
   position: absolute;
@@ -1763,6 +1763,10 @@ them however you see fit.
     width: 75%; } }
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
+  html {
+  	font-size: 1vw;
+  }
+  
   .t-all {
     float: left;
     padding-right: 0.75em;
@@ -2992,10 +2996,10 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1.6rem;
     display: block;
-    color: #2980b9; }
+    color: var(--soft-blue); }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
-      color: white; }
+      background-color: var(--soft-blue);
+      color: var(--white); }
   .pagination .current {
     cursor: default;
     color: #5c6b80; }
@@ -3273,6 +3277,10 @@ FOOTER STYLES
   ul.social li img {
   	height: 3.2rem;
   		width: 3.2rem;
+  }
+  
+  ul.social li img:hover {
+  	filter: invert(1)
   }
   
   
