@@ -1637,7 +1637,7 @@ h5.event_widgettitle {opacity: 0.87;
   text-align: left;
   color: var(--dusk);
   text-transform: none;
-  margin-top: 2rem;
+  margin-top: 2.35rem;
   margin-bottom: 0;
   height: 3.2rem;
   overflow: hidden;
@@ -2643,6 +2643,15 @@ section#two .Rectangle {
 	top: 35.4rem;
 }
 
+section#three .Rectangle {
+	background-color: var(--sick-green);
+	width: 37.5rem;
+	height: 37.5rem;
+	position: absolute;
+	right: 0;
+	top: 27.7rem;
+}
+
 section .taxonomy-description p {
 	opacity: 0.87;
 	  font-family: Lato;
@@ -3436,7 +3445,6 @@ you can add resource intensive styles.
       margin-top: 0; }
     .nav li {
       float: left;
-      position: relative;
       /*
       plan your menus and drop-downs wisely.
       */
