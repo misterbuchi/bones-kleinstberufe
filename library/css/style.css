@@ -925,32 +925,6 @@ article.RectangleHome {
 	color: var(--dusk);
 }
 
-a.button {
-	
-	background-color: var(--deep-lilac);
-	font-family: Lato;
-	 font-size: 1.6rem;
-	 font-weight: bold;
-	 font-style: normal;
-	 font-stretch: normal;
-	 line-height: normal;
-	letter-spacing: 0.084em;
-	text-align: center;
-	color: var(--white);
-	text-decoration: none;
-	text-transform: uppercase;
-     padding: 1.4rem;
-width: 20rem;
-margin-left: 0;
-margin-right: 0;
-margin: auto;
-display: table;
-}
-
-a.button:hover {
-	background-color: var(--dusk);
-	color: var(--white);
-}
 
 
 .swiper-container, #slider-replacement {
@@ -3343,6 +3317,32 @@ FOOTER STYLES
   }
   
   
+  a.button {
+  	
+  	background-color: var(--deep-lilac);
+  	font-family: Lato;
+  	 font-size: 1.6rem;
+  	 font-weight: bold;
+  	 font-style: normal;
+  	 font-stretch: normal;
+  	 line-height: normal;
+  	letter-spacing: 0.084em;
+  	text-align: center;
+  	color: var(--white);
+  	text-decoration: none;
+  	text-transform: uppercase;
+       padding: 1.4rem;
+  width: 20rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  display: table;
+  }
+  
+  a.button:hover {
+  	background-color: var(--dusk);
+  	color: var(--white);
+  }
   
 
 
