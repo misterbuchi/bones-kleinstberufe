@@ -920,6 +920,11 @@ article.RectangleHome {
 	
 }
 
+#sidebar1 p a:hover, .RectangleHome p a:hover {
+	background-color: var(--bluey-grey);
+	color: var(--dusk);
+}
+
 a.button {
 	
 	background-color: var(--deep-lilac);
@@ -940,10 +945,11 @@ margin-left: 0;
 margin-right: 0;
 margin: auto;
 display: table;
-		
-		
-	
-	
+}
+
+a.button:hover {
+	background-color: var(--dusk);
+	color: var(--white);
 }
 
 
@@ -952,7 +958,6 @@ display: table;
     margin-right: auto;
     overflow: hidden;
 	position: relative;
-	z-index: -1;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -1150,16 +1155,22 @@ display: table;
 .swiper-pagination-fraction {
     bottom: 10px;
     left: 0;
-    width: 100%
+    width: 100%;
+	z-index: 9999;
 }
 
-.swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+.swiper-custom-bullet, span.swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
     display: inline-block;
     border-radius: 100%;
-    background: #000;
-    opacity: .2
+    
+    opacity: 0.8;
+	margin: 1rem;
+	
+	opacity: 0.8;
+	background: transparent;
+	border: 0.5rem solid var(--white);
 }
 
 button.swiper-pagination-bullet {
@@ -1181,9 +1192,8 @@ button.swiper-pagination-bullet {
     background: #fff
 }
 
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #007aff
+.swiper-custom-bullet-active, .swiper-pagination-bullet-active {
+    background-color: var(--white);
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
@@ -1568,6 +1578,10 @@ button.swiper-pagination-bullet {
 	column-gap: 5rem
 }
 
+#content.page .event_list {
+	margin-top: 5rem;
+}
+
 .event_single {
 	position: relative;
 	background-color: var(--very-light-blue) !important;
@@ -1577,6 +1591,8 @@ button.swiper-pagination-bullet {
 	padding-left: 10.5rem;
 	border: 0;
 	padding-top: 2.8rem;
+	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+	border: solid 1px var(--very-light-blue);
 	
 	
 }
@@ -1595,6 +1611,8 @@ div.event_item {
 			   padding-left: 10.5rem;
 			   height: 9.5rem;
 width: 53.9rem;
+box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+border: solid 1px var(--very-light-blue);
 }
 
 #content.page div.event_item {
@@ -1609,7 +1627,7 @@ time.date-start, span.date-single {
 	font-size: 1.6rem !important;
 	color: var(--white);
 	width: 9.5rem;
-	height: 9.5rem;
+	height: 9.4rem;
 	text-align: center;
 	line-height: 1.2;
 	text-transform: uppercase;
@@ -2428,7 +2446,11 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: var(--white); }
+  background-color: var(--white); 
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1001;
+}
 #logo, #logo.h1 a, #logo img {
 	width: 19.4rem;
 }
@@ -2439,6 +2461,7 @@ HEADER STYLES
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	  background-color: var(--white);
 	  z-index: 10;
+	  
 }    
 
 /*********************
@@ -2568,6 +2591,7 @@ ul.register li a {
  #content.page article, #content.page .event_single {
 	margin-left: 19rem;
 		margin-right: 19rem;
+ 	clear: both;
 	
 }
 
@@ -2758,9 +2782,14 @@ section .taxonomy-description p {
   
   a.excerpt-read-more {
   	display: block;
-  	  color: #000000;
+  	  color: var(--dusk);
   	  margin-top: 1.8rem;
   	
+  }
+  
+  
+  a.excerpt-read-more:hover {
+  	color: var(--deep-lilac);
   }
   
   /*Mitglieder*/
@@ -3183,6 +3212,11 @@ SIDEBARS & ASIDES
   	  color: #000000;
   }
   
+  #top-sidebar .widget a:hover, #top-sidebar .widget p a:hover {
+  	color: var(--bluey-grey);
+  	
+  }
+  
   #top-sidebar .widget:first-child {
   	background-color: var(--pale-grey);
   	width: 23.6rem;
@@ -3466,7 +3500,6 @@ you can add resource intensive styles.
         visibility: hidden;
         z-index: 8999;
 		width: 117rem;
-		height: 20rem;
 		right: 0;
 		opacity: 0.9;
 		background-blend-mode: multiply;
@@ -3482,10 +3515,9 @@ you can add resource intensive styles.
           */ }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
-            padding-left: 10px;
+            padding-left: 1rem;
             border-right: 0;
             display: block;
-            width: 180px;
 			color: var(--white);
              }
           .nav li ul.sub-menu li:last-child a,
