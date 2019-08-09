@@ -3468,7 +3468,7 @@ ul.register {
 }
 
 .nav li ul.sub-menu {
-	right: -5rem;
+	right: -2rem !important;
 }
 
 .event_list {
