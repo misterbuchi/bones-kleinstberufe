@@ -1570,9 +1570,19 @@ button.swiper-pagination-bullet {
 
 .event_single {
 	position: relative;
-	background-color: var(--white);
-				   height: 9.5rem;
+	background-color: var(--pale-lilac) !important;
+	min-height: 9.5rem;
+	max-height: 41.5rem;
+	width: 73rem;
+	padding-left: 10.5rem;
+	border: 0;
+	padding-top: 2.8rem;
 	
+	
+}
+
+.event_category {
+	display: none;
 }
 
 div.event_item {
@@ -1584,7 +1594,7 @@ div.event_item {
                break-inside: avoid;
 			   padding-left: 10.5rem;
 			   height: 9.5rem;
-width: 53.9rem;;
+width: 53.9rem;
 }
 
 time.date-start, span.date-single {
@@ -1650,11 +1660,11 @@ time.date-end, span.time {
 	  float: left;
 }
 
-span.time-end::before {
+time.date-end::before, span.time-end::before {
 	content: "- ";
 }
 
-.event_location {
+.event_single address, .event_location {
 	font-size: 1.6rem !important;
 	font-stretch: normal;
 	  line-height: 1.75;
@@ -1669,6 +1679,13 @@ span.time-end::before {
 	
 }
 
+.event_single address {
+	float: none;
+	width: 100%;
+	display: inline-block;
+	
+}
+
 .event_location address {
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -1677,7 +1694,9 @@ span.time-end::before {
 	
 }
 
-time.date-end::after, span.time-end::after {
+
+
+time.date-end::after, .event_item span.time-end::after {
 	content: "|";
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -1686,6 +1705,7 @@ time.date-end::after, span.time-end::after {
 .event_location address {
 	font-style: normal;
 		  color: var(--gunmetal);
+		 
 	
 }
 
@@ -1694,6 +1714,16 @@ span.eventpost-date-export {
 	top: 0.65rem;
 	right: 0;
 	font-size: 1.2rem !important;
+}
+
+
+.event_single span.eventpost-date-export {
+	font-size: 2rem !important;
+}
+
+.event_data a.gps {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 
@@ -2532,7 +2562,8 @@ ul.register li a {
 
 
  #content.page article, #content.page .event_single {
-	margin-left: 16.5rem;
+	margin-left: 19rem;
+		margin-right: 19rem;
 	
 }
 
