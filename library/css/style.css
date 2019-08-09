@@ -1706,10 +1706,18 @@ time.date-end::after, .event_item span.time-end::after {
 }
 
 span.eventpost-date-export {
-	position: absolute;
-	top: 0.65rem;
-	right: 0;
+	
 	font-size: 1.2rem !important;
+}
+
+a.ics {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 9.5rem;
+		height: 9.5rem;
+	
+	
 }
 
 
