@@ -1153,7 +1153,7 @@ a.button:hover {
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: 1rem;
     left: 0;
     width: 100%;
 	z-index: 9999;
@@ -1170,7 +1170,7 @@ a.button:hover {
 	
 	opacity: 0.8;
 	background: transparent;
-	border: 0.5rem solid var(--white);
+	border: 0.5rem solid var(--very-light-blue);
 }
 
 button.swiper-pagination-bullet {
@@ -1193,7 +1193,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-custom-bullet-active, .swiper-pagination-bullet-active {
-    background-color: var(--white);
+    background-color: var(--very-light-blue);
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
