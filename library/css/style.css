@@ -429,6 +429,10 @@ ul {
 	list-style-type: circle;
 }
 
+ul#menu-hauptmenu {
+	list-style-type: none;
+}
+
 /*
  * Corrects list images handled incorrectly in IE7.
  */
