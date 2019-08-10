@@ -53,6 +53,7 @@ the whole project.
 }
 html {
 	font-size: 0.6944vw;
+	overflow-x: hidden;
 }
 
 @media (min-width: 1440px) {
