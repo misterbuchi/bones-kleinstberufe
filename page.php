@@ -17,16 +17,17 @@
 				
 				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
 				
-				$primaryNav = wp_get_nav_menu_items($menuID, array('menu_item_parent' => 1, )); 
+				$primaryNav = wp_get_nav_menu_items($menuID); 
 				
 				foreach ( $primaryNav as $navItem ) {
 				
 				  $parent_id = $navItem->meta->_menu_item_menu_item_parent;
 				
-				if ($parent_id == '0') {}
+				if ($parent_id == '0') {echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+				}
 				
 				 else {
-				    echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+				    
 				}
 				}
 				 ?>
