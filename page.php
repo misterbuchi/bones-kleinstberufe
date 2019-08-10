@@ -14,7 +14,6 @@
 				
 				<li><?php the_title(); ?></li>-->
 				<?php wp_nav_menu(array(
-										'items_wrap' => '',
 				    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
 				    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
 				    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
