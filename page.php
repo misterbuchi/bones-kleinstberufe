@@ -13,20 +13,19 @@
 				<?php } ?>
 				
 				<li><?php the_title(); ?></li>-->
-				<?php echo strip_tags(wp_nav_menu(array(
-				    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
-				    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
-				    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-				    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-				    					'theme_location' => 'footer-links',             // where it's located in the theme
-				    					'before' => '',                                 // before the menu
-				    					'after' => '',                                  // after the menu
-				    					'link_before' => '',                            // before each link
-				    					'link_after' => '',                             // after each link
-				    					'depth' => 0,                                   // limit the depth of the nav
-				    					'items_wrap'     => '%3$s',
-				    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-										)), '<li>'); ?>
+				<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
+				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
+				
+				$menuID = $menuLocations['primary']; // Get the *primary* menu ID
+				
+				$primaryNav = wp_get_nav_menu_items($menuID); 
+				
+				foreach ( $primaryNav as $navItem ) {
+				
+				    echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+				
+				}
+				 ?>
 				
 				
 			</ul>
