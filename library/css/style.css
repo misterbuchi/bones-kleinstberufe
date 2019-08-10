@@ -3313,7 +3313,7 @@ top: 2rem;
 
 #inner-header {
 	padding: 0;
-	height: 19rem;
+	height: 13rem;
 }
 
 #logo img {
@@ -3409,9 +3409,9 @@ input#hamburg {display:none}
    transform-origin: center; 
 }
 
-.line:nth-child(1) { top: 12px; }
-.line:nth-child(2) { top: 24px; }
-.line:nth-child(3) { top: 36px; }
+.line:nth-child(1) { top: 20px; }
+.line:nth-child(2) { top: 32px; }
+.line:nth-child(3) { top: 44px; }
 
 #hamburg:checked + .hamburg .line:nth-child(1){
    transform: translateY(12px) rotate(-45deg);
@@ -3429,6 +3429,9 @@ ul#menu-hauptmenu {
 	position: absolute;
 	  width: 100vw;
 	  margin: 0 0 0 0px;
+	  box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+	  	  border: solid 1px var(--very-light-blue);
+	  
 	  
 	  background: var(--white);
 	  list-style-type: none;
@@ -3451,13 +3454,16 @@ ul#menu-hauptmenu li a{
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	
 	
 }
 
 ul#menu-hauptmenu ul.sub-menu a {
-	font-size: 16px
+	font-size: 16px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 ul#menu-hauptmenu ul {
@@ -3470,15 +3476,24 @@ ul#menu-hauptmenu li{
 	background-color: var(--pale-lilac);
 	width: 100vw;
 	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	border-bottom: 1px solid var(--white);
+	
+	
 }
+
+
 
 ul#menu-hauptmenu ul li {
 	background-color: var(--white);
 	padding-top: 10px;
-	padding-bottom: 10px;
+	border-bottom: 1px solid var(--pale-lilac);
+	
 }
+
+ul#menu-hauptmenu li:last-child, ul#menu-hauptmenu ul li:last-child {
+	border-bottom: none;
+}
+
 
 
 
