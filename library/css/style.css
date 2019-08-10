@@ -3313,6 +3313,7 @@ top: 2rem;
 
 #inner-header {
 	padding: 0;
+	height: 19rem;
 }
 
 #logo img {
@@ -3373,29 +3374,27 @@ z-index: -1;
 padding-left: 0;
 }
 
-.m-menu  {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	right: 0;
-	width: 100vw;
-	display: inline-block;
-}
 
 label.hamburg { 
    display: block;
    background: ; width: 75px; height: 50px; 
-   position: relative; 
+ 
+   position: absolute;
+   top: 0;
+   right: 0;
+   
+   
    
    margin-left: auto; margin-right: auto;
    border-radius: 4px; 
-   float: right;
+   z-index: 6000;
    
    
 }
 
 .header {
 	position: relative;
+	
 }
 
 input#hamburg {display:none}
@@ -3426,26 +3425,59 @@ input#hamburg {display:none}
    transform: translateY(-12px) rotate(45deg);
 }
 
-#hamburg ul {
+ul#menu-hauptmenu {
 	position: absolute;
-	  width: 300px;
-	  margin: -100px 0 0 -50px;
-	  padding: 50px;
-	  padding-top: 125px;
+	  width: 100vw;
+	  margin: 0 0 0 0px;
 	  
-	  background: #ededed;
+	  background: var(--white);
 	  list-style-type: none;
 	  -webkit-font-smoothing: antialiased;
 	  /* to stop flickering of text in safari */
 	  
 	  transform-origin: 0% 0%;
-	  transform: translate(-100%, 0);
+	  transform: translate(100%, 0);
 	  
 	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	  z-index: 5000;
 }
 
-#hamburg input:checked ~ ul {
+#hamburg:checked ~ ul {
 transform: none;
+margin: 0;
+padding: 0;
+}
+ul#menu-hauptmenu li a{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	padding-bottom: 20px;
+	
+	
+}
+
+ul#menu-hauptmenu ul.sub-menu a {
+	font-size: 16px
+}
+
+ul#menu-hauptmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul#menu-hauptmenu li{
+	background-color: var(--pale-lilac);
+	width: 100vw;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ul#menu-hauptmenu ul li {
+	background-color: var(--white);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
