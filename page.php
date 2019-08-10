@@ -12,7 +12,21 @@
 				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
 				<?php } ?>
 				
-				<li><?php the_title(); ?></li>				<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
+				<li><?php the_title(); ?></li>
+				
+				<?php wp_nav_menu(array(
+								<?php echo strip_tags(wp_nav_menu(array(
+								    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
+								    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
+								    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+				@ -26,7 +26,7 @@
+								    					'depth' => 0,                                   // limit the depth of the nav
+								    					'items_wrap'     => '%3$s',
+								    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+														)); ?>
+														)), '<a>'; ?>
+
+<!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
 				
 				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
@@ -30,7 +44,7 @@
 				    
 				}
 				}
-				 ?>
+				 ?>-->
 				 
 				
 				
