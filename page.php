@@ -8,24 +8,24 @@
 			
 			<ul class="register">
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-				<!--<?php if ( $post->post_parent ) { ?>
+				<?php if ( $post->post_parent ) { ?>
 				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
 				<?php } ?>
 				
-				<li><?php the_title(); ?></li>-->
-				<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
+				<li><?php the_title(); ?></li>				<!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
 				
 				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
 				
-				$primaryNav = wp_get_nav_menu_items($menuID, array('menu_item_parent' => 1)); 
+				$primaryNav = wp_get_nav_menu_items($menuID, array('menu_item_parent' => 1, )); 
 				
 				foreach ( $primaryNav as $navItem ) {
 				
 				    echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
 				
 				}
-				 ?>
+				 ?>-->
+				 
 				
 				
 			</ul>
