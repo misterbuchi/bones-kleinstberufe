@@ -3422,7 +3422,7 @@ input#hamburg {display:none}
    opacity:0;
 }
 
-#hamburg:checked + .hamburg .line:nth-child(3){
+#hamburg:checked .hamburg .line:nth-child(3){
    transform: translateY(-12px) rotate(45deg);
 }
 
@@ -3430,7 +3430,7 @@ input#hamburg {display:none}
 	display: none;
 }
 
-input#hamburg1:checked + div#toggle {
+input#hamburg:checked + div#toggle {
 display: block !important;
 }
 
