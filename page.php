@@ -12,7 +12,7 @@
 				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
 				<?php } ?>
 				
-				<li><?php the_title(); ?></li>				<!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
+				<li><?php the_title(); ?></li>				<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
 				
 				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
@@ -21,10 +21,15 @@
 				
 				foreach ( $primaryNav as $navItem ) {
 				
-				    echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+				  $parent_id = $navItem->meta->_menu_item_menu_item_parent;
 				
+				if ($parent_id == '0') {}
+				
+				 else {
+				    echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
 				}
-				 ?>-->
+				}
+				 ?>
 				 
 				
 				
