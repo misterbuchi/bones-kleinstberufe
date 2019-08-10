@@ -24,7 +24,7 @@
 								    					'items_wrap'     => '%3$s',
 								    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 														)); ?>
-														)), '<a>'; ?>
+														)), '<a>'); ?>
 
 <!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
