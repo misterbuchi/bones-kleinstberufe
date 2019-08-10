@@ -3201,6 +3201,10 @@ them however you see fit.
     float: left;
     padding-right: 0.75em;
     width: 75%; } 
+	
+p {
+	font-size: 2rem;
+}	
 .swiper-slide img, .swiper-container, #slider-replacement {
 	height: 54rem;
 }
@@ -3251,11 +3255,11 @@ section article, #content.page main.newscontainer article {
 }
 
 .newsbox {
-	height: 66rem;
+	height: 75rem;
 }
 
 section#one .newsbox {
-height: 27rem;
+height: 34rem;
 margin-bottom: 2rem;
 margin-top: 2rem;
 }
@@ -3309,11 +3313,14 @@ top: 2rem;
 
 .footer address {
 	padding-top: 2rem;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 }
-
 .footer address span, .footer address span p {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	height: 2.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
 }
 
 #inner-header {
@@ -3329,19 +3336,21 @@ top: 2rem;
 .oda {
 	width: 100vw !important;
 	margin: 3.5rem 0 0;
+	position: relative;
 }
 
 .oda img {
-	width: 60.5vw !important;
+	width: 50vw !important;
+	height: 41.4rem;
+	object-fit: cover;
 }
 
 .oda h2 {
-	font-size: 1.6rem;
+	font-size: 2.4rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
 }
 
-.oda p {
-	font-size: 1.4rem;
-}
 
 div.oda:nth-child(odd) img {
 	margin-right: 1rem;
