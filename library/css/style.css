@@ -3312,7 +3312,12 @@ top: 2rem;
 }
 
 #inner-header {
-	padding: 1.73rem 2rem 2.03rem 2.6rem;
+	padding: 0;
+}
+
+#logo img {
+	margin-left: 2.6rem;
+	position: absolute;
 }
 
 .oda {
@@ -3349,6 +3354,89 @@ padding-right: 0rem;
 padding-left: 1rem;
 padding-right: 0rem;
 }
+
+.header .wrap {
+	position: static;
+}
+
+.nav {
+width: 100vw;
+background-color: var(--white);
+position: static;
+left: 0;
+top: 0;
+clear: both;
+left: 0;
+top: 0;
+right: 0;
+z-index: -1;
+padding-left: 0;
+}
+
+.m-menu  {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	display: inline-block;
+}
+
+label.hamburg { 
+   display: block;
+   background: ; width: 75px; height: 50px; 
+   position: relative; 
+   
+   margin-left: auto; margin-right: auto;
+   border-radius: 4px; 
+   float: right;
+   
+   
+}
+
+.header {
+	position: relative;
+}
+
+input#hamburg {display:none}
+
+.line { 
+   position: absolute; 
+   left:10px;
+   height: 4px; width: 55px; 
+   background: var(--dusk); border-radius: 2px;
+   display: block; 
+   transition: 0.5s; 
+   transform-origin: center; 
+}
+
+.line:nth-child(1) { top: 12px; }
+.line:nth-child(2) { top: 24px; }
+.line:nth-child(3) { top: 36px; }
+
+#hamburg:checked + .hamburg .line:nth-child(1){
+   transform: translateY(12px) rotate(-45deg);
+}
+
+#hamburg:checked + .hamburg .line:nth-child(2){
+   opacity:0;
+}
+
+#hamburg:checked + .hamburg .line:nth-child(3){
+   transform: translateY(-12px) rotate(45deg);
+}
+
+#toggle {
+	display: none;
+}
+
+input#hamburg1:checked + div#toggle {
+display: block !important;
+}
+
+
+
+
 
 }
 /* Portrait tablet to landscape */
@@ -3408,6 +3496,10 @@ padding-right: 0rem;
     float: left;
     padding-right: 0.75em;
     width: 80%; }
+	
+	.t-h0 {
+		display: none;
+	}
 .nav {
 	right: 2rem;
 }
@@ -3625,7 +3717,13 @@ section .article-header {
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
-    width: 8.33%; } }
+    width: 8.33%; }
+	
+.d-h0 {
+	display: none;
+}	
+
+}
 
 /*
 if you checked out the link above:

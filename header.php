@@ -69,12 +69,13 @@
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 									<div class="m-menu t-h0 d-h0">									    <input type="checkbox" id="hamburg" class="nav-trigger t-h0 d-h0 m-all" role="tooltip">
-									    <label for="hamburg" class="hamburg">
+									    <label for="hamburg hamburg1" class="hamburg">
 									        <span class="line"></span>
 									        <span class="line"></span>
 									        <span class="line"></span>
 									    </label>
 									</div>
+									<input type="checkbox" id="hamburg1" class="nav-trigger t-h0 d-h0 m-all" role="tooltip">
 																<div id="toggle" role="tooltip">
 																	<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
