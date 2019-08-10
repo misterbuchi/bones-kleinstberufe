@@ -18,7 +18,7 @@
 				
 				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
 				
-				$primaryNav = wp_get_nav_menu_items($menuID); 
+				$primaryNav = wp_get_nav_menu_items($menuID, array('post_parent' => 0)); 
 				
 				foreach ( $primaryNav as $navItem ) {
 				
