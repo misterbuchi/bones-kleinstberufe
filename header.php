@@ -68,8 +68,8 @@
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-									<div class="m-menu t-h0 d-h0">									    <input type="checkbox" id="hamburg" class="nav-trigger t-h0 d-h0 m-all" role="tooltip">
-									    <label for="hamburg" class="hamburg">
+									<div >									    <input type="checkbox" id="hamburg" class="nav-trigger t-h0 d-h0 m-all" role="tooltip">
+									    <label for="hamburg" class="m-menu t-h0 d-h0 hamburg" >
 									        <span class="line"></span>
 									        <span class="line"></span>
 									        <span class="line"></span>
