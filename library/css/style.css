@@ -3149,7 +3149,7 @@ FOOTER STYLES
   	text-transform: uppercase;
   	font-size: 1.2rem;
   	height: 1.6rem;
-  	list-style-type:disc;
+  	z-index: 1000;
   	
   	
   }
@@ -3261,6 +3261,10 @@ article.RectangleHome {
 #content.page article.page, #content.page article.post, #content.page .event_single {
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+ul.register {
+	left: 1rem;
 }
 
 
