@@ -420,15 +420,14 @@ ol,
 ul {
   
   list-style-type: none; 
+  list-style-position: inside;
   
 }
 .wrap ol {
 	list-style-type: decimal;
 }  
 
-.wrap ul {
-	list-style-type: circle;
-}
+
 
 ul#menu-hauptmenu {
 	list-style-type: none;
@@ -2677,9 +2676,10 @@ section .taxonomy-description p {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
-    margin-bottom: 1.5em; }
+    margin-bottom: 1rem; }
   .entry-content img {
     margin: 0 0 2.5rem 0;
+	padding: 0;
     max-width: 100%;
     height: auto; }
   .entry-content .size-auto,
@@ -2705,6 +2705,10 @@ section .taxonomy-description p {
 	
 	.entry-content {
 		display: inline-block;
+	}
+	
+	.entry-content ul{
+		list-style-type: disc;
 	}
 
 /* end .entry-content */
