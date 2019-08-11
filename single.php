@@ -7,12 +7,20 @@
 				<div class="Rectangle dull-red second"></div>	
 				
 				<ul class="register">
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-					<li><?php  printf( get_the_category_list(' ') ); ?></li>
-					<li><?php the_title(); ?></li>
-					
-					
-				</ul>
+								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
+								
+								
+								
+												<?php wp_nav_menu(array(
+												    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
+												    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
+												    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+												    					'depth' => 0,                                   // limit the depth of the nav
+												    					'items_wrap'     => '%3$s',
+												    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+																		)); ?>
+				
+							</ul>
 				
 
 				<div id="inner-content" class="wrap cf">

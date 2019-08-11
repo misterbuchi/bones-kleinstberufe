@@ -20,28 +20,6 @@
 								    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
 														)); ?>
 
-<!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
-				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
-				
-				$menuID = $menuLocations['footer-links']; // Get the *primary* menu ID
-				
-				$primaryNav = wp_get_nav_menu_items($menuID); 
-				
-				foreach ( $primaryNav as $navItem ) {
-				
-				  $parent_id = $navItem->meta->_menu_item_menu_item_parent;
-				
-				if ($parent_id == '0') {echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
-				}
-				
-				 else {
-				    
-				}
-				}
-				 ?>-->
-				 
-				
-				
 			</ul>
 			
 				

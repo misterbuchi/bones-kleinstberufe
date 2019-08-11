@@ -8,17 +8,20 @@
 				<div class="Rectangle soft-blue third"></div>
 				
 				<ul class="register">
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-					<?php if ( $post->post_parent ) { ?>
-					<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
-					<?php } ?>
-					
-					
-					
-					<li><?php the_archive_title(); ?></li>
-					
-					
-				</ul>
+								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
+								
+								
+								
+												<?php wp_nav_menu(array(
+												    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
+												    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
+												    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+												    					'depth' => 0,                                   // limit the depth of the nav
+												    					'items_wrap'     => '%3$s',
+												    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+																		)); ?>
+				
+							</ul>
 				
 
 				<div id="inner-content" class="wrap cf">
