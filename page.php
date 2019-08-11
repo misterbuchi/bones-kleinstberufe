@@ -8,11 +8,7 @@
 			
 			<ul class="register">
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
-				<?php if ( $post->post_parent ) { ?>
-				<li><a href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a></li>
-				<?php } ?>
 				
-				<li><?php the_title(); ?></li>
 				
 				
 								<?php wp_nav_menu(array(
