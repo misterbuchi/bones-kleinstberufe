@@ -15,14 +15,14 @@
 				<li><?php the_title(); ?></li>
 				
 				
-								<?php echo strip_tags(html_entity_decode(wp_nav_menu(array(
+								<?php wp_nav_menu(array(
 								    					'container' => '',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
 								    					'container_class' => 'footer-links cf register',         // class of container (should you choose to use it)
 								    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
 								    					'depth' => 0,                                   // limit the depth of the nav
 								    					'items_wrap'     => '%3$s',
 								    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-														))), '<a>'); ?>
+														)); ?>
 
 <!--<?php $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 				                                           // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);

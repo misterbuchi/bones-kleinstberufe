@@ -2344,31 +2344,6 @@ POSTS & CONTENT STYLES
 	top: 206rem;
 }
 
-ul.register {
-	position: absolute;
-	top: 5rem;
-	left: 16.5rem;
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	height: 1.6rem;
-	list-style-type:disc;
-	
-	
-}
-
-ul.register li:first-child {
-	list-style-type: none;
-}
-
-ul.register li {
-	float: left;
-	color: #45436e;
-	margin-right: 3.2rem;
-}
-
-ul.register li a {
-	color: #000000;
-}
 
 
 
@@ -2813,6 +2788,9 @@ PAGE NAVI STYLES
     .pagination .current:hover, .pagination .current:focus {
       background-color: white;
       color: #5c6b80; }
+      
+      
+      
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -3158,6 +3136,59 @@ FOOTER STYLES
   a.button:hover {
   	background-color: #45436e;
   	color: #ffffff;
+  }
+  
+  ul.register {
+  	position: absolute;
+  	top: 5rem;
+  	left: 16.5rem;
+  	text-transform: uppercase;
+  	font-size: 1.2rem;
+  	height: 1.6rem;
+  	list-style-type:disc;
+  	
+  	
+  }
+  
+  ul.register li:first-child {
+  	list-style-type: none;
+  }
+  
+  ul.register li {
+  	float: left;
+  	color: #45436e;
+  	margin-right: 3.2rem;
+  }
+  
+  ul.register li a {
+  	color: #000000;
+  }
+  
+  
+  ul.register li.menu-item { 
+  	
+  	display: none;
+  	  		  	list-style-type: disc !important;
+  	
+  }
+  
+  ul.register li.menu-item:first-child {
+  	position: static;
+  	text-transform: uppercase;
+  	font-size: 1.2rem;
+  	height: 1.6rem;
+  	list-style-type:disc;
+  }
+  
+  
+  ul.register li.current-menu-parent, ul.register li.current-menu-item { 
+  	display: block;
+  	list-style-type:disc;
+  	text-transform: uppercase;
+  		font-size: 1.2rem;
+  		height: 1.6rem;
+  		  	list-style-type: disc !important;
+  		
   }
   
 /*
@@ -3630,6 +3661,8 @@ section#three {
 ul.register {
 	left: 1rem;
 }
+
+
 
 .oda {
 	width: 100vw !important;
