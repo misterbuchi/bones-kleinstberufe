@@ -3992,14 +3992,19 @@ you can add resource intensive styles.
         .nav li a:hover, .nav li a:focus {
           color: #45436e;
           text-decoration: underline; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
+      .nav li ul.sub-menu {
         margin-top: 0;
         border-top: 0;
+		margin: 0;
+		padding: 0;
+		display: flex;
         position: absolute;
+		text-align:center;
         visibility: hidden;
         z-index: 8999;
 		width: 117rem;
+		height: 18rem;
+		max-width: 100vw;
 		right: 0;
 		opacity: 0.9;
 		background-blend-mode: multiply;
@@ -4007,7 +4012,11 @@ you can add resource intensive styles.
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
-		  float: right;
+			display: inline-flex;	
+			margin-left: 0;
+			margin-right: 0;
+			
+			margin: auto;
           /*
           if you need to go deeper, go nuts
           just remember deeper menus suck
@@ -4015,9 +4024,10 @@ you can add resource intensive styles.
           */ }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
-            padding-left: 1rem;
+            padding-left: 0.5rem;
+						display: inline-block;		  
+			
             border-right: 0;
-            display: block;
 			color: #ffffff;
              }
           .nav li ul.sub-menu li:last-child a,
