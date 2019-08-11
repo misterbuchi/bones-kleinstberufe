@@ -2426,7 +2426,37 @@ section#three {
 	padding-right: 0rem;
 }
 
+#crArchive {
+display: table;
+font-size: 2rem;
+width: 73rem;
+margin-left: 16.5rem;
+}
 
+.crArchiveItem {
+	width: 100%;
+	display: table-row;
+	border-bottom: 1px solid #fffff;
+	border-top: 1px solid #fffff;
+	
+}
+
+.crArchiveItemDate, crArchiveItemName {
+	display: table-cell;
+	padding: 1rem;
+}
+
+.crArchiveItem:nth-child(odd) {
+background-color: #f6f8f9;
+}
+
+.crArchiveItem:nth-child(even) {
+background-color: #e7eaee;
+}
+
+.crArchiveItemDescription {
+	display: none;
+}
 
 section#one .Rectangle {
 	background-color: #5b8982;
