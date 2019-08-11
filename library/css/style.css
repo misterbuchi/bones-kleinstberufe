@@ -2431,6 +2431,7 @@ display: table;
 font-size: 2rem;
 width: 73rem;
 margin-left: 16.5rem;
+margin-top: 5rem;
 }
 
 .crArchiveItem {
@@ -3342,6 +3343,11 @@ section#three, section#one {
 	max-height: 35rem;
 }
 
+
+#crArchive {
+	margin-left: 2vw;
+	width: 96vw;
+}
 
 section article, #content.page main.newscontainer article {
 	margin-left: 8.25rem;
