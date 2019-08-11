@@ -3150,36 +3150,27 @@ FOOTER STYLES
   	
   }
   
-  ul.register li:first-of-type {
-  	list-style-type: none;
-  }
+  
   
   ul.register li {
   	float: left;
   	color: #45436e;
-  	margin-right: 3.2rem;
-  	list-style-type:disc !important;
+  	margin-right: 1.6rem;
+  	list-style-type: none;
+  	background: none;
   	
   }
   
   ul.register li a {
   	color: #000000;
+  	
   }
   
   
  ul.register li.menu-item {
  	display: none;
- 	 list-style-type:disc !important;
  	
  }
-  
-  ul.register li.menu-item:first-child {
-  	text-transform: uppercase;
-  	font-size: 1.2rem;
-  	height: 1.6rem;
-  	list-style-type:disc !important;
-  	top: 0;
-  }
   
   
   ul.register li.current-menu-parent, ul.register li.current-menu-item{ 
@@ -3191,6 +3182,10 @@ FOOTER STYLES
   		  	list-style-type: disc !important;
   		
   }
+  
+  ul.register li.current-menu-parent:before, ul.register li.current-menu-item::before {
+  	content: "\2022";
+  	padding-right: 1.6rem;  }
   
   ul.register li ul.sub-menu {
   	margin: 0;
