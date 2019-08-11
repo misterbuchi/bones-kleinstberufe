@@ -3078,8 +3078,7 @@ FOOTER STYLES
   	max-width: 15.3rem;
   	height: auto;
   	margin-right: 1rem;
-  	float: left;
-  }
+	float: left;  }
   
 
   
@@ -3698,6 +3697,10 @@ ul.register {
 
 .event_list {
 	column-gap: 1rem;
+}
+
+#content.page .event_list {
+	margin-left: 1rem;
 }
 
 div.event_item {
