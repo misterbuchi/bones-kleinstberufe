@@ -563,7 +563,10 @@ input[type="submit"] {
   position: absolute;
   right: 3rem;
   width: 25rem;
-  text-align: right;}
+  text-align: right;
+  color: #9d3d39;
+  top: 0.6rem;
+  }
   
   div.wpcf7 .ajax-loader {
   	display: none;
@@ -571,11 +574,25 @@ input[type="submit"] {
   
   
   div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-  border: 1px solid #f7e700;
   font-size: 1.6rem;
   position: absolute;
   background-color: #ffffff;
   margin-left: 0;
+  border: 1px solid #f2ee6c;
+  border-radius: 1px;
+  top: 17.5rem;
+  }
+  
+  div.wpcf7-mail-sent-ok {
+  	font-size: 1.6rem;
+  	position: absolute;
+  	background-color: #ffffff;
+  	margin-left: 0;
+  	border: 1px solid #5b8982;
+  	border-radius: 1px;
+  	width: 82%;
+  	top: 12rem;
+  	
   }
 
 /**
@@ -616,6 +633,10 @@ input[type="search"] {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
+  
+  input {
+  	border-radius: 0;
+  }
 
 /**
  * Remove inner padding and border in Firefox 4+.
