@@ -3922,7 +3922,7 @@ tweeners.
       float: right; }
     .entry-content .aligncenter, .entry-content img.aligncenter {
       margin-right: auto;
-      margin-left: -90px auto;
+      margin-left: auto;
       display: block;
       clear: both; }
 
