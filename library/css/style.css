@@ -2426,25 +2426,35 @@ section#three {
 	padding-right: 0rem;
 }
 
-#crArchive {
+#newsletterarchiv, #crArchive {
 display: table;
 font-size: 2rem;
 width: 73rem;
 margin-left: 16.5rem;
-margin-top: 5rem;
+box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+border: solid 1px #e7eaee;
+
+}
+
+#crArchive {
+	margin-top: 5rem;
 }
 
 .crArchiveItem {
 	width: 100%;
 	display: table-row;
-	border-bottom: 1px solid #fffff;
-	border-top: 1px solid #fffff;
+	border-bottom: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
 	
 }
 
 .crArchiveItemDate, crArchiveItemName {
 	display: table-cell;
 	padding: 1rem;
+}
+
+.crArchiveItemDate {
+	width: 20%;
 }
 
 .crArchiveItem:nth-child(odd) {
@@ -3344,7 +3354,7 @@ section#three, section#one {
 }
 
 
-#crArchive {
+#newsletterarchiv, #crArchive {
 	margin-left: 2vw;
 	width: 96vw;
 }
