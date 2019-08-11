@@ -3190,8 +3190,9 @@ FOOTER STYLES
   ul.register li ul.sub-menu {
   	margin: 0;
   	padding: 0;
-  	display: inline;
-  	float: left;
+  	margin-left: 1.6rem;
+  	display: block;
+  	float: right;
   }
   
 /*
