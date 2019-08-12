@@ -289,27 +289,23 @@ external fonts. If you're using Google Fonts, you
 can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
-function add_menu_parent_class( $items ) {
-$parents = array();
-foreach ( $items as $item ) {
-    //Check if the item is a parent item
-    if ( $item->menu_item_parent && $item->menu_item_parent > 0 ) {
-        $parents[] = $item->menu_item_parent;
-    }
-}
+add_filter('nav_menu_css_class', 'add_active_class', 10, 2 );
 
-foreach ( $items as $item ) {
-    if ( in_array( $item->ID, $parents ) ) {
-        //Add "menu-parent-item" class to parents
-        $item->classes[] = 'my-parent-item';
-    }
-}
+function add_active_class($classes, $item) {
 
-return $items;
-}
+  if( $item->menu_item_parent == 0 && 
+    in_array( 'current-menu-item', $classes ) ||
+    in_array( 'current-menu-ancestor', $classes ) ||
+    in_array( 'current-menu-parent', $classes ) ||
+    in_array( 'current_page_parent', $classes ) ||
+    in_array( 'current_page_ancestor', $classes )
+    ) {
 
-//add_menu_parent_class to menu
-add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' ); 
+    $classes[] = "active";
+  }
+
+  return $classes;
+}
 
 
 function bones_fonts() {
