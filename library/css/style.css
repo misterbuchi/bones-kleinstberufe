@@ -267,7 +267,6 @@ body {
  	display: block;
  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
  	  border: solid 1px #e7eaee;
- 	  overflow: hidden;
  } 
 
 /* ==========================================================================
@@ -2252,9 +2251,11 @@ HEADER STYLES
 *********************/
 .header {
   background-color: #ffffff; 
+  position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 1001;
+  overflow-x: hidden;
 }
 #logo, #logo.h1 a, #logo img {
 	width: 19.4rem;
@@ -2327,7 +2328,6 @@ POSTS & CONTENT STYLES
 #content.page {
 	background-color: #ffffff;
 	position: relative;
-	overflow: hidden;
 }
 
 .Rectangle.pale-lilac.first {
@@ -3054,6 +3054,7 @@ SIDEBARS & ASIDES
   #top-sidebar .widget:first-child {
   	background-color: #f6f8f9;
   	width: 23.6rem;
+  	height: 5rem;
   }
   
   .qtranxs_widget ul li {
