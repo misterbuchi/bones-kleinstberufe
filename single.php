@@ -74,12 +74,9 @@
 			</div>
 			
 			<script type="text/javascript">
-				jQuery( document ).ready(function() {
-				    console.log( "ready!" );
-				
-				jQuery('.li.current-menu-parent').parent().parent().addClass('current-menu-parent');
-				
-				});
+				jQuery(function(){
+					jQuery('ul.sub-menu li.current-menu-parent').parents('li.menu-item-has-children').addClass('current-menu-parent');
+				})
 				
 			</script>
 
