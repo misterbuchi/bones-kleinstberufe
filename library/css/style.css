@@ -2255,7 +2255,6 @@ HEADER STYLES
   position: -webkit-sticky;
   top: 0;
   z-index: 1001;
-  overflow-x: hidden;
 }
 #logo, #logo.h1 a, #logo img {
 	width: 19.4rem;
@@ -2328,6 +2327,7 @@ POSTS & CONTENT STYLES
 #content.page {
 	background-color: #ffffff;
 	position: relative;
+	overflow: hidden;
 }
 
 .Rectangle.pale-lilac.first {
