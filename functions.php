@@ -289,25 +289,6 @@ external fonts. If you're using Google Fonts, you
 can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
-add_filter('nav_menu_css_class', 'add_active_class', 10, 2 );
-
-function add_active_class($classes, $item) {
-
-  if( 
-  
-  $item->menu_item_parent == 0 && 
-    in_array( 'current-menu-item', $classes ) ||
-    in_array( 'current-menu-ancestor', $classes ) ||
-    array_search('current-menu-parent', $classes ) ||
-    in_array( 'current_page_parent', $classes ) ||
-    in_array( 'current_page_ancestor', $classes )
-    ) {
-
-    $classes[] = "active";
-  }
-
-  return $classes;
-}
 
 
 function bones_fonts() {

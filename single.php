@@ -72,5 +72,10 @@
 										
 
 			</div>
+			
+			<script type="text/javascript">
+				jQuery('.li.current-menu-parent').parent().parent().addClass('current-menu-parent')
+				
+			</script>
 
 <?php get_footer(); ?>
