@@ -2457,11 +2457,11 @@ border: solid 1px #e7eaee;
 	width: 20%;
 }
 
-.crArchiveItem:nth-child(odd) {
+#crArchive.crArchiveItem:nth-last-child(odd) {
 background-color: #f6f8f9;
 }
 
-.crArchiveItem:nth-child(even) {
+#crArchive.crArchiveItem:nth-last-child(even) {
 background-color: #e7eaee;
 }
 
