@@ -334,7 +334,6 @@ add_filter( 'get_the_archive_title', function ($title) {
 function wpse_310629_nav_menu_css_class( $classes, $item, $args, $depth ) {
     if ( $depth === 0 ) {
         if ( 
-            in_array( 'current-menu-item', $classes ) || 
             in_array( 'current-menu-parent', $classes ) 
         ) {
             $classes[] = 'current-menu-parent';
