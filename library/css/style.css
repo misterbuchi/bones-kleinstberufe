@@ -2442,6 +2442,10 @@ border: solid 1px #e7eaee;
 	margin-top: 5rem;
 }
 
+#newsletterarchiv {
+	margin-bottom: 5rem;
+}
+
 .crArchiveItem {
 	width: 100%;
 	display: table-row;
