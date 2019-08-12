@@ -2415,14 +2415,14 @@ section#three {
 	padding-right: 19rem;
 }
 
-#content.page div.oda:nth-last-child(odd) p, #content.page div.oda:nth-last-child(odd) h2 {
-	padding-left: 6.5rem;
-	padding-right: 0rem;
+#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2 {
+	padding-left: 0rem;
+	padding-right: 2rem;
 	
 }
 
-#content.page div.oda:nth-last-child(even) p, #content.page div.oda:nth-last-child(even) h2 {
-	padding-left: 6.5rem;
+#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2 {
+	padding-left: 3rem;
 	padding-right: 0rem;
 }
 
