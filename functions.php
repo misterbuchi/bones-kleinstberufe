@@ -289,6 +289,16 @@ external fonts. If you're using Google Fonts, you
 can replace these fonts, change it in your scss files
 and be up and running in seconds.
 */
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-parent', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
+
+
 function bones_fonts() {
   wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i');
 }
@@ -331,13 +341,6 @@ add_filter( 'get_the_archive_title', function ($title) {
 
 });
 
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
-function special_nav_class ($classes, $item) {
-    if (in_array('current-menu-parent', $classes) ){
-        $classes[] = 'active ';
-    }
-    return $classes;
-}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
