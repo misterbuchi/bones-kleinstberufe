@@ -4320,4 +4320,16 @@ be set to display none.
   nav {
     display: none; } }
     
+    @media
+    only screen and (-webkit-min-device-pixel-ratio : 1.5),
+    only screen and (min-device-pixel-ratio : 1.5) {
+        html { font-size: 150%; }
+    }
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio : 2),
+    only screen and (min-device-pixel-ratio : 2) {
+        html { font-size: 200%; }
+    }
+    
     
