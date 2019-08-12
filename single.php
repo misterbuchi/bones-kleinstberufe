@@ -74,7 +74,12 @@
 			</div>
 			
 			<script type="text/javascript">
-				jQuery('.li.current-menu-parent').parent().parent().addClass('current-menu-parent')
+				jQuery( document ).ready(function() {
+				    console.log( "ready!" );
+				
+				jQuery('.li.current-menu-parent').parent().parent().addClass('current-menu-parent');
+				
+				});
 				
 			</script>
 
