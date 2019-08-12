@@ -2448,20 +2448,24 @@ border: solid 1px #e7eaee;
 	
 }
 
+#crArchive + p {
+	display: none;
+}
+
 .crArchiveItemDate, crArchiveItemName {
 	display: table-cell;
 	padding: 1rem;
 }
 
 .crArchiveItemDate {
-	width: 20%;
+	width: 30%;
 }
 
-#crArchive.crArchiveItem:nth-last-child(odd) {
+#newsletterarchiv .crArchiveItem:nth-last-child(even), #crArchive .crArchiveItem:nth-last-child(odd) {
 background-color: #f6f8f9;
 }
 
-#crArchive.crArchiveItem:nth-last-child(even) {
+#newsletterarchiv .crArchiveItem:nth-last-child(odd), #crArchive .crArchiveItem:nth-last-child(even) {
 background-color: #e7eaee;
 }
 
@@ -3472,12 +3476,12 @@ div.oda:nth-child(even) img {
 	margin-left: 1rem;
 }
 
-#content.page div.oda:nth-last-child(even) p, #content.page div.oda:nth-last-child(even) h2 {
+#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2 {
 padding-left: 1rem;
 padding-right: 0rem;
 }
 
-#content.page div.oda:nth-last-child(odd) p, #content.page div.oda:nth-last-child(odd) h2 {
+#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2 {
 padding-left: 1rem;
 padding-right: 0rem;
 }
