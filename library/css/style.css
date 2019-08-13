@@ -68,7 +68,30 @@ html {
 	
 
 	}
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (min-width: 1440px),
+only screen and (min-device-pixel-ratio : 1.5) and (min-width: 1440px)
+ {
+    html {
+    	font-size: 0.6944vw;
+    	
+    }
+}
 
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (min-width: 1656px),
+only screen and (min-device-pixel-ratio : 1.5) and (min-width: 1656px) {
+    html {
+    	font-size: 15px;
+    	
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 2) and (min-width: 2880px),
+only screen and (min-device-pixel-ratio : 2) and (min-width: 2880px) {
+    html { font-size: 20px; }
+}
 
 
 	
