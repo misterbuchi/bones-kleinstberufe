@@ -8,7 +8,7 @@
 				<div class="Rectangle soft-blue third"></div>
 				
 				<ul class="register">
-								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Startseite</a></li>
+								<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo __('[:de]Startseite[:fr]Accueil[:]'); ?></a></li>
 								
 								
 								
