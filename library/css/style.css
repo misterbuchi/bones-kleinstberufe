@@ -1716,8 +1716,7 @@ time.date-end::before, span.time-end::before {
 	  line-height: 1.75;
 	  letter-spacing: 0.044rem;
 	  color: #54565a;
-	  float: left;
-	  width: 66%;
+	  width: 95%;
 	font-weight: normal;
 	font-style: normal;
 	
@@ -1727,8 +1726,8 @@ time.date-end::before, span.time-end::before {
 
 .event_single address {
 	float: none;
-	width: 100%;
 	display: inline-block;
+	
 	
 }
 
@@ -1755,9 +1754,11 @@ time.date-end::after, .event_item span.time-end::after {
 	
 }
 
+
+
 span.eventpost-date-export {
 	
-	font-size: 1.2rem !important;
+	font-size: 1.4rem !important;
 }
 
 a.ics {
@@ -1779,6 +1780,7 @@ a.ics {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
 
 
 
