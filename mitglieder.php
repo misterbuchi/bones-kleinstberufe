@@ -28,10 +28,7 @@
 			<div class="Rectangle soft-purple seven"></div>
 			<div class="Rectangle deep-lilac aight"></div>
 			<div class="Rectangle greyish-brown-two nine"></div>
-			
-			
-			
-			
+
 			<ul class="register">
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo __('[:de]Startseite[:fr]Accueil[:]'); ?></a></li>
 							
