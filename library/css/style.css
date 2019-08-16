@@ -1774,8 +1774,7 @@ a.ics {
 		height: 9.5rem;
 		opacity: 0;
 		border-radius: 0;
-		padding: 1rem;
-		padding-top: 4rem;
+		
 	
 	
 }
@@ -1785,6 +1784,8 @@ a.ics:hover {
 	opacity: 1;
 	font-size: 5rem !important;
 	background-color: #a573aa;
+	padding: 1rem;
+	padding-top: 2.8rem;
 	
 }
 
@@ -1795,6 +1796,10 @@ a.ics:hover {
 	padding-bottom: 0;
 	margin-bottom: 0;
 	font-size: 1em;
+}
+
+.event_map {
+	margin-top: 1.5rem;
 }
 
 
