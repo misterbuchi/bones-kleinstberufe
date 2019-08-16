@@ -3438,9 +3438,14 @@ section#three, section#one {
 	left: 0;
 }
 
-.Rectangle.dull-red.second, .Rectangle.soft-blue.third {
+#content.page .Rectangle {
 	opacity: 0.6;
 }
+
+#content.page .Rectangle.first {
+	opacity: 1;
+}
+
 
 #content.page h1, #content.page h2, #content.page h3, #content.page h4, #content.page p, #content.page #inner-content ol, #content.page #inner-content ul  {
 	padding-left: 4.75rem;
