@@ -982,6 +982,7 @@ article.RectangleHome {
     margin-right: auto;
     overflow: hidden;
 	position: relative;
+	height: auto;
 	height: calc(100vh - 22rem);
 	min-height: 54rem;
 	
