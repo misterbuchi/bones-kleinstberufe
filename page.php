@@ -71,10 +71,10 @@
 
 						</main>
 
-
+<?php endwhile; endif; ?>
+						<?php get_sidebar(); ?>
 				</div>
-											<?php endwhile; endif; ?>
-																	<?php get_sidebar(); ?>
+											
 											
 				
 

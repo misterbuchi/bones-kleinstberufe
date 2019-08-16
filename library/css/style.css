@@ -985,10 +985,10 @@ article.RectangleHome {
 	height: auto;
 	height: calc(100vh - 22rem);
 	min-height: 54rem;
-	
 	max-height: 785px;
 	
 }
+
 
 .swiper-container-no-flexbox .swiper-slide {
     float: left;
