@@ -1764,27 +1764,37 @@ time.date-end::after, .event_item span.time-end::after {
 
 span.eventpost-date-export {
 	
-	font-size: 1.4rem !important;
 }
 
 a.ics {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: -0.6rem;
+		left: -1rem;
 		width: 9.5rem;
 		height: 9.5rem;
+		opacity: 0;
+		border-radius: 0;
+		padding: 1rem;
+		padding-top: 4rem;
 	
 	
 }
 
-
-.event_single span.eventpost-date-export {
-	font-size: 2rem !important;
+a.ics:hover {
+	color: #ffffff !important;
+	opacity: 1;
+	font-size: 5rem !important;
+	background-color: #a573aa;
+	
 }
+
+
+
 
 .event_data a.gps {
 	padding-bottom: 0;
 	margin-bottom: 0;
+	font-size: 1em;
 }
 
 
