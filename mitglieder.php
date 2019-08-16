@@ -22,7 +22,7 @@
 			<div class="Rectangle pale-lilac first"></div>
 			<div class="Rectangle dull-red second"></div>
 			<div class="Rectangle soft-blue third"></div>
-			<div class="Rectangle sick-green thourth"></div>
+			<div class="Rectangle grey-teal thourth"></div>
 			
 			
 			
