@@ -20,7 +20,9 @@
 											<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
 			<div class="Rectangle pale-lilac first"></div>
-			<div class="Rectangle dull-red second"></div>	
+			<div class="Rectangle dull-red second"></div>
+			<div class="Rectangle soft-blue third"></div>
+			
 			
 			<ul class="register">
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo __('[:de]Startseite[:fr]Accueil[:]'); ?></a></li>
@@ -134,13 +136,13 @@
 
 						</main>
 
-<?php endwhile; endif; ?>
+
 
 																	<?php get_sidebar(); ?>
 				</div>
 											
 											
-				
+				<?php endwhile; endif; ?>
 
 			</div>
 
