@@ -3380,7 +3380,7 @@ section#three, section#one {
 	left: 0;
 }
 
-.Rectangle.dull-red.second {
+.Rectangle.dull-red.second, .Rectangle.soft-blue.third {
 	opacity: 0.6;
 }
 
