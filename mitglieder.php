@@ -23,8 +23,8 @@
 			<div class="Rectangle dull-red second"></div>
 			<div class="Rectangle soft-blue third"></div>
 			<div class="Rectangle grey-teal thourth"></div>
-			
-			
+			<div class="Rectangle sick-green five"></div>
+			<div class="Rectangle yellowish six"></div>
 			
 			<ul class="register">
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo __('[:de]Startseite[:fr]Accueil[:]'); ?></a></li>

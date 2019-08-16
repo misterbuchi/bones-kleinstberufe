@@ -2393,7 +2393,7 @@ POSTS & CONTENT STYLES
   background-color: #9d3d39;
   position: absolute;
   right: 0;
-  top: 54.5rem;
+  top: 55rem;
 }
 
 .Rectangle.soft-blue.third {
@@ -2410,7 +2410,25 @@ POSTS & CONTENT STYLES
 	background-color: #5b8982;
 	position: absolute;
 	right: 0;
-	top: 206rem;
+	top: 255rem;
+}
+
+.Rectangle.sick-green.five {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: #b0ae2d;
+	position: absolute;
+	left: 0;
+	top: 355rem;
+}
+
+.Rectangle.yellowish.six {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: #f2ee6c;
+	position: absolute;
+	left: 0;
+	top: 355rem;
 }
 
 
