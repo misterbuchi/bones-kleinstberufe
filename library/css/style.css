@@ -3900,8 +3900,12 @@ section .article-header {
 	margin-right: 11rem;
 }
 
-.Rectangle.dull-red.second {
+#content.page .Rectangle {
 	opacity: 0.6;
+}
+
+#content.page .Rectangle.first {
+	opacity: 1;
 }
 
 }
