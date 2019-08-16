@@ -2450,7 +2450,14 @@ POSTS & CONTENT STYLES
 	top: 655rem;
 }
 
-
+.Rectangle.greyish-brown-two.nine {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: #624e41;
+	position: absolute;
+	left: 0;
+	top: 755rem;
+}
 
 
  #content.page article, #content.page .event_single {
