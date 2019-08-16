@@ -2427,10 +2427,28 @@ POSTS & CONTENT STYLES
 	height: 42rem;
 	background-color: #f2ee6c;
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 455rem;
 }
 
+
+.Rectangle.soft-purple.seven {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: #a573aa;
+	position: absolute;
+	left: 0;
+	top: 555rem;
+}
+
+.Rectangle.deep-lilac.aight {
+	width: 30.4rem;
+	height: 42rem;
+	background-color: #7d7bb7;
+	position: absolute;
+	right: 0;
+	top: 655rem;
+}
 
 
 
