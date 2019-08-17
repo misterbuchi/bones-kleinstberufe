@@ -3213,7 +3213,9 @@ FOOTER STYLES
   }
   
   ul.social {
-  	  	margin-top: 44.4rem;
+  	  	padding: 0;
+  	  	position: absolute;
+  	  	bottom: 0.4rem;
   	
   }
   
@@ -3505,6 +3507,8 @@ div.event_item {
 
 ul.social {
 	margin-top: 5.25rem;
+	position: static;
+	
 }
 
 .footer img.custom-logo {
@@ -3902,6 +3906,11 @@ section .article-header {
 
 #content.page .Rectangle.first {
 	opacity: 1;
+
+}
+
+.footer address {
+	padding-top: 7.5rem;
 }
 
 }
