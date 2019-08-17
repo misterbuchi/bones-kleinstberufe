@@ -10,7 +10,7 @@
 					<ul class="social">
 						<li><a href="https://www.instagram.com/kleinstberufe/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Instagram.svg" title="Instagram" alt="Instagram" /></a></li>
 						<li><a href="https://www.facebook.com/Kleinstberufe" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Facebook.svg" alt="Facebook" title="Facebook" /></a></li>
-						<li><a href="https://www.youtube.com/channel/UCxYoE0effZWLg3EC7XHYxvg/videos?shelf_id=0&view=0&sort=dd" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Youtube.svg" alt="Facebook" title="Facebook" /></a>	</li>
+						<li><a href="https://www.youtube.com/channel/UCxYoE0effZWLg3EC7XHYxvg/videos?shelf_id=0&view=0&sort=dd" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Youtube.svg" alt="Youtube" title="Youtube" /></a>	</li>
 					</ul>
 					
 				</div>
