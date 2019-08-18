@@ -47,9 +47,13 @@
 						                    <?php while(have_posts()) : the_post();
 						                    ?>
 											
+											<a href="<?php get_post_meta($post->ID, 'link', true) ?>"
 						
 						
-						                        <?php the_post_thumbnail('sponsoren') ?>
+						                        <?php 
+						                        
+						                        
+						                        the_post_thumbnail('sponsoren') ?></a>
 						
 						
 						                    <?php
