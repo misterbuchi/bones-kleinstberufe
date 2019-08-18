@@ -62,10 +62,10 @@
 						                        <?php 
 						                        
 						                        
-						                        the_post_thumbnail('sponsoren') ?></a>
+						                        the_post_thumbnail('sponsoren'); ?></a>
 						
 						
-						                    <?php }
+						                    <?php } endif;
 						                    endwhile;
 						                    wp_reset_query();
 						                    ?>
