@@ -3201,6 +3201,7 @@ FOOTER STYLES
  	width: 60%;
  	float: left;
  	padding-top: 6.1rem;
+ 	height: 53.8rem;
  }
  
  
@@ -3234,21 +3235,25 @@ FOOTER STYLES
   	filter: invert(1)
   }
   
+  .sponsoren {
+  	display: flex;
+  	height: 6rem;
+  }
   
   .sponsoren img {
   	max-width: 15.3rem;
   	height: auto;
-  	margin-right: 1rem;
-	float: left;
-	padding: 0.5rem;
+	display: inline-flex;
+	justify-content: space-evenly;
+	padding-right: 1.5rem;
 
   }
   
 
   
   .footer address {
-  	clear: both;
-  	padding-top: 5.5rem;
+  	position: absolute;
+  	bottom: 0;
   }
   
   
@@ -3824,6 +3829,7 @@ section#one .newsbox:nth-child(3), section#two .newsbox:nth-child(3) {
 }
 .footer .wrap {
 	width: 75%;
+	
 }
 
 section#three {
