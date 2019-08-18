@@ -3282,6 +3282,15 @@ FOOTER STYLES
   	
   }
   
+  .footer address span, .footer address span p {
+  	font-size: 1.4rem;
+  	height: 2.4rem;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	
+  }
+  
+  
   .footer address span p:empty {
   	display: none;
   }
@@ -3537,6 +3546,7 @@ top: 2rem;
 	width: 100%;
 	padding-left: 4.75rem;
 	padding-right: 4.75rem;
+	height: 44.5rem;
 }
 
 .sponsoren img {
@@ -3546,13 +3556,6 @@ top: 2rem;
 .footer address {
 	padding-top: 2rem;
 	font-size: 1.4rem;
-}
-.footer address span, .footer address span p {
-	font-size: 1.4rem;
-	height: 2.4rem;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	
 }
 
 #inner-header {
