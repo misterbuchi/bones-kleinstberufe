@@ -3162,6 +3162,7 @@ SIDEBARS & ASIDES
   #sidebar1 {
   	background-color: #45436e;
   	text-align: center;
+  	padding-bottom: 2rem;
 }
   
   #sidebar1 p a {
@@ -3573,9 +3574,9 @@ top: 2rem;
 	top: 10px;
 }
 
-.oda {
+div.oda {
 	width: 100vw !important;
-	margin: 3.5rem 0 0;
+	margin: 8.4rem 0 0;
 	position: relative;
 }
 
@@ -3868,8 +3869,9 @@ ul.register {
 
 
 
-.oda {
+div.oda {
 	width: 100vw !important;
+	margin: 10.2rem 0 0;
 }
 
 .oda img {
