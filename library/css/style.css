@@ -3239,7 +3239,10 @@ FOOTER STYLES
   	max-width: 15.3rem;
   	height: auto;
   	margin-right: 1rem;
-	float: left;  }
+	float: left;
+	padding: 0.5rem;
+
+  }
   
 
   
