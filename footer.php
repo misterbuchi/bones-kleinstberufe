@@ -56,7 +56,7 @@
 											
 											
 											
-											<a href="<?php echo $spons_link; ?>">
+											<a href="<?php echo $spons_link; ?>" target="_blank">
 						
 						
 						                        <?php 

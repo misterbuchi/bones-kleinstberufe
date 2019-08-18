@@ -3236,7 +3236,7 @@ FOOTER STYLES
   	filter: invert(1)
   }
   
-  .sponsoren {
+  .sponsoren{
   	display: -webkit-box; 
   	display: -moz-box;
   	display: -ms-flexbox;
@@ -3246,7 +3246,8 @@ FOOTER STYLES
   	width: 100%;
   }
   
-  .sponsoren img {
+ 
+  .sponsoren img, .sponsoren a {
   	width: 16.6%;
   	height: auto;
 	display: -webkit-inline-box;
@@ -3257,6 +3258,12 @@ FOOTER STYLES
 	        justify-content: space-evenly;
 	padding-right: 2.5rem;
 
+  }
+  
+  .sponsoren a img {
+  	display: block;
+  	width: 100%;
+  	padding: 0;
   }
   
 
