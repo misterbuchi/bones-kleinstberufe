@@ -3257,7 +3257,15 @@ FOOTER STYLES
 	    -ms-flex-pack: space-evenly;
 	        justify-content: space-evenly;
 	padding-right: 2.5rem;
+		-webkit-filter: grayscale(100%);
+	           filter: grayscale(100%)
 
+  }
+  
+ 
+  .sponsoren img:hover, .sponsoren a:hover {
+  	-webkit-filter: grayscale(0%);
+  	           filter: grayscale(0%)
   }
   
   .sponsoren a img {
