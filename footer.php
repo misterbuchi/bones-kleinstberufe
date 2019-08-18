@@ -45,9 +45,18 @@
 						                    						                    <div class="sponsoren">
 						                    
 						                    <?php while(have_posts()) : the_post();
-						                    ?>
+						                    
+						                    $spons_link = get_post_meta($post->ID, 'Link', true)
+						                    if ( empty($spons_link)) {
+						                    
+					                    	the_post_thumbnail('sponsoren');
+					                    } else {
+				                    	
+				                    ?>
 											
-											<a href="<?php echo get_post_meta($post->ID, 'Link', true) ?>">
+											
+											
+											<a href="<?php echo $spons_link ?>">
 						
 						
 						                        <?php 
@@ -56,7 +65,7 @@
 						                        the_post_thumbnail('sponsoren') ?></a>
 						
 						
-						                    <?php
+						                    <?php }
 						                    endwhile;
 						                    wp_reset_query();
 						                    ?>
