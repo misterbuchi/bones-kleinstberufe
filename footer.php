@@ -47,7 +47,7 @@
 						                    <?php while(have_posts()) : the_post();
 						                    ?>
 											
-											<a href="<?php get_post_meta($post->ID, 'Link', true) ?>">
+											<a href="<?php echo get_post_meta($post->ID, 'Link', true) ?>">
 						
 						
 						                        <?php 
