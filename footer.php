@@ -56,7 +56,7 @@
 											
 											
 											
-											<a href="<?php echo $spons_link ?>">
+											<a href="<?php echo $spons_link; ?>">
 						
 						
 						                        <?php 
@@ -65,7 +65,7 @@
 						                        the_post_thumbnail('sponsoren'); ?></a>
 						
 						
-						                    <?php } endif;
+						                    <?php } 
 						                    endwhile;
 						                    wp_reset_query();
 						                    ?>
