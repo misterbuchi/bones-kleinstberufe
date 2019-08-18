@@ -3241,11 +3241,12 @@ FOOTER STYLES
   	display: -ms-flexbox;
   	display: -webkit-flex; 
   	display: flex;
-  	height: 6rem;
+  	height: 7rem;
+  	width: 100%;
   }
   
   .sponsoren img {
-  	max-width: 15.3rem;
+  	width: 20%;
   	height: auto;
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -3253,7 +3254,7 @@ FOOTER STYLES
 	-webkit-box-pack: space-evenly;
 	    -ms-flex-pack: space-evenly;
 	        justify-content: space-evenly;
-	padding-right: 1.5rem;
+	padding-right: 2.5rem;
 
   }
   
@@ -3549,9 +3550,11 @@ top: 2rem;
 	height: 44.5rem;
 }
 
-.sponsoren img {
-	max-width: 11.2rem;
+#sponsoren h4 {
+	margin-bottom: 2rem;
 }
+
+
 
 .footer address {
 	padding-top: 2rem;
@@ -3825,10 +3828,7 @@ section#one .newsbox:nth-child(3), section#two .newsbox:nth-child(3) {
 	display: none;
 }
 
-.sponsoren img {
-	max-width: 12rem;
-	margin-right: 1rem;
-}
+
 
 .footer .column-1 {
 	padding-left: 5rem;
