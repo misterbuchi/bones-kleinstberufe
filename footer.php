@@ -46,7 +46,7 @@
 						                    
 						                    <?php while(have_posts()) : the_post();
 						                    
-						                    $spons_link = get_post_meta($post->ID, 'Link', true)
+						                    $spons_link = get_post_meta($post->ID, 'Link', true);
 						                    if ( empty($spons_link)) {
 						                    
 					                    	the_post_thumbnail('sponsoren');
