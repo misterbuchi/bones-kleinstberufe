@@ -2242,7 +2242,7 @@ a, a:visited {
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
+  a h5:hover, a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #a573aa; }
   a:link, a:visited:link {
     /*
