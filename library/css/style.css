@@ -1035,6 +1035,7 @@ article.RectangleHome {
     display: flex;
     object-fit: cover;
     margin: 0 auto;
+	max-width: 100%;
 }
 
 /* END vri */
@@ -3458,7 +3459,7 @@ p {
 	font-size: 2rem;
 }	
 .swiper-slide img, .swiper-container, #slider-replacement {
-	height: 54rem;
+	height: 47.5rem;
 }
 
 .swiper-slide img {
@@ -3932,7 +3933,7 @@ div.event_item {
 }
 
 .swiper-container, #slider-replacement {
-	height: 54rem;
+	height: 47.5rem;
 }
 
 #content.page .article-header {
