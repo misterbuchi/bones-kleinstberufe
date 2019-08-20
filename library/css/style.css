@@ -2454,9 +2454,7 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 	text-align: center;
 	margin-bottom: 3.7rem;
 }
-#content.page h1 {
-	text-align: left;
-}
+
 
 #content.page #sidebar1 h1 {
 	text-align: center;
