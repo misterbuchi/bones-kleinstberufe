@@ -3815,6 +3815,10 @@ label.button svg {
 	margin: 0;
 }
 
+#top-sidebar p {
+	padding-top: 0.5rem;
+}
+
 
 
 
@@ -3978,7 +3982,7 @@ div.event_item {
 }
 
 section .article-header {
-	margin-top: 6rem;
+	margin-top: 8rem;
 }
 
 .entry-content .alignright, .entry-content img.alignright {
