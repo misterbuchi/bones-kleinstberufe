@@ -2667,7 +2667,7 @@ section .taxonomy-description p {
   	  overflow: hidden;
   	      text-overflow: ellipsis;
   	  position: relative;
-  	  margin-bottom: 7rem;
+  	  margin-bottom: 2rem;
   }
   
   .newsbox::after {
