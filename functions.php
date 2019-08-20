@@ -71,7 +71,7 @@ add_filter( 'excerpt_length', function($length) {
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 1110;
+	$content_width = 2220;
 }
 
 /************* THUMBNAIL SIZE OPTIONS *************/
@@ -79,12 +79,12 @@ if ( ! isset( $content_width ) ) {
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
-add_image_size( 'slider-home', 1440, 785, true );
-add_image_size( 'slider-contend', 1110, 465, true );
-add_image_size( 'home-medium', 630, 414, true );
-add_image_size( 'home-small', 350, 220, true );
-add_image_size( 'sponsoren', 153, 66 );
-add_image_size( 'oda', 630, 414, true );
+add_image_size( 'slider-home', 2880, 1570, true );
+add_image_size( 'slider-contend', 2220, 930, true );
+add_image_size( 'home-medium', 1260, 828, true );
+add_image_size( 'home-small', 700, 440, true );
+add_image_size( 'sponsoren', 306, 132 );
+add_image_size( 'oda', 1260, 828, true );
 
 
 
