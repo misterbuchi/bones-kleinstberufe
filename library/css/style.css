@@ -3762,13 +3762,16 @@ ul#menu-hauptmenu {
 transform: none;
 margin: 0;
 padding: 0;
+margin-top: 72px;
 }
 ul#menu-hauptmenu li a{
 	margin: 0;
 	padding: 0;
+	padding-left: 32px;
 	font-size: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align: left;
 	
 	
 }
@@ -3783,6 +3786,7 @@ ul#menu-hauptmenu ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	
 }
 
 ul#menu-hauptmenu li{
