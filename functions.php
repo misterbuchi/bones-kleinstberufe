@@ -64,7 +64,7 @@ function bones_ahoy() {
 add_action( 'after_setup_theme', 'bones_ahoy' );
 
 add_filter( 'excerpt_length', function($length) {
-    return 29;
+    return 28;
 } );
 
 
