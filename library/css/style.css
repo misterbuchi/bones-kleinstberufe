@@ -69,7 +69,7 @@ html {
 	
 	
 h1 {
-  font-family: rubik;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 4.8rem;
   font-style: normal;
@@ -80,7 +80,7 @@ h1 {
   text-align: left;
 }
 h2 {
-  font-family: Rubik;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 3.4rem;
   font-weight: normal;
   font-style: normal;
@@ -91,7 +91,7 @@ h2 {
   text-align: left;
 }
 h4 {
-  font-family: Rubik;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.4rem;
   font-weight: normal;
   font-style: normal;
@@ -2806,7 +2806,7 @@ section .taxonomy-description p {
     
     blockquote p {
 		font-size: 4.8rem;
-			font-family: Rubik;
+			font-family: 'Source Sans Pro', sans-serif;
 			font-weight: 300;
 			  font-style: normal;
 			  font-stretch: normal;
