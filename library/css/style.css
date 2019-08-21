@@ -1581,12 +1581,11 @@ button.swiper-pagination-bullet {
 .event_list {
 	column-count: 2;
 	margin-bottom: 5rem;
-	column-gap: 5rem
+	column-gap: 5rem;
+	margin-top: 8rem;
 }
 
-#content.page .event_list {
-	margin-top: 5rem;
-}
+
 
 .event_single {
 	position: relative;
