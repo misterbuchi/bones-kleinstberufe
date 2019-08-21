@@ -3495,6 +3495,11 @@ section#three, section#one {
 	padding: 0;
 }
 
+section#three {
+	padding-top: 3.7rem;
+	padding-bottom: 3.7rem;
+}
+
 .Rectangle.pale-lilac.first, section#two .Rectangle {
 	left: 0;
 }
@@ -3564,6 +3569,7 @@ section#two .newsbox {
 
 .event_list {
 	column-count: 1;
+	padding-top: 2.4rem;
 	
 }
 
