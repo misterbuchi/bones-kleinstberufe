@@ -2651,6 +2651,10 @@ section .taxonomy-description p {
   	margin-top: 0;
   }
   
+  #content.page .newsbox p.news-meta {
+  	margin-top: 0.8rem;
+  }
+  
   .newsbox .custom-logo-link img {
   	height: 16rem;
   	margin: 4rem 2rem ;
