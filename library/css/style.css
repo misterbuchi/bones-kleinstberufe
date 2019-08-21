@@ -3467,6 +3467,7 @@ h3 {
 }
 .swiper-slide img, .swiper-container, #slider-replacement {
 	height: 47.5rem;
+	min-height: 47.5rem;;
 }
 
 .swiper-slide img {
