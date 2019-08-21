@@ -95,5 +95,12 @@
 					</nav>
 
 				</div>
+<?php if (is_home()) { } else {
+	
+?>
 
+<script>
+window.location.hash = '#section_main';	
+</script>
+<?php } ?>
 			</header>
