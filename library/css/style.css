@@ -956,7 +956,7 @@ article.RectangleHome {
 	position: relative;
 	height: auto;
 	height: calc(100vh - 22rem);
-	min-height: 47.5rem;
+	min-height: 54rem;
 	max-height: 785px;
 	
 }
@@ -1035,7 +1035,8 @@ article.RectangleHome {
     display: flex;
     object-fit: cover;
     margin: 0 auto;
-	max-width: 100%;
+	width: 100vw;
+	max-width: 2880px;
 }
 
 /* END vri */
@@ -2647,9 +2648,8 @@ section .taxonomy-description p {
   }
   
   .newsbox .custom-logo-link img {
-  	width: 34rem;
-  	height: 22rem;
-  	margin-bottom: 2.5rem;
+  	height: 16rem;
+  	margin: 4rem 2rem ;
   }
   
   .newsbox h3 a {
@@ -2825,7 +2825,7 @@ section .taxonomy-description p {
     height: auto; }
  
  .newsbox  img {
- 	height: 22vw;
+ 	max-height: 15vw;
  	object-fit: cover 
  }
  
@@ -3544,12 +3544,14 @@ section#two .newsbox {
 
 .newsbox img {
 	width: 100%;
-	height: 48vw;
+	max-height: 48vw;
 }
 
 .newsbox .custom-logo-link img {
 	width: 56rem;
-	height: 28rem;
+	height:  28rem;
+	max-height: 29rem;
+	margin:0;
 	margin-bottom: 10rem;
 }
 
@@ -3577,9 +3579,14 @@ div.event_item {
 }
 
 ul.social {
-	margin-top: 5.25rem;
+	margin-top: 2.8rem;
 	position: static;
 	
+}
+
+ul.social li, ul.social li img, ul.social li a::after{
+	height: 4.8rem;
+	width: 4.8rem;
 }
 
 .footer img.custom-logo {
@@ -4000,6 +4007,10 @@ section .article-header {
 
 .footer address {
 	padding-top: 7.5rem;
+}
+
+.newsbox img {
+	max-height: 21.5rem;
 }
 
 }
