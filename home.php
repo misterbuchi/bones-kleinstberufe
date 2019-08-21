@@ -30,7 +30,7 @@
 							        while(have_posts()) : the_post();
 							        ?>
 							
-							        <div class="swiper-slide">
+							        <div class="swiper-slide" data-swiper-autoplay="3000">
 							
 							            <?php the_post_thumbnail('slider-home') ?>
 							
