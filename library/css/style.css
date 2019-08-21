@@ -957,7 +957,7 @@ article.RectangleHome {
 	height: auto;
 	height: calc(100vh - 22rem);
 	min-height: 54rem;
-	max-height: 785px;
+	max-height: 1570px;
 	
 }
 
@@ -4015,9 +4015,6 @@ div.event_item {
 	width: 48rem;
 }
 
- .event_location {
-	width: 60%;
-}
 
 .swiper-container, #slider-replacement {
 	height: 47.5rem;
