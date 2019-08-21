@@ -3577,6 +3577,7 @@ section#two .newsbox {
 .event_list {
 	column-count: 1;
 	padding-top: 2.4rem;
+	margin-top: 0;
 	
 }
 
