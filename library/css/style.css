@@ -2829,10 +2829,7 @@ section .taxonomy-description p {
  	object-fit: cover 
  }
  
- .size-large img {
- 	width: 111rem;
- 	height: auto;
- }
+
   .entry-content .size-auto,
   .entry-content .size-full,
   .entry-content .size-large,
@@ -2847,7 +2844,10 @@ section .taxonomy-description p {
     padding: 1.5em;
     margin: 0 0 1.5em;
     }
-    
+    .size-large img {
+    	width: 111rem;
+    	height: auto;
+    }
     .entry-content iframe {
 		max-width: 100%;
 		padding-left: -19rem;
