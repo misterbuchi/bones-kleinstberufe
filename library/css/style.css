@@ -2844,7 +2844,7 @@ section .taxonomy-description p {
     padding: 1.5em;
     margin: 0 0 1.5em;
     }
-    .size-large img {
+    .size-large, .size-large img {
     	width: 111rem;
     	height: auto;
     }
