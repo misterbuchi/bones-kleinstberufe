@@ -95,8 +95,8 @@
 					</nav>
 
 				</div>
-<?php if (is_home()) { } else {
+<?php if (is_home()) {  } else {
 	
-echo("<script> window.location.hash = '#inner-header';</script>"
+echo("<script> window.location.hash = '#inner-header';</script>");
  } ?>
 			</header>
