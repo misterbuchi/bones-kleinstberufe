@@ -2350,53 +2350,44 @@ POSTS & CONTENT STYLES
 	position: relative;
 	overflow: hidden;
 }
+#content.page .Rectangle{
+	width: 30.4rem;
+	height: 42rem;
+	 position: absolute;
+	
+}
 
-.Rectangle.pale-lilac.first {
+#content.page .Rectangle.pale-lilac.first {
   width: 42rem;
   height: 26rem;
   background-color: #e3e2e4;
-  position: absolute;
   top: 0;
   left: 26rem;
 }
 .Rectangle.dull-red.second {
-  width: 30.4rem;
-  height: 42rem;
   background-color: #9d3d39;
-  position: absolute;
   right: 0;
   top: 55rem;
 }
 
 .Rectangle.soft-blue.third {
-	position: absolute;
 	background-color: #81a5d6;
-	height: 42rem;
-	width: 30.4rem;
 	top: 155rem;
 }
 
 .Rectangle.grey-teal.thourth {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #5b8982;
-	position: absolute;
 	right: 0;
 	top: 255rem;
 }
 
 .Rectangle.sick-green.five {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #b0ae2d;
-	position: absolute;
 	left: 0;
 	top: 355rem;
 }
 
 .Rectangle.yellowish.six {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #f2ee6c;
 	position: absolute;
 	right: 0;
@@ -2405,28 +2396,19 @@ POSTS & CONTENT STYLES
 
 
 .Rectangle.soft-purple.seven {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #a573aa;
-	position: absolute;
 	left: 0;
 	top: 555rem;
 }
 
 .Rectangle.deep-lilac.aight {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #7d7bb7;
-	position: absolute;
 	right: 0;
 	top: 655rem;
 }
 
 .Rectangle.greyish-brown-two.nine {
-	width: 30.4rem;
-	height: 42rem;
 	background-color: #624e41;
-	position: absolute;
 	left: 0;
 	top: 755rem;
 }
@@ -3507,17 +3489,15 @@ section#three {
 	padding-bottom: 3.7rem;
 }
 
-.Rectangle.pale-lilac.first, section#two .Rectangle {
+#content.page .Rectangle.pale-lilac.first, section#two .Rectangle {
 	left: 0;
 }
 
 #content.page .Rectangle {
-	opacity: 0.4;
+	width: 4rem;
 }
 
-#content.page .Rectangle.first {
-	opacity: 1;
-}
+
 
 
 #content.page h1, #content.page h2, #content.page h3, #content.page h4, #content.page p, #content.page #inner-content ol, #content.page #inner-content ul  {
@@ -4045,11 +4025,11 @@ section .article-header {
 }
 
 #content.page .Rectangle {
-	opacity: 0.4;
+	width: 18rem;
 }
 
-#content.page .Rectangle.first {
-	opacity: 1;
+#content.page .Rectangle.pale-lilac.first {
+	left: 9rem;
 
 }
 
