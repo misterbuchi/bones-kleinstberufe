@@ -97,10 +97,6 @@
 				</div>
 <?php if (is_home()) { } else {
 	
-?>
-
-<script>
-window.location.hash = '#inner-header';	
-</script>
-<?php } ?>
+echo("<script> window.location.hash = '#inner-header';</script>"
+ } ?>
 			</header>
