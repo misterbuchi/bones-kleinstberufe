@@ -100,7 +100,7 @@
 ?>
 
 <script>
-window.location.hash = '#section_main';	
+window.location.hash = '#inner-header';	
 </script>
 <?php } ?>
 			</header>
