@@ -2350,7 +2350,7 @@ POSTS & CONTENT STYLES
 
 .Rectangle.pale-lilac.first {
   width: 42rem;
-  height: 42rem;
+  height: 26rem;
   background-color: #e3e2e4;
   position: absolute;
   top: 0;
@@ -2708,6 +2708,8 @@ section .taxonomy-description p {
   	display: inline-block;
   	background-color: #f6f8f9;
   }
+  
+ 
   
 
   
@@ -3627,45 +3629,56 @@ top: 2rem;
 	margin-left: 2.6rem;
 	position: absolute;
 	width: 105px;
-	top: 10px;
-}
+	top: 10px;}
 
 div.oda {
-	width: 100vw !important;
-	margin: 8.4rem 0 0;
+	width: 62rem;
+	margin: 4.8rem 4.8rem 0;
 	position: relative;
-}
+	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+		  border: solid 1px #e7eaee;
+		  background-color: #ffffff;
+		  padding-bottom: 2.8rem;
+		  		  	  
+		  }
+		  
+		 .oda::after {
+		  	content: '';
+		  	width: 4rem;
+		  	  height: .6rem;
+		  	  background-color: #45436e;
+		  	  position: absolute;
+		  	  bottom: 0;
+		  	  left: 0;
+		  	  transition: width .3s;
+		  }
+		  
+		  .oda:hover::after {
+		  	width: 100%;
+		  }
 
-.oda img {
-	width: 50vw !important;
+
+.oda img, div.oda:nth-child(even) img, div.oda:nth-child(odd) img {
+	width: 100%;
 	height: 41.4rem;
 	object-fit: cover;
+	margin-bottom: 4.8rem;
 }
 
 .oda h2 {
-	font-size: 2.4rem;
-	margin-top: 0.8rem;
+	font-size: 2.8rem;
 	margin-bottom: 0.8rem;
+	
+}
+
+.oda p, .oda h2, .oda h4 {
+	padding-right: 1.8rem !important;
+		padding-left: 1.8rem !important;
 }
 
 
-div.oda:nth-child(odd) img {
-	margin-right: 1rem;
-}
 
-div.oda:nth-child(even) img {
-	margin-left: 1rem;
-}
 
-#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2 {
-padding-left: 1rem;
-padding-right: 0rem;
-}
-
-#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2 {
-padding-left: 1rem;
-padding-right: 0rem;
-}
 
 .header .wrap {
 	position: static;
@@ -3812,7 +3825,7 @@ ul#menu-hauptmenu li:last-child, ul#menu-hauptmenu ul li:last-child {
 }
 
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .field {
-	width: 100%;
+	width: 90%;
 	display: block;
 }
 
@@ -3826,9 +3839,23 @@ label.button svg {
 	height: 0;
 	margin: 0;
 }
+#top-sidebar, #top-sidebar .widget:first-child {
+	height: 45px;
+}
 
-#top-sidebar p {
-	padding-top: 0.5rem;
+#top-sidebar .widget:first-child {
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+#top-sidebar p, .qtranxs_widget ul {
+	padding-top: 10px;
+}
+
+#top-sidebar .widget a, #top-sidebar .widget p a, #top-sidebar .widget p {
+	font-size: 16px;
 }
 
 
@@ -3940,6 +3967,7 @@ section#three {
 
 .Rectangle.pale-lilac.first {
 	left: 10rem;
+	height: 18rem;
 }
 
 ul.register {
