@@ -3868,6 +3868,10 @@ label.button svg {
 	font-size: 16px;
 }
 
+.swiper-pagination {
+	display: none;
+}
+
 
 
 
