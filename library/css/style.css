@@ -212,6 +212,7 @@ nav,
 section,
 summary {
   display: block; }
+  
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
@@ -4017,9 +4018,7 @@ section .article-header {
 	margin-top: 8rem;
 }
 
-.entry-content .alignright, .entry-content img.alignright {
-	margin-right: 11rem;
-}
+
 
 #content.page .Rectangle {
 	width: 18rem;
