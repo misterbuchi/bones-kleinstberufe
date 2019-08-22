@@ -51,7 +51,7 @@
     <?php dynamic_sidebar( 'sidebartop' ); ?>
 <?php endif; ?>
 </div>
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header id="main-header" class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 				
 
 				<div id="inner-header" class="wrap cf">

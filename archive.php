@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<script> window.location.hash = '#inner-header';</script>
+<script> window.location.hash = '#main-header';</script>
 
 			<div id="content" class="page">
 				
