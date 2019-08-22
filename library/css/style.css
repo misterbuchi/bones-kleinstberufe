@@ -955,7 +955,6 @@ article.RectangleHome {
     overflow: hidden;
 	position: relative;
 	height: auto;
-	height: calc(100vh - 22rem);
 	min-height: 54rem;
 	max-height: 1570px;
 	
