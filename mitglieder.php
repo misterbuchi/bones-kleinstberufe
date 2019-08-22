@@ -15,6 +15,7 @@
 
 
 <?php get_header(); ?>
+<script> window.location.hash = '#main-header';</script>
 
 			<div id="content" class="page">
 											<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
