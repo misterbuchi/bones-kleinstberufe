@@ -3148,7 +3148,7 @@ SIDEBARS & ASIDES
   
   .qtranxs_widget ul li {
   	text-transform: uppercase;
-  	padding: 0 1.2rem 0 0;
+  	padding: 0 2.4rem 0 0;
   	height: 5rem;
   }
   
@@ -3868,13 +3868,17 @@ label.button svg {
 
 #top-sidebar .widget:first-child {
 	width: auto;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 
 #top-sidebar p, .qtranxs_widget ul {
 	padding-top: 10px;
+}
+
+.qtranxs_widget ul li {
+	padding-right: 25px;
 }
 
 #top-sidebar .widget a, #top-sidebar .widget p a, #top-sidebar .widget p {
