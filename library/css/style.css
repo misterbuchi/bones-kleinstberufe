@@ -926,7 +926,7 @@ article.RectangleHome {
 	 border-radius: 1px;
 	 background-color: #7d7bb7;
 	 display: block;
-	 padding: 1.5rem;
+	 padding: 1.6rem;
 	 opacity: 0.87;
 	 font-family: Lato;
 	 font-size: 1.6rem;
@@ -3599,7 +3599,11 @@ top: 2rem;
 	width: 100%;
 	padding-left: 4.75rem;
 	padding-right: 4.75rem;
-	height: 44.5rem;
+	height: 47rem;
+}
+
+.footer {
+	height: 56rem;
 }
 
 #sponsoren {
