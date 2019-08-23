@@ -2448,9 +2448,14 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 }
 
 
-#content.page #sidebar1 h1 {
+#content.page #sidebar1 h1,  {
 	text-align: center;
 	margin-bottom: 2rem;
+}
+
+.category #content.page h1 {
+	text-align: left;
+	margin-bottom: 11rem;
 }
 
 section#one, section#three {
