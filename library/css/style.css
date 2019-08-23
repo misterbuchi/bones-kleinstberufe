@@ -914,6 +914,10 @@ article.RectangleHome {
 
 #sidebar1 h1, #sidebar1 p, .RectangleHome h1, .RectangleHome p {
 	color: #ffffff !important;
+}
+
+#sidebar1 h1, #sidebar1 p {
+	color: #ffffff !important;
 	text-align: center !important;
 }
 
