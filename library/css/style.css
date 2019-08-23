@@ -3868,8 +3868,8 @@ label.button svg {
 
 #top-sidebar .widget:first-child {
 	width: auto;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 
@@ -3878,7 +3878,7 @@ label.button svg {
 }
 
 .qtranxs_widget ul li {
-	padding-right: 25px;
+	padding-right: 20px;
 }
 
 #top-sidebar .widget a, #top-sidebar .widget p a, #top-sidebar .widget p {
