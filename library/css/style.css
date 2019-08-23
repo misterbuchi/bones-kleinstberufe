@@ -3181,7 +3181,7 @@ FOOTER STYLES
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
   	  border: solid 1px #e7eaee;
-  	  height: 53.2rem;
+  	  height: 55.2rem;
  }
  
  .footer .column-1 {
@@ -3213,7 +3213,7 @@ FOOTER STYLES
   ul.social {
   	  	padding: 0;
   	  	position: absolute;
-  	  	bottom: 0.4rem;
+  	  	bottom: 2.6rem;
   	
   }
   
@@ -3589,7 +3589,7 @@ div.event_item {
 }
 
 ul.social {
-	margin-top: 2.8rem;
+	margin-top: 4rem;
 	position: static;
 	
 }
@@ -3613,7 +3613,7 @@ top: 2rem;
 }
 
 .footer {
-	height: 56rem;
+	height: 57rem;
 }
 
 #sponsoren {
