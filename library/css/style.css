@@ -914,6 +914,7 @@ article.RectangleHome {
 
 #sidebar1 h1, #sidebar1 p, .RectangleHome h1, .RectangleHome p {
 	color: #ffffff !important;
+	text-align: center !important;
 }
 
 
@@ -2448,14 +2449,15 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 }
 
 
-#content.page #sidebar1 h1,  {
-	text-align: center;
-	margin-bottom: 2rem;
-}
+
 
 .category #content.page h1 {
-	text-align: left;
 	margin-bottom: 11rem;
+}
+
+#content.page #sidebar1 h1,  {
+	text-align: center !important;
+	margin-bottom: 2rem;
 }
 
 section#one, section#three {
