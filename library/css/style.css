@@ -2358,11 +2358,11 @@ POSTS & CONTENT STYLES
 }
 
 #content.page .Rectangle.pale-lilac.first {
-  width: 42rem;
-  height: 26rem;
+  width: 30.4rem;
+  height: 42rem;
   background-color: #e3e2e4;
   top: 0;
-  left: 26rem;
+  left: 0rem;
 }
 .Rectangle.dull-red.second {
   background-color: #9d3d39;
@@ -2699,6 +2699,7 @@ section .taxonomy-description p {
   	height: auto;
   	display: inline-block;
   	background-color: #f6f8f9;
+  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
   }
   
  
@@ -2710,6 +2711,8 @@ section .taxonomy-description p {
   	width: 65rem;
   	margin-right: 3.5rem;
   	margin-bottom: 0;
+  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+  	
   }
   
   div.oda:nth-child(even) img {
@@ -2717,6 +2720,8 @@ section .taxonomy-description p {
   	width: 65rem;
   	margin-left: 3.5rem;
   	margin-bottom: 0;
+  	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+  	
   }
   
   .oda a {
@@ -3496,6 +3501,11 @@ section#three {
 	left: 0;
 }
 
+#content.page .Rectangle.pale-lilac.first {
+	width: 50%;
+	height: 19rem;
+}
+
 #content.page .Rectangle {
 	width: 4rem;
 }
@@ -3663,6 +3673,7 @@ div.oda {
 	width: 100%;
 	object-fit: cover;
 	margin-bottom: 4.8rem;
+	
 }
 
 .oda h2 {
@@ -4028,7 +4039,8 @@ section .article-header {
 }
 
 #content.page .Rectangle.pale-lilac.first {
-	left: 9rem;
+	left: 0;
+	width: 18rem;
 
 }
 
