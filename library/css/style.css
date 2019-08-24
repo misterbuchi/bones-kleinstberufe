@@ -2363,7 +2363,7 @@ POSTS & CONTENT STYLES
 }
 
 #content.page .Rectangle.pale-lilac.first {
-  width: 36.4rem;
+  width: 36.5rem;
   height: 42rem;
   background-color: #e3e2e4;
   top: 0;
@@ -4082,6 +4082,13 @@ section .article-header {
 }
 
 }
+/*Very small Mobile */
+@media (max-width: 400px) {
+	#top-sidebar .widget:first-child {
+		display: none;
+	}
+}
+
 /* Landscape to small desktop */
 @media (min-width: 1000px) {
   .d-all {
