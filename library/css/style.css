@@ -4083,7 +4083,7 @@ section .article-header {
 
 }
 /*Very small Mobile */
-@media (max-width: 400px) {
+@media (max-width: 350px) {
 	#top-sidebar .widget:first-child {
 		display: none;
 	}
