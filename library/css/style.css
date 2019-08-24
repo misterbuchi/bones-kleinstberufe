@@ -3971,6 +3971,7 @@ label.button svg {
 }
 article.RectangleHome {
 	opacity: 0.8;
+	right: 4rem;
 }
 
 section#one .newsbox:nth-child(3), section#two .newsbox:nth-child(3) {
