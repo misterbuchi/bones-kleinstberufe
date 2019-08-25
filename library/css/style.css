@@ -58,13 +58,9 @@ html {
 }
 
 
-@media all and (min-width: 2880px;) {
+@media (min-width: 2880px) {
     html { font-size: 20px;}
-	body { font-size: 20px;}
-}
-
-
-	
+}	
 	
 h1 {
   font-family: 'Source Sans Pro', sans-serif;
