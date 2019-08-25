@@ -60,8 +60,9 @@ html {
 
 }
 
-@media all and (min-width: 2880px) {
-    html { font-size: 20px; }
+@media all and (min-width: 2880px;) {
+    html { font-size: 20px;}
+	body { font-size: 20px;}
 }
 
 
