@@ -2561,6 +2561,7 @@ section#two .Rectangle {
 	position: absolute;
 	left: 7.2rem;
 	top: 35.4rem;
+	z-index: -1;
 }
 
 section#three .Rectangle {
@@ -3971,6 +3972,10 @@ label.button svg {
 article.RectangleHome {
 	opacity: 0.8;
 	right: 4rem;
+}
+
+section#one .Rectangle {
+	top: 31rem;
 }
 
 section#one .newsbox:nth-child(3), section#two .newsbox:nth-child(3) {
