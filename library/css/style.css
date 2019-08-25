@@ -60,8 +60,7 @@ html {
 
 }
 
-@media
-(min-width: 2880px) {
+@media (min-width: 2880px) {
     html { font-size: 20px; }
 }
 
