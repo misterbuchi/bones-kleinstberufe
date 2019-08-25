@@ -1597,7 +1597,6 @@ button.swiper-pagination-bullet {
 	background-color: #e7eaee !important;
 	min-height: 9.5rem;
 	max-height: 45rem;
-	width: 73rem;
 	padding-left: 10.5rem;
 	border: 0 none #e7eaee;
 	padding-top: 2.8rem;
@@ -4004,10 +4003,7 @@ section#three {
 	margin-right: 0px;
 }
 
-#content.page article.post h1 {
-	padding-left: 0;
-	padding-right: 0;
-}
+
 
 .Rectangle.pale-lilac.first {
 	left: 10rem;
