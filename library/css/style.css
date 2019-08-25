@@ -60,7 +60,7 @@ html {
 
 }
 
-@media (min-width: 2880px) {
+@media all and (min-width: 2880px) {
     html { font-size: 20px; }
 }
 
