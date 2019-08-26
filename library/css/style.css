@@ -2476,15 +2476,15 @@ section#three {
 	padding-right: 19rem;
 }
 
-#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2, #content.page div.oda:nth-child(odd) h4 {
-	padding-left: 0rem;
+#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2, #content.page div.oda:nth-child(odd) h4, #content.page div.oda:nth-child(odd) h3 {
+	padding-left: 68rem;
 	padding-right: 2rem;
 	
 }
 
-#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2, #content.page div.oda:nth-child(even) h4 {	
+#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2, #content.page div.oda:nth-child(even) h4, #content.page div.oda:nth-child(even) h3 {	
 	padding-left: 3rem;
-	padding-right: 0rem;
+	padding-right: 68rem;
 }
 
 #newsletterarchiv, #crArchive {
@@ -2630,8 +2630,20 @@ section .taxonomy-description p {
   	margin-bottom: 5.9rem;
   }
   
-
-  
+section#two .newsbox {
+	height: 37rem;
+}
+ 
+ 
+ section#two .newsbox h3 {
+ 	height: auto;
+ 	max-height: 12.3rem;
+ 	margin-bottom: 0;
+ }
+ 
+ section .taxonomy-description p {
+ 	margin-bottom: 8rem;
+ }
  
   
   #content.page .newsbox h2, #content.page .newsbox h3, #content.page .newsbox h4, #content.page .newsbox p, .newsbox h2, .newsbox h3, .newsbox h4, .newsbox p {
@@ -2706,6 +2718,8 @@ section .taxonomy-description p {
   	display: inline-block;
   	background-color: #f6f8f9;
   	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+  	position: relative;
+  	min-height: 35rem;
   }
   
  
@@ -2713,20 +2727,22 @@ section .taxonomy-description p {
 
   
   div.oda:nth-child(odd) img {
-  	float: left;
+  	left: 0;
   	width: 65rem;
   	margin-right: 3.5rem;
   	margin-bottom: 0;
   	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
   	
+  	
   }
   
   div.oda:nth-child(even) img {
-  	float: right;
-  	width: 65rem;
+right: 0;
+width: 65rem;
   	margin-left: 3.5rem;
   	margin-bottom: 0;
   	box-shadow: 0 2px 4px 0 rgba(44, 46, 48, 0.08);
+  	
   	
   }
   
@@ -2742,6 +2758,14 @@ section .taxonomy-description p {
   	   -webkit-hyphens: auto;
   	   -ms-hyphens: auto;
   	   hyphens: auto; 
+  }
+  
+  div.oda img {
+  	  min-height: 35rem;
+  	  position: absolute;
+  	  height: 100%;
+  	  object-fit: cover;
+  	
   }
   
  
@@ -3682,11 +3706,14 @@ div.oda {
 		  }
 
 
-.oda img, div.oda:nth-child(even) img, div.oda:nth-child(odd) img {
-	width: 100%;
-	object-fit: cover;
-	margin-bottom: 4.8rem;
-	
+div.oda:nth-child(even) img {
+	margin-left: 0;
+}
+
+div.oda img {
+	position: static;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .oda h2 {
@@ -4016,7 +4043,8 @@ ul.register {
 
 
 div.oda {
-	width: 100vw !important;
+	width: 96vw !important;
+	margin-left: 2vw;
 }
 
 .oda img {
@@ -4024,7 +4052,15 @@ div.oda {
 }
 
 .oda h2 {
-	font-size: 2rem;
+	font-size: 2.8rem;
+}
+
+#content.page div.oda:nth-child(even) p, #content.page div.oda:nth-child(even) h2, #content.page div.oda:nth-child(even) h4, #content.page div.oda:nth-child(even) h3 {
+	padding-right: 62.5rem;
+}
+
+#content.page div.oda:nth-child(odd) p, #content.page div.oda:nth-child(odd) h2, #content.page div.oda:nth-child(odd) h4, #content.page div.oda:nth-child(odd) h3 {
+	padding-left: 62.5rem;
 }
 
 #inner-header {
