@@ -2281,7 +2281,7 @@ HEADER STYLES
   #logo a {
     color: white; }
 #inner-header {
-	padding: 1.73rem 16.5rem 2.03rem 13.71rem;
+	padding: 1.7rem 16.5rem 2.03rem 13.71rem;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	  background-color: #ffffff;
 	  z-index: 10;
@@ -2661,6 +2661,9 @@ section#two .newsbox {
   .newsbox .custom-logo-link img {
   	height: 16rem;
   	margin: 4rem 2rem ;
+  	width: 31rem;
+  	object-position: 0 0;
+  	object-fit: cover;
   }
   
   .newsbox h3 a {
@@ -3238,7 +3241,11 @@ FOOTER STYLES
   	width: 19.2rem;
   	position: absolute;
   	left: 14.5rem;
-  	top: 5.7rem;
+  	top: 6rem;
+  	height: 10.2rem;
+  	object-fit: cover;
+  	object-position: 0 0;
+  	
   }
   
   ul.social {
@@ -3593,7 +3600,7 @@ section#two .newsbox {
 }
 
 .newsbox .custom-logo-link img {
-	width: 56rem;
+	width: 55.5rem;
 	height:  28rem;
 	max-height: 29rem;
 	margin:0;
@@ -3643,6 +3650,7 @@ ul.social li, ul.social li img, ul.social li a::after{
 .footer img.custom-logo {
 left: 2.6rem;
 top: 2rem;
+width: 40rem;
 }
 
 .footer .wrap {
@@ -4065,7 +4073,7 @@ div.oda {
 }
 
 #inner-header {
-	padding: 1.73rem 5rem 2.03rem 3.1rem;
+	padding: 1.7rem 5rem 2.03rem 3.1rem;
 }
 
 .nav li ul.sub-menu {
