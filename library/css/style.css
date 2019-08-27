@@ -2276,7 +2276,7 @@ HEADER STYLES
   z-index: 1001;
 }
 #logo, #logo.h1 a, #logo img {
-	width: 19.4rem;
+	width: 38.8rem;
 }
   #logo a {
     color: white; }
@@ -2331,8 +2331,8 @@ right: 14.8rem;}
 	  text-decoration: none;
 	  margin-right: 2.4rem;
 	margin-left: 2.4rem;
-		padding-top: 7.3rem;
-	padding-bottom: 7.3rem;
+		padding-top: 7.1rem;
+	padding-bottom: 7.4rem;
 	}
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
@@ -3677,7 +3677,7 @@ top: 2rem;
 #logo img {
 	margin-left: 2.6rem;
 	position: absolute;
-	width: 105px;
+	width: 210px;
 	top: 10px;}
 
 div.oda {
