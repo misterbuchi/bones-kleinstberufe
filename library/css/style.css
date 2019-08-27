@@ -42,12 +42,12 @@ the whole project.
   --very-light-blue: #e7eaee;
   --steel: #7e8085;
   --gunmetal: #54565a;
-  --grey-teal: #5b8982;
-  --soft-blue: #81a5d6;
-  --soft-purple: #a573aa;
-  --yellowish: #f2ee6c;
-  --sick-green: #b0ae2d;
-  --dull-red: #9d3d39;
+  --grey-teal: #39a29;
+  --soft-blue: #6a9de2;
+  --soft-purple: #aa62b2;
+  --yellowish: #fcea3d;
+  --sick-green: rgba(184, 182, 40, 0.97);
+  --dull-red: #bd251f;
   --pale-grey: #f6f8f9;
   --pale-lilac: #e3e2e4;
 }
@@ -560,7 +560,7 @@ input[type="submit"] {
   right: 3rem;
   width: 25rem;
   text-align: right;
-  color: #9d3d39;
+  color: #bd251f;
   top: 0.6rem;
   }
   
@@ -574,7 +574,7 @@ input[type="submit"] {
   position: absolute;
   background-color: #ffffff;
   margin-left: 0;
-  border: 1px solid #f2ee6c;
+  border: 1px solid #fcea3d;
   border-radius: 1px;
   top: 17.5rem;
   }
@@ -584,7 +584,7 @@ input[type="submit"] {
   	position: absolute;
   	background-color: #ffffff;
   	margin-left: 0;
-  	border: 1px solid #5b8982;
+  	border: 1px solid #39a29;
   	border-radius: 1px;
   	width: 82%;
   	top: 12rem;
@@ -1753,7 +1753,7 @@ a.ics:hover {
 	color: #ffffff !important;
 	opacity: 1;
 	font-size: 5rem !important;
-	background-color: #a573aa;
+	background-color: #aa62b2;
 	padding: 1rem;
 	padding-top: 2.8rem;
 	
@@ -2245,7 +2245,7 @@ a, a:visited {
   /* on click */
   /* mobile tap color */ }
   a h5:hover, a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #a573aa; }
+    color: #aa62b2; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -2363,30 +2363,30 @@ POSTS & CONTENT STYLES
   left: 0rem;
 }
 .Rectangle.dull-red.second {
-  background-color: #9d3d39;
+  background-color: #bd251f;
   right: 0;
   top: 55rem;
 }
 
 .Rectangle.soft-blue.third {
-	background-color: #81a5d6;
+	background-color: #6a9de2;
 	top: 155rem;
 }
 
 .Rectangle.grey-teal.thourth {
-	background-color: #5b8982;
+	background-color: #39a29;
 	right: 0;
 	top: 255rem;
 }
 
 .Rectangle.sick-green.five {
-	background-color: #b0ae2d;
+	background-color: rgba(184, 182, 40, 0.97);
 	left: 0;
 	top: 355rem;
 }
 
 .Rectangle.yellowish.six {
-	background-color: #f2ee6c;
+	background-color: #fcea3d;
 	position: absolute;
 	right: 0;
 	top: 455rem;
@@ -2394,7 +2394,7 @@ POSTS & CONTENT STYLES
 
 
 .Rectangle.soft-purple.seven {
-	background-color: #a573aa;
+	background-color: #aa62b2;
 	left: 0;
 	top: 555rem;
 }
@@ -2539,7 +2539,7 @@ background-color: #e7eaee;
 }
 
 section#one .Rectangle {
-	background-color: #5b8982;
+	background-color: #39a29;
 	width: 37.5rem;
 	height: 37.5rem;
 	position: absolute;
@@ -2559,7 +2559,7 @@ section#two .Rectangle {
 }
 
 section#three .Rectangle {
-	background-color: #b0ae2d;
+	background-color: rgba(184, 182, 40, 0.97);
 	width: 37.5rem;
 	height: 37.5rem;
 	position: absolute;
@@ -2962,9 +2962,9 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1.6rem;
     display: block;
-    color: #81a5d6; }
+    color: #6a9de2; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #81a5d6;
+      background-color: #6a9de2;
       color: #ffffff; }
   .pagination .current {
     cursor: default;
@@ -3267,7 +3267,7 @@ FOOTER STYLES
   	    position: absolute;
   	    	height: 3.2rem;
   	    	width: 3.2rem;
-  	    	background-color: #a573aa;
+  	    	background-color: #aa62b2;
   	    	top: 0;
   	    	left: 0;
 opacity: 0;  }
