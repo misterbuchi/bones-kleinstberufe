@@ -3639,7 +3639,7 @@ div.event_item {
 }
 
 ul.social {
-	margin-top: 6rem;
+	margin-top: 7.2rem;
 	position: static;
 	
 }
@@ -3660,11 +3660,11 @@ width: 40rem;
 	width: 100%;
 	padding-left: 4.75rem;
 	padding-right: 4.75rem;
-	height: 55rem;
+	height: 58rem;
 }
 
 .footer {
-	height: 70rem;
+	height: 73rem;
 }
 
 #sponsoren {
@@ -3887,10 +3887,11 @@ ul#menu-hauptmenu li:last-child, ul#menu-hauptmenu ul li:last-child {
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .field {
 	width: 90%;
 	display: block;
+	margin-top: 1rem;
 }
 
 label.button svg {
-	margin-top: 6.5rem;
+	margin-top: 8.5rem;
 }
 
 
