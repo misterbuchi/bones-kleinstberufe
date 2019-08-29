@@ -55,6 +55,7 @@ the whole project.
 html {
 	font-size: 0.6944vw;
 	font-variant-ligatures: none;
+	scroll-behavior: smooth;
 	
 }
 
