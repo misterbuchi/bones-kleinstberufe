@@ -1036,10 +1036,11 @@ position: relative
 display: flex;
 object-fit: cover;
 margin: 0 auto;
-	width: 100vw;
-	max-width: 2880px;
-	height: 54.5vw;
-}
+width: 100vw;
+max-width: 2880px;
+height: calc(100vh - 22rem);
+object-position: 50% 80%;
+min-height: 54rem;
 
 /* END vri */
 
