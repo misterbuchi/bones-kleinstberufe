@@ -68,12 +68,6 @@ add_filter( 'excerpt_length', function($length) {
 } );
 
 
-function themprefix_excerpt_read_more_link($output) {
-	global $post;
-	return $output . ' <a href="' . get_permalink($post->ID) . '" class="more-link" title="Read More">Read More</a>';
-}
-add_filter( 'the_excerpt', 'themprefix_excerpt_read_more_link' );
-
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
