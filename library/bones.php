@@ -296,6 +296,12 @@ function bones_excerpt_more($more) {
 	return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' ) .'</a>';
 }
 
-
+function tn_excerpt_more( $more ) {
+return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+get_permalink( get_the_ID() ),
+__( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' )
+);
+}
+add_filter( 'excerpt_more', 'tn_excerpt_more' );
 
 ?>
