@@ -69,7 +69,7 @@ add_filter( 'excerpt_length', function($length) {
 
 function themprefix_excerpt_read_more_link($output) {
 	global $post;
-	return $output . '<a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' ) .'</a>';
+	return $output . '<p><a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' ) .'</a></p>';
 }
 add_filter( 'the_excerpt', 'themprefix_excerpt_read_more_link' );
 
