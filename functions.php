@@ -68,6 +68,16 @@ add_filter( 'excerpt_length', function($length) {
 } );
 
 
+function manual_excerpt_more( $excerpt ) {
+	$excerpt_more = '';
+	if( has_excerpt() ) {
+    	$excerpt_more = '&nbsp;<a href="' . get_permalink() . '" rel="nofollow">'. __( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' ) .'</a>';
+	}
+	return $excerpt . $excerpt_more;
+}
+add_filter( 'get_the_excerpt', 'manual_excerpt_more' );
+
+
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
