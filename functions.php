@@ -68,17 +68,11 @@ add_filter( 'excerpt_length', function($length) {
 } );
 
 
-add_filter( 'wp_trim_excerpt', function( $excerpt ) {
-	if ( has_excerpt() ) {
-		$excerpt = sprintf( '%1$s <a href="%2$s">%3$s</a>',
-			$excerpt,
-			get_permalink(),
-                        'Read more'
-		);
-	}
-	
-	return $excerpt;
-} );
+function themprefix_excerpt_read_more_link($output) {
+	global $post;
+	return $output . ' <a href="' . get_permalink($post->ID) . '" class="more-link" title="Read More">Read More</a>';
+}
+add_filter( 'the_excerpt', 'themprefix_excerpt_read_more_link' );
 
 /************* OEMBED SIZE OPTIONS *************/
 
