@@ -1040,13 +1040,15 @@ width: 100vw;
 max-width: 2880px;
 height: calc(100vh - 22rem);
 object-position: 50% 70%;
-min-height: 54rem;}
+min-height: 54rem;
+max-height: 785px;
+}
 
 @media screen and (min-width:0\0) {
 	
 	.swiper-slide img {
 		height: 54vw;
-		max-height: 1570px;
+		max-height: 785px;
 	}
 }
 
