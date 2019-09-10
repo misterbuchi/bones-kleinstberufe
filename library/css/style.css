@@ -3503,7 +3503,7 @@ float: left;
 padding-right: 0.75em;
 width: 75%; }
 	
-p {
+p, .Body-1-Style, ul, ol {
 	font-size: 2.4rem;
 }
 
