@@ -67,6 +67,12 @@ add_filter( 'excerpt_length', function($length) {
     return 28;
 } );
 
+function themprefix_excerpt_read_more_link($output) {
+	global $post;
+	return $output . '<p><a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'bonestheme' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( '[:de]Mehr erfahren[:fr]Plus[:]', 'bonestheme' ) .'</a></p>';
+}
+add_filter( 'the_excerpt', 'themprefix_excerpt_read_more_link' );
+
 
 /************* OEMBED SIZE OPTIONS *************/
 
