@@ -978,8 +978,7 @@ flex-direction: column
 .swiper-wrapper {
 position: relative;
 width: 100%;
-height: calc(100vh - 22rem);
-max-height: 70rem;
+
 /* 100% */
 /*z-index: 1;*/
 display: -webkit-box;
@@ -1037,11 +1036,12 @@ position: relative
 .swiper-slide img {
 display: inline-block;
 object-fit: cover;
+object-position: 30% 70%;
 margin: 0 auto;
 	width: 100vw;
-	max-width: 2880px;
 	height: 54.5vw;
-	vertical-align: middle;
+	height: calc(100vh - 22rem);
+	max-height: 70rem;
 	
 }
 
