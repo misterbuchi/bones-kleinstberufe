@@ -2280,6 +2280,8 @@ position: sticky;
 position: -webkit-sticky;
 top: 0;
 z-index: 1001;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
 }
 #logo, #logo.h1 a, #logo img {
 	width: 38.8rem;
@@ -2288,7 +2290,6 @@ z-index: 1001;
 color: white; }
 #inner-header {
 	padding: 1.7rem 16.5rem 2.03rem 13.71rem;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 	background-color: #ffffff;
 	z-index: 10;
 	
@@ -3466,6 +3467,34 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
+@media (min-width: 1728px) {
+html { font-size: 12px;}
+
+.hentry, section article, #content.page main.newscontainer article, #content.page article, #content.page .event_single {
+width: 114rem;
+margin: 0 auto;
+margin-bottom: 1.5em;
+
+}
+
+
+.event_list {
+	width: 114rem;
+	margin: 0 auto;
+}
+#inner-header {
+	width: 144rem;
+}
+
+.footer {
+	width: 144rem;
+	margin: 0 auto;
+	border: none;
+	box-shadow: none;
+}
+}
+
+
 @media (max-width: 767px) {
 html {
 font-size: 1.3880vw;
