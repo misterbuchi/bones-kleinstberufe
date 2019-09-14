@@ -33,25 +33,7 @@ HTML5 display definitions
 */
 
 /* Color palette */
-:root {
---white: #ffffff;
---greyish-brown: #3d3d3d;
---dusk: #45436e;
---deep-lilac: #7d7bb7;
---bluey-grey: #a6a6a9;
---greyish-brown-two: #624e41;
---very-light-blue: #e7eaee;
---steel: #7e8085;
---gunmetal: #54565a;
---grey-teal: #39a29;
---soft-blue: #6a9de2;
---soft-purple: #aa62b2;
---yellowish: #fcea3d;
---sick-green: rgba(184, 182, 40, 0.97);
---dull-red: #bd251f;
---pale-grey: #f6f8f9;
---pale-lilac: #e3e2e4;
-}
+
 html {
 	font-size: 0.6944vw;
 	font-variant-ligatures: none;
@@ -108,8 +90,6 @@ line-height: 1.6;
 letter-spacing: 0.007em;
 text-align: left;
 color: #45436e;
-text-align: left;
-
 }
 .Button-Style {
 font-family: Lato;
@@ -763,9 +743,7 @@ some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
-
-word-break: break-word;
-word-break: break-word;
+word-break: normal;
 -webkit-hyphens: auto;
 -moz-hyphens: auto;
 -ms-hyphens: auto;
@@ -1172,11 +1150,8 @@ width: 2rem;
 height: 2rem;
 display: inline-block;
 border-radius: 100%;
-
 opacity: 0.8;
 	margin: 1rem;
-	
-	opacity: 0.8;
 	background: transparent;
 	border: 0.25rem solid #e7eaee;
 }
@@ -1922,7 +1897,6 @@ margin-bottom: 1.4rem;
 margin-right: 2rem;
 font-size: 1em;
 color: #54565a;
-vertical-align: middle;
 box-shadow: none;
 border: 0;
 float: left;
@@ -2314,15 +2288,8 @@ right: 14.8rem;}
 
 /* end .menu li */
 /* highlight current page */
-/* end current highlighters */ }
-.nav li {
-/*
-so you really have to rethink your dropdowns for mobile.
-you don't want to have it expand too much because the
-screen is so small. How you manage your menu should
-depend on the project. Here's some great info on it:
-http://www.alistapart.com/articles/organizing-mobile/
-*/ }
+/* end current highlighters */ 
+
 .nav li a {
 display: block;
 opacity: 0.87;
@@ -2459,7 +2426,7 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 	margin-bottom: 11rem;
 }
 
-#content.page #sidebar1 h1,  {
+#content.page #sidebar1 h1  {
 	text-align: center !important;
 	margin-bottom: 2rem;
 }
@@ -2622,7 +2589,6 @@ padding-bottom: 5.1rem;
 position: relative;
 display: table-cell;
 height: 60rem;
-margin-bottom: 2.5rem;
 }
 
 section#one .newsbox {
@@ -2804,7 +2770,7 @@ image alignment on a screen this size may be
 a bit difficult. It's set to start aligning
 and floating images at the next breakpoint,
 but it's up to you. Feel free to change it up.
-*/ }
+*/ 
 .entry-content p {
 margin: 0 0 1.5em; }
 .entry-content table {
@@ -2956,7 +2922,6 @@ clear: both;
 border-radius: 3px; }
 .pagination li {
 padding: 0;
-margin: 0;
 float: left;
 display: inline;
 overflow: hidden;
@@ -3441,7 +3406,6 @@ display: none;
 
 ul.register li.current-menu-parent, ul.register li.current-menu-item{
 display: block;
-list-style-type:disc;
 text-transform: uppercase;
 font-size: 1.2rem;
 height: 1.6rem;
@@ -3516,7 +3480,6 @@ font-size: 1.3880vw;
 
 .m-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0;
 }
@@ -3796,8 +3759,6 @@ position: static;
 left: 0;
 top: 0;
 clear: both;
-left: 0;
-top: 0;
 right: 0;
 z-index: -1;
 padding-left: 0;
@@ -3806,8 +3767,8 @@ padding-left: 0;
 
 label.hamburg {
 display: block;
-background: ; width: 50px; height: 50px;
-
+width: 50px; 
+height: 50px;
 position: absolute;
 top: 0;
 right: 0;
@@ -4013,7 +3974,6 @@ font-size: 1vw;
 
 .t-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0; }
 
@@ -4204,7 +4164,6 @@ section .article-header {
 @media (min-width: 1000px) {
 .d-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0; }
 
