@@ -3620,22 +3620,18 @@ section article, #content.page main.newscontainer article {
 	margin-right: 6.5rem;
 }
 
-.newsbox {
+.newsbox, section#two .newsbox {
 	height: auto;
 }
 
 section#one .newsbox {
-height: 44rem;
+height: auto;
 margin-bottom: 2rem;
 margin-top: 2rem;
 }
 
 section#one .newsbox:last-of-type{
 	margin-bottom: 6rem;
-}
-
-section#two .newsbox {
-	height: 50rem;
 }
 
 .newsbox img {
