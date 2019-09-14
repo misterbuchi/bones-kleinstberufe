@@ -1041,7 +1041,7 @@ margin: 0 auto;
 	width: 100vw;
 	height: 54.5vw;
 	height: calc(100vh - 22rem);
-	max-height: 70rem;
+	max-height: 54.5vw;
 	
 }
 
@@ -3490,6 +3490,10 @@ margin-bottom: 1.5em;
 	padding-left: calc(50vw - 60rem);
 }
 
+article.RectangleHome {
+	right: calc(50vw - 57rem);
+}
+
 .footer img.custom-logo {
 	left: calc(50vw - 63.2rem);
 }
@@ -3500,6 +3504,8 @@ margin-bottom: 1.5em;
 ul.register {
 	left: calc(50vw - 60rem);
 }
+
+
 }
 
 
