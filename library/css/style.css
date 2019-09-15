@@ -974,6 +974,8 @@ transition-property: transform;
 box-sizing: content-box;
 }
 
+
+
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
 -webkit-transform: translateZ(0);
@@ -982,6 +984,8 @@ box-sizing: content-box;
 -ms-transform: translateZ(0);
 transform: translateZ(0)
 }
+
+
 
 .swiper-container-multirow>.swiper-wrapper {
 -webkit-box-lines: multiple;
@@ -1121,10 +1125,10 @@ background-color: #45436e;
 .swiper-pagination {
 position: absolute;
 text-align: center;
--webkit-transition: .8s;
+-webkit-transition: 1.8s;
 -moz-transition: .8s;
 -o-transition: .8s;
-transition: .8s;
+transition: 1.8s;
 -webkit-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
