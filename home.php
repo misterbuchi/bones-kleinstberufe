@@ -33,6 +33,8 @@
 							        <div class="swiper-slide" data-swiper-autoplay="3000">
 							
 							            <?php the_post_thumbnail('slider-home') ?>
+										<div class="swiper-lazy-preloader"></div>
+										
 							
 							        </div>
 							
