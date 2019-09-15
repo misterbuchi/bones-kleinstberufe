@@ -1518,13 +1518,14 @@ left: 50%;
 top: 50%;
 margin-left: -21px;
 margin-top: -21px;
-z-index: 10;
+z-index: 1;
 -webkit-transform-origin: 50%;
 -moz-transform-origin: 50%;
 transform-origin: 50%;
 -webkit-animation: swiper-preloader-spin 1s steps(12) infinite;
 -moz-animation: swiper-preloader-spin 1s steps(12) infinite;
-animation: swiper-preloader-spin 1s steps(12) infinite
+animation: swiper-preloader-spin 1s steps(12) infinite;
+opacity: 0;
 }
 
 .swiper-lazy-preloader:after {
