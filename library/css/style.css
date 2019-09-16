@@ -2346,50 +2346,50 @@ left: 0rem;
 .Rectangle.dull-red.second {
 background-color: #bd251f;
 right: 0;
-top: 55rem;
+top: 65rem;
 }
 
 .Rectangle.soft-blue.third {
 	background-color: #6a9de2;
-	top: 155rem;
+	top: 145rem;
 }
 
 .Rectangle.grey-teal.thourth {
 	background-color: #39a292;
 	right: 0;
-	top: 255rem;
+	top: 230rem;
 }
 
 .Rectangle.sick-green.five {
 	background-color: rgba(184, 182, 40, 0.97);
 	left: 0;
-	top: 355rem;
+	top: 315rem;
 }
 
 .Rectangle.yellowish.six {
 	background-color: #fcea3d;
 	position: absolute;
 	right: 0;
-	top: 455rem;
+	top: 400rem;
 }
 
 
 .Rectangle.soft-purple.seven {
 	background-color: #aa62b2;
 	left: 0;
-	top: 555rem;
+	top: 485rem;
 }
 
 .Rectangle.deep-lilac.aight {
 	background-color: #7d7bb7;
 	right: 0;
-	top: 655rem;
+	top: 570rem;
 }
 
 .Rectangle.greyish-brown-two.nine {
 	background-color: #624e41;
 	left: 0;
-	top: 755rem;
+	top: 655rem;
 }
 
 
@@ -4182,7 +4182,8 @@ width: 50%; }
 .d-1of3 {
 float: left;
 margin: 0 1.5rem;
-width: 35rem; }
+width: 35rem;margin-bottom: 5rem;
+}
 	
 	
 
