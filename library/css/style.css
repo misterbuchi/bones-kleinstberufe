@@ -1010,7 +1010,9 @@ margin: 0 auto
 flex-shrink: 0;
 width: 100%;
 height: 100%;
-position: relative
+position: relative;
+	min-height: 54.5rem;
+
 }
 
 /* vri */
@@ -1024,7 +1026,6 @@ margin: 0 auto;
 	height: 54.5vw;
 	height: calc(100vh - 22rem);
 	max-height: 54.5vw;
-	min-height: 54.5rem;
 	
 }
 
