@@ -566,7 +566,7 @@ font-size: 1.6rem;
 position: absolute;
 background-color: #ffffff;
 margin-left: 0;
-border: 1px solid #39a29;
+border: 1px solid #39a292;
 border-radius: 1px;
 width: 82%;
 top: 12rem;
@@ -2355,7 +2355,7 @@ top: 55rem;
 }
 
 .Rectangle.grey-teal.thourth {
-	background-color: #39a29;
+	background-color: #39a292;
 	right: 0;
 	top: 255rem;
 }
@@ -2520,7 +2520,7 @@ background-color: #e7eaee;
 }
 
 section#one .Rectangle {
-	background-color: #39a29;
+	background-color: #39a292;
 	width: 37.5rem;
 	height: 37.5rem;
 	position: absolute;
