@@ -3456,22 +3456,22 @@ margin-bottom: 1.5em;
 }
 
 .footer .column-1 {
-	padding-left: calc(50vw - 60rem);
+	padding-left: calc(50vw - 57.5rem);
 }
 
 article.RectangleHome {
-	right: calc(50vw - 57rem);
+	right: calc(50vw - 57.5rem);
 }
 
 .footer img.custom-logo {
-	left: calc(50vw - 63.2rem);
+	left: calc(50vw - 60rem);
 }
 .footer .wrap {
-	width: calc(60% - 25rem);
+	width: calc(60% - 20rem);
 }
 
 ul.register {
-	left: calc(50vw - 60rem);
+	left: calc(50vw - 57.5rem);
 }
 
 
