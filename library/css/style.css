@@ -936,9 +936,7 @@ overflow: hidden;
 	position: relative;
 	height: auto;
 	min-height: 54rem;
-	max-height: 1570px;
-	height: calc(100vh - 22rem);
-	
+	max-height: 1570px;	
 }
 
 
