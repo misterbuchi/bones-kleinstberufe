@@ -1019,7 +1019,7 @@ object-position: 30% 70%;
 margin: 0 auto;
 	width: 100vw;
 	height: 54.5vw;
-	height: calc(100vh - 22rem);
+	height: calc(100vh - 50rem);
 	max-height: 785px;
 	min-height: 55rem;
 	
@@ -3434,8 +3434,8 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
-@media (min-width: 1728px) {
-html { font-size: 12px;}
+@media (min-width: 1140px) {
+html { font-size: 10px;}
 
 .hentry, section article, #content.page main.newscontainer article, #content.page article, #content.page .event_single {
 width: 114rem;
@@ -3448,6 +3448,9 @@ margin-bottom: 1.5em;
 .event_list {
 	width: 114rem;
 	margin: 0 auto;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
 }
 #inner-header {
 	width: 144rem;
