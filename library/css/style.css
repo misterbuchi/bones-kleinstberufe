@@ -3434,7 +3434,7 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
 html { font-size: 10px;}
 
 .hentry, section article, #content.page main.newscontainer article, #content.page article, #content.page .event_single {
