@@ -4173,7 +4173,7 @@ section .article-header {
 	}
 }
 
-@media (min-width: 1000px) and (min-aspect-ratio: 3/2) and (min-aspect-ratio: 21/13 {
+@media (min-width: 1000px) and (min-aspect-ratio: 3/2) and and (max-width: 1440px) {
 	.swiper-slide {
 	-webkit-flex-shrink: 0;
 	-ms-flex: 0 0 auto;
@@ -4197,7 +4197,7 @@ section .article-header {
 		
 	}
 	}
-@media (min-width: 1000px) and (min-aspect-ratio: 21/13) {	
+@media (min-width: 1000px) and (min-aspect-ratio: 21/13) and (max-width: 1440px){	
 	
 	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
 		display: none;
