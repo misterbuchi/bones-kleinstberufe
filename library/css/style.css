@@ -4233,6 +4233,13 @@ section .article-header {
 	}
 }
 
+@media (min-width: 1000px) and (min-aspect-ratio: 19/10) and (max-width: 1440px){	
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		display: none;
+	}
+}
+
 /* Landscape to small desktop */
 @media (min-width: 1000px) {
 .d-all {
