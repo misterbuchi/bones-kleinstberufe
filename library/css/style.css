@@ -936,7 +936,7 @@ margin-right: auto;
 overflow: hidden;
 	position: relative;
 	height: auto;
-	min-height: 54rem;
+	min-height: 47rem;
 	max-height: 785px;	
 }
 
@@ -1009,7 +1009,7 @@ margin: 0 auto
 -ms-flex: 0 0 auto;
 flex-shrink: 0;
 width: 100%;
-height: 54rem;
+height: 53.5rem;
 position: relative
 }
 
@@ -1568,7 +1568,7 @@ transform: rotate(1turn)
 	column-count: 2;
 	margin-bottom: 5rem;
 	column-gap: 5rem;
-	margin-top: 8rem;
+	margin-top: 3.8rem;
 }
 
 
@@ -2402,7 +2402,7 @@ clear: both;
 section article, #content.page main.newscontainer article {
 		margin-left: 15rem;
 		margin-right: 14.5rem;
-		padding-bottom: 8rem;
+		padding-bottom: 4rem;
 	
 }
 
@@ -2411,7 +2411,7 @@ section article, #content.page main.newscontainer article {
 }
 
 section .article-header {
-	margin-top: 10rem;
+	margin-top: 8rem;
 }
 
 section#one h1, section#two h1, #content.page h1, section#three h1 {
@@ -2448,7 +2448,7 @@ section#two {
 }
 
 section#three {
-	padding: 6.5rem 19rem;
+	padding: 3.5rem 19rem;
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p, #content.page #inner-content ol, #content.page #inner-content ul {
@@ -2599,7 +2599,7 @@ height: 60rem;
 
 section#one .newsbox {
 padding-top: 2.5rem;
-margin-top: 5.9rem;
+margin-top: 3.9rem;
 
 
 }
