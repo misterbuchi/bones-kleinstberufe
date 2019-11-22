@@ -2269,7 +2269,7 @@ z-index: 1001;
 #logo a {
 color: white; }
 #inner-header {
-	padding: 1.7rem 16.5rem 2.03rem 13.71rem;
+	padding: 1rem 16.5rem 0.4rem 13.71rem;
 	background-color: #ffffff;
 	z-index: 10;
 	
@@ -2311,8 +2311,8 @@ color: #000000;
 	text-decoration: none;
 	margin-right: 2.4rem;
 	margin-left: 2.4rem;
-		padding-top: 7.1rem;
-	padding-bottom: 7.4rem;
+		padding-top: 5.4rem;
+	padding-bottom: 5.8rem;
 	}
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
