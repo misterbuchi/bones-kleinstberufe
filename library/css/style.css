@@ -33,25 +33,7 @@ HTML5 display definitions
 */
 
 /* Color palette */
-:root {
---white: #ffffff;
---greyish-brown: #3d3d3d;
---dusk: #45436e;
---deep-lilac: #7d7bb7;
---bluey-grey: #a6a6a9;
---greyish-brown-two: #624e41;
---very-light-blue: #e7eaee;
---steel: #7e8085;
---gunmetal: #54565a;
---grey-teal: #39a29;
---soft-blue: #6a9de2;
---soft-purple: #aa62b2;
---yellowish: #fcea3d;
---sick-green: rgba(184, 182, 40, 0.97);
---dull-red: #bd251f;
---pale-grey: #f6f8f9;
---pale-lilac: #e3e2e4;
-}
+
 html {
 	font-size: 0.6944vw;
 	font-variant-ligatures: none;
@@ -59,10 +41,11 @@ html {
 	
 }
 
+@media (min-width: 1440px) {
+html { font-size: 10px;}}
 
-@media (min-width: 2880px) {
-html { font-size: 20px;}
-}
+
+
 	
 h1 {
 font-family: 'Source Sans Pro', sans-serif;
@@ -108,8 +91,6 @@ line-height: 1.6;
 letter-spacing: 0.007em;
 text-align: left;
 color: #45436e;
-text-align: left;
-
 }
 .Button-Style {
 font-family: Lato;
@@ -257,7 +238,7 @@ body {
 margin: 0; }
 
 #container {
-max-width: 2880px;
+max-width: 1440px;
 width: 100vw;
 margin: auto;
 display: block;
@@ -586,7 +567,7 @@ font-size: 1.6rem;
 position: absolute;
 background-color: #ffffff;
 margin-left: 0;
-border: 1px solid #39a29;
+border: 1px solid #39a292;
 border-radius: 1px;
 width: 82%;
 top: 12rem;
@@ -763,9 +744,7 @@ some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
-
-word-break: break-word;
-word-break: break-word;
+word-break: normal;
 -webkit-hyphens: auto;
 -moz-hyphens: auto;
 -ms-hyphens: auto;
@@ -957,9 +936,8 @@ margin-right: auto;
 overflow: hidden;
 	position: relative;
 	height: auto;
-	min-height: 54rem;
-	max-height: 1570px;
-	
+	min-height: 47rem;
+	max-height: 785px;	
 }
 
 
@@ -978,8 +956,7 @@ flex-direction: column
 .swiper-wrapper {
 position: relative;
 width: 100%;
-height: calc(100vh - 22rem);
-max-height: 70rem;
+
 /* 100% */
 /*z-index: 1;*/
 display: -webkit-box;
@@ -997,6 +974,8 @@ transition-property: transform;
 box-sizing: content-box;
 }
 
+
+
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
 -webkit-transform: translateZ(0);
@@ -1005,6 +984,8 @@ box-sizing: content-box;
 -ms-transform: translateZ(0);
 transform: translateZ(0)
 }
+
+
 
 .swiper-container-multirow>.swiper-wrapper {
 -webkit-box-lines: multiple;
@@ -1028,7 +1009,7 @@ margin: 0 auto
 -ms-flex: 0 0 auto;
 flex-shrink: 0;
 width: 100%;
-height: 100%;
+height: 60rem;
 position: relative
 }
 
@@ -1037,11 +1018,13 @@ position: relative
 .swiper-slide img {
 display: inline-block;
 object-fit: cover;
+object-position: 30% 70%;
 margin: 0 auto;
-	width: 100vw;
-	max-width: 2880px;
+	width: 144rem;
 	height: 54.5vw;
-	vertical-align: middle;
+	height: calc(100vh - 50rem);
+	max-height: 785px;
+	min-height: 60rem;
 	
 }
 
@@ -1143,10 +1126,10 @@ background-color: #45436e;
 .swiper-pagination {
 position: absolute;
 text-align: center;
--webkit-transition: .8s;
+-webkit-transition: 1.8s;
 -moz-transition: .8s;
 -o-transition: .8s;
-transition: .8s;
+transition: 1.8s;
 -webkit-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
@@ -1172,11 +1155,8 @@ width: 2rem;
 height: 2rem;
 display: inline-block;
 border-radius: 100%;
-
 opacity: 0.8;
 	margin: 1rem;
-	
-	opacity: 0.8;
 	background: transparent;
 	border: 0.25rem solid #e7eaee;
 }
@@ -1539,13 +1519,14 @@ left: 50%;
 top: 50%;
 margin-left: -21px;
 margin-top: -21px;
-z-index: 10;
+z-index: 1;
 -webkit-transform-origin: 50%;
 -moz-transform-origin: 50%;
 transform-origin: 50%;
 -webkit-animation: swiper-preloader-spin 1s steps(12) infinite;
 -moz-animation: swiper-preloader-spin 1s steps(12) infinite;
-animation: swiper-preloader-spin 1s steps(12) infinite
+animation: swiper-preloader-spin 1s steps(12) infinite;
+opacity: 0;
 }
 
 .swiper-lazy-preloader:after {
@@ -1587,7 +1568,7 @@ transform: rotate(1turn)
 	column-count: 2;
 	margin-bottom: 5rem;
 	column-gap: 5rem;
-	margin-top: 8rem;
+	margin-top: 3.8rem;
 }
 
 
@@ -1922,7 +1903,6 @@ margin-bottom: 1.4rem;
 margin-right: 2rem;
 font-size: 1em;
 color: #54565a;
-vertical-align: middle;
 box-shadow: none;
 border: 0;
 float: left;
@@ -2280,6 +2260,8 @@ position: sticky;
 position: -webkit-sticky;
 top: 0;
 z-index: 1001;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
 }
 #logo, #logo.h1 a, #logo img {
 	width: 38.8rem;
@@ -2287,8 +2269,7 @@ z-index: 1001;
 #logo a {
 color: white; }
 #inner-header {
-	padding: 1.7rem 16.5rem 2.03rem 13.71rem;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	padding: 1rem 16.5rem 0.4rem 13.71rem;
 	background-color: #ffffff;
 	z-index: 10;
 	
@@ -2313,15 +2294,8 @@ right: 14.8rem;}
 
 /* end .menu li */
 /* highlight current page */
-/* end current highlighters */ }
-.nav li {
-/*
-so you really have to rethink your dropdowns for mobile.
-you don't want to have it expand too much because the
-screen is so small. How you manage your menu should
-depend on the project. Here's some great info on it:
-http://www.alistapart.com/articles/organizing-mobile/
-*/ }
+/* end current highlighters */ 
+
 .nav li a {
 display: block;
 opacity: 0.87;
@@ -2337,8 +2311,8 @@ color: #000000;
 	text-decoration: none;
 	margin-right: 2.4rem;
 	margin-left: 2.4rem;
-		padding-top: 7.1rem;
-	padding-bottom: 7.4rem;
+		padding-top: 5.4rem;
+	padding-bottom: 5.8rem;
 	}
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
@@ -2362,7 +2336,7 @@ POSTS & CONTENT STYLES
 }
 
 #content.page .Rectangle.pale-lilac.first {
-width: 35rem;
+width: 33.55rem;
 height: 42rem;
 background-color: #e3e2e4;
 top: 0;
@@ -2371,50 +2345,50 @@ left: 0rem;
 .Rectangle.dull-red.second {
 background-color: #bd251f;
 right: 0;
-top: 55rem;
+top: 65rem;
 }
 
 .Rectangle.soft-blue.third {
 	background-color: #6a9de2;
-	top: 155rem;
+	top: 145rem;
 }
 
 .Rectangle.grey-teal.thourth {
-	background-color: #39a29;
+	background-color: #39a292;
 	right: 0;
-	top: 255rem;
+	top: 230rem;
 }
 
 .Rectangle.sick-green.five {
 	background-color: rgba(184, 182, 40, 0.97);
 	left: 0;
-	top: 355rem;
+	top: 315rem;
 }
 
 .Rectangle.yellowish.six {
 	background-color: #fcea3d;
 	position: absolute;
 	right: 0;
-	top: 455rem;
+	top: 400rem;
 }
 
 
 .Rectangle.soft-purple.seven {
 	background-color: #aa62b2;
 	left: 0;
-	top: 555rem;
+	top: 485rem;
 }
 
 .Rectangle.deep-lilac.aight {
 	background-color: #7d7bb7;
 	right: 0;
-	top: 655rem;
+	top: 570rem;
 }
 
 .Rectangle.greyish-brown-two.nine {
 	background-color: #624e41;
 	left: 0;
-	top: 755rem;
+	top: 655rem;
 }
 
 
@@ -2426,9 +2400,9 @@ clear: both;
 }
 
 section article, #content.page main.newscontainer article {
-		margin-left: 16.5rem;
-		margin-right: 13rem;
-		padding-bottom: 8rem;
+		margin-left: 15rem;
+		margin-right: 14.5rem;
+		padding-bottom: 4rem;
 	
 }
 
@@ -2437,7 +2411,7 @@ section article, #content.page main.newscontainer article {
 }
 
 section .article-header {
-	margin-top: 10rem;
+	margin-top: 8rem;
 }
 
 section#one h1, section#two h1, #content.page h1, section#three h1 {
@@ -2458,7 +2432,7 @@ section#one h1, section#two h1, #content.page h1, section#three h1 {
 	margin-bottom: 11rem;
 }
 
-#content.page #sidebar1 h1,  {
+#content.page #sidebar1 h1  {
 	text-align: center !important;
 	margin-bottom: 2rem;
 }
@@ -2474,7 +2448,7 @@ section#two {
 }
 
 section#three {
-	padding: 6.5rem 19rem;
+	padding: 3.5rem 19rem;
 }
 
 #content.page h1, #content.page h2,#content.page h3,#content.page h4,#content.page p, #content.page #inner-content ol, #content.page #inner-content ul {
@@ -2545,7 +2519,7 @@ background-color: #e7eaee;
 }
 
 section#one .Rectangle {
-	background-color: #39a29;
+	background-color: #39a292;
 	width: 37.5rem;
 	height: 37.5rem;
 	position: absolute;
@@ -2621,12 +2595,11 @@ padding-bottom: 5.1rem;
 position: relative;
 display: table-cell;
 height: 60rem;
-margin-bottom: 2.5rem;
 }
 
 section#one .newsbox {
 padding-top: 2.5rem;
-margin-top: 5.9rem;
+margin-top: 3.9rem;
 
 
 }
@@ -2803,7 +2776,7 @@ image alignment on a screen this size may be
 a bit difficult. It's set to start aligning
 and floating images at the next breakpoint,
 but it's up to you. Feel free to change it up.
-*/ }
+*/ 
 .entry-content p {
 margin: 0 0 1.5em; }
 .entry-content table {
@@ -2955,7 +2928,6 @@ clear: both;
 border-radius: 3px; }
 .pagination li {
 padding: 0;
-margin: 0;
 float: left;
 display: inline;
 overflow: hidden;
@@ -3440,7 +3412,6 @@ display: none;
 
 ul.register li.current-menu-parent, ul.register li.current-menu-item{
 display: block;
-list-style-type:disc;
 text-transform: uppercase;
 font-size: 1.2rem;
 height: 1.6rem;
@@ -3466,6 +3437,51 @@ These are the widths for the mobile grid.
 There are four types, but you can add or customize
 them however you see fit.
 */
+/*@media (min-width: 1440px) {
+html { font-size: 10px;}
+
+.hentry, section article, #content.page main.newscontainer article, #content.page article, #content.page .event_single {
+width: 114rem;
+margin: 0 auto;
+margin-bottom: 1.5em;
+
+}
+
+
+.event_list {
+	width: 114rem;
+	margin: 0 auto;
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+
+}
+#inner-header {
+	width: 144rem;
+}
+
+.footer .column-1 {
+	padding-left: calc(50vw - 57.5rem);
+}
+
+article.RectangleHome {
+	right: calc(50vw - 57.5rem);
+}
+
+.footer img.custom-logo {
+	left: calc(50vw - 60rem);
+}
+.footer .wrap {
+	width: calc(60% - 20rem);
+}
+
+ul.register {
+	left: calc(50vw - 57.5rem);
+}
+
+
+}*/
+
+
 @media (max-width: 767px) {
 html {
 font-size: 1.3880vw;
@@ -3473,7 +3489,6 @@ font-size: 1.3880vw;
 
 .m-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0;
 }
@@ -3583,22 +3598,18 @@ section article, #content.page main.newscontainer article {
 	margin-right: 6.5rem;
 }
 
-.newsbox {
+.newsbox, section#two .newsbox {
 	height: auto;
 }
 
 section#one .newsbox {
-height: 44rem;
+height: auto;
 margin-bottom: 2rem;
 margin-top: 2rem;
 }
 
 section#one .newsbox:last-of-type{
 	margin-bottom: 6rem;
-}
-
-section#two .newsbox {
-	height: 50rem;
 }
 
 .newsbox img {
@@ -3757,8 +3768,6 @@ position: static;
 left: 0;
 top: 0;
 clear: both;
-left: 0;
-top: 0;
 right: 0;
 z-index: -1;
 padding-left: 0;
@@ -3767,8 +3776,8 @@ padding-left: 0;
 
 label.hamburg {
 display: block;
-background: ; width: 50px; height: 50px;
-
+width: 50px; 
+height: 50px;
 position: absolute;
 top: 0;
 right: 0;
@@ -3974,7 +3983,6 @@ font-size: 1vw;
 
 .t-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0; }
 
@@ -4153,6 +4161,10 @@ section .article-header {
 	max-height: 21.5rem;
 }
 
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	display: none;
+}
+
 }
 /*Very small Mobile */
 @media (max-width: 350px) {
@@ -4161,11 +4173,77 @@ section .article-header {
 	}
 }
 
+@media (min-width: 1000px) and (min-aspect-ratio: 3/2) and (max-width: 1440px) {
+	.swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	width: 100%;
+	height: 53.5rem;
+	height: calc(100vh - 36.2rem);
+	position: relative;
+	min-height: 47.5rem;
+	}
+	.swiper-slide img {
+	display: inline-block;
+	object-fit: cover;
+	object-position: 30% 70%;
+	margin: 0 auto;
+		width: 144rem;
+		height: 54.5vw;
+		height: calc(100vh - 36.2rem);
+		max-height: 785px;
+		min-height: 47.5rem;
+		
+	}
+	}
+@media (min-width: 1000px) and (min-aspect-ratio: 21/13) and (max-width: 1440px){	
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) and (min-aspect-ratio: 19/11) and (max-width: 1440px){
+	.swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	width: 100%;
+	height: 53.5rem;
+	height: calc(100vh - 22rem);
+	position: relative;
+	min-height: 47.5rem;
+	}
+	.swiper-slide img {
+	display: inline-block;
+	object-fit: cover;
+	object-position: 30% 70%;
+	margin: 0 auto;
+		width: 144rem;
+		height: 54.5vw;
+		height: calc(100vh - 22rem);
+		max-height: 785px;
+		min-height: 47.5rem;
+		
+	}
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		display: block;
+	}
+}
+
+@media (min-width: 1000px) and (min-aspect-ratio: 19/10) and (max-width: 1440px){	
+	
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		display: none;
+	}
+}
+
 /* Landscape to small desktop */
 @media (min-width: 1000px) {
 .d-all {
 float: left;
-padding-right: 0.75em;
 width: 100%;
 padding-right: 0; }
 
@@ -4176,8 +4254,9 @@ width: 50%; }
 
 .d-1of3 {
 float: left;
-margin-right: 3rem;
-width: 35rem; }
+margin: 0 1.5rem;
+width: 35rem;margin-bottom: 5rem;
+}
 	
 	
 
