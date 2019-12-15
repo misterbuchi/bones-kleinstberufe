@@ -890,6 +890,9 @@ right: 16.8rem;
 #sidebar1 h1, #sidebar1 p, .RectangleHome h1, .RectangleHome p {
 	color: #ffffff !important;
 }
+.RectangleHome h1 {
+	font-size: 4.6rem;
+	margin-bottom: 1.6rem;}
 
 #sidebar1 h1, #sidebar1 p {
 	color: #ffffff !important;
