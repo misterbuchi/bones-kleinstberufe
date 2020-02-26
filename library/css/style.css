@@ -2269,6 +2269,10 @@ z-index: 1001;
 #logo, #logo.h1 a, #logo img {
 	width: 38.8rem;
 }
+
+#logo:lang(fr), #logo:lang(fr).h1 a, #logo:lang(fr) img {
+	width: 41.7rem;
+}
 #logo a {
 color: white; }
 #inner-header {
@@ -2640,12 +2644,16 @@ margin-top: 0;
 margin-top: 0.8rem;
 }
 
-.newsbox .custom-logo-link img {
+.newsbox img.custom-logo{
 height: 16rem;
 margin: 4rem 2rem ;
 width: 31rem;
 object-position: 0 0;
 object-fit: cover;
+}
+
+.newsbox img.custom-logo:lang(fr) {
+	height: 15rem;
 }
 
 .newsbox h3 a {
@@ -3229,6 +3237,10 @@ object-position: 0 0;
 
 }
 
+.footer img.custom-logo:lang(fr) {
+	width: 20.1rem;
+}
+
 ul.social {
 padding: 0;
 position: absolute;
@@ -3620,12 +3632,16 @@ section#one .newsbox:last-of-type{
 	max-height: 48vw;
 }
 
-.newsbox .custom-logo-link img {
+.newsbox img.custom-logo {
 	width: 55.5rem;
 	height:  28rem;
 	max-height: 29rem;
 	margin:0;
 	margin-bottom: 10rem;
+}
+
+.newsbox img.custom-logo:lang(fr) {
+	height: 13.2rem;
 }
 
 .newsbox h3 {
@@ -3708,6 +3724,12 @@ width: 40rem;
 	position: absolute;
 	width: 210px;
 	top: 10px;}
+	
+#logo:lang(fr) img	{
+	width: 228px;
+}
+
+
 
 div.oda {
 	width: 62rem;
@@ -3928,8 +3950,11 @@ label.button svg {
 }
 
 
-#top-sidebar p, .qtranxs_widget ul {
+#top-sidebar p {
 	padding-top: 10px;
+}
+.qtranxs_widget ul {
+	padding-top: 0;
 }
 
 .qtranxs_widget ul li {
