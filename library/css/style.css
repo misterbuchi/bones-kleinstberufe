@@ -3247,7 +3247,7 @@ object-position: 0 0;
 ul.social {
 padding: 0;
 position: absolute;
-bottom: 2.6rem;
+bottom: 2.8rem;
 
 }
 
@@ -3261,15 +3261,15 @@ position: relative;
 }
 
 ul.social li img {
-height: 3.2rem;
-width: 3.2rem;
+height: 4.2rem;
+width: 4.2rem;
 }
 
 ul.social li a::after {
 content: '';
 position: absolute;
-height: 3.2rem;
-width: 3.2rem;
+height: 4.2rem;
+width: 4.2rem;
 background-color: #aa62b2;
 top: 0;
 left: 0;
@@ -3326,7 +3326,7 @@ padding: 0;
 
 .footer address {
 position: absolute;
-bottom: 2.6rem;
+bottom: 2.4rem;
 }
 
 
