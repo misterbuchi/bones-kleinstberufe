@@ -57,7 +57,7 @@
 								    the_post_thumbnail('home-small');
 								}
 								else { ?>
-								    <img class="custom-logo" src="<?php  echo get_stylesheet_directory_uri(); ?>/img/<?php echo __('[:de]Logo_de.svg[:fr]Logo_fr.svg[:]'); ?>">
+								    <img class="custom-logo" src="<?php  echo get_stylesheet_directory_uri(); ?>/img/<?php echo __('[:de]Logo_de.svg[:fr]Logo_fr.svg[:]'); ?>"> 
 								<?php }
 								
 								 ?></a>
