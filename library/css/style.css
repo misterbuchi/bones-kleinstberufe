@@ -3693,6 +3693,10 @@ top: 5rem;
 width: 40rem;
 }
 
+.footer img.custom-logo:lang(fr) {
+	width: 43rem;
+}
+
 .footer .wrap {
 	padding-top: 2rem;
 	width: 100%;
