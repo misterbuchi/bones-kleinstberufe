@@ -56,9 +56,9 @@
 								if ( has_post_thumbnail() ) {
 								    the_post_thumbnail('home-small');
 								}
-								else {
-								    the_custom_logo('home-small');
-								}
+								else {?>
+								    <a href="<?php echo home_url(); ?>" rel="nofollow"><img class="custom-logo" src="<?php  echo get_stylesheet_directory_uri(); ?>/img/<?php echo __('[:de]Logo_de.svg[:fr]Logo_fr.svg[:]'); ?>"></a>
+								<?php}
 								
 								 ?></a>
 								
