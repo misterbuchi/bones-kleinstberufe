@@ -925,6 +925,9 @@ right: 16.8rem;
 	text-transform: uppercase;
 	
 }
+#sidebar1 p a:lang(fr) {
+	width: 22rem;
+}
 
 #sidebar1 p a:hover, .RectangleHome p a:hover {
 	background-color: #ffffff;
@@ -3990,6 +3993,10 @@ label.button svg {
 	font-size: 2rem;
 	padding-bottom: 4rem;
 	width: 25rem;
+}
+
+#sidebar1 p a:lang(fr) {
+	width: 27rem;
 }
 
 a.button {
