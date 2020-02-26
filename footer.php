@@ -1,11 +1,7 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 				
 				<div class="column-1">
-					<?php  if ( function_exists( 'the_custom_logo' ) ) {
-							the_custom_logo();
-						} else {
-						
-					bloginfo('name');} ?>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><img class="custom-logo" src="<?php  echo get_stylesheet_directory_uri(); ?>/img/<?php echo __('[:de]Logo_de.svg[:fr]Logo_fr.svg[:]'); ?>"></a>
 					
 					<ul class="social">
 						<li><a href="https://www.instagram.com/kleinstberufe/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Instagram.svg" title="Instagram" alt="Instagram" /></a></li>
