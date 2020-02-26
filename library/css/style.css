@@ -3326,7 +3326,7 @@ padding: 0;
 
 .footer address {
 position: absolute;
-bottom: 0;
+bottom: 2.6rem;
 }
 
 
@@ -4193,9 +4193,6 @@ section .article-header {
 
 }
 
-.footer address {
-	padding-top: 7.5rem;
-}
 
 .newsbox img {
 	max-height: 21.5rem;
