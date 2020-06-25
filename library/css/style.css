@@ -2640,13 +2640,6 @@ margin-top: 0;
 margin-top: 0.8rem;
 }
 
-.newsbox .custom-logo-link img {
-height: 16rem;
-margin: 4rem 2rem ;
-width: 31rem;
-object-position: 0 0;
-object-fit: cover;
-}
 
 .newsbox h3 a {
 
@@ -2841,6 +2834,14 @@ height: auto; }
 .newsbox  img {
 max-height: 15vw;
 object-fit: cover
+}
+
+.newsbox img.custom-logo {
+height: 16rem;
+margin: 4rem 2rem ;
+width: 31rem;
+object-position: 0 0;
+object-fit: cover;
 }
 
 
@@ -3620,7 +3621,7 @@ section#one .newsbox:last-of-type{
 	max-height: 48vw;
 }
 
-.newsbox .custom-logo-link img {
+.newsbox img.custom-logo  {
 	width: 55.5rem;
 	height:  28rem;
 	max-height: 29rem;
