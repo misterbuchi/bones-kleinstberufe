@@ -905,7 +905,7 @@ right: 16.8rem;
 }
 
 #sidebar1 p a, .RectangleHome p a {
-	width: 20rem;
+	width: 22rem;
 	height: 5rem;
 	border-radius: 1px;
 	background-color: #7d7bb7;
@@ -2844,6 +2844,9 @@ object-position: 0 0;
 object-fit: cover;
 }
 
+.newsbox img.custom-logo:lang(fr) {
+	height: 15rem;
+}
 
 .entry-content .size-auto,
 .entry-content .size-full,
@@ -3228,6 +3231,10 @@ height: 10.2rem;
 object-fit: cover;
 object-position: 0 0;
 
+}
+
+.footer img.custom-logo:lang(fr) {
+	width: 19rem;
 }
 
 ul.social {
@@ -3627,6 +3634,10 @@ section#one .newsbox:last-of-type{
 	max-height: 29rem;
 	margin:0;
 	margin-bottom: 10rem;
+}
+
+.newsbox img.custom-logo:lang(fr) {
+	height: 28rem;
 }
 
 .newsbox h3 {
