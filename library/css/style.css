@@ -574,6 +574,10 @@ top: 12rem;
 
 }
 
+div.wpcf7-response-output {
+	display: none;
+}
+
 /**
 * Re-set default cursor for disabled elements.
 */
