@@ -22,12 +22,11 @@
 
                   <p class="byline entry-meta vcard">
 
-                    <?php printf( 
-                       /* the time the post was published */
-                       '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>'
-                       /* the author of the post */
-                      
-                    ); ?>
+                    
+              <time class="updated entry-time" datetime="<?php get_the_time('Y-m-d') ?>" itemprop="datePublished"><?php  $display_date = date('d.m.Y', strtotime(get_post_meta($post->ID, 'event_begin', true)));
+
+                         if ( $display_date == '01.01.1970'): { the_time(get_option('date_format')); } else: { echo date(get_option('date_format'), strtotime($display_date));  } endif; ?></time>
+					
 
                   </p>
 
